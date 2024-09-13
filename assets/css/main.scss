@@ -19,3 +19,8 @@ code {
     background-color: #FF0000; /* Slightly different background for inline code */
     color: #FFFFFF; /* Custom color for inline code */
 }
+
+.post-content {
+    max-width: 900px; /* Adjust this value */
+    margin: 0 auto;
+}
