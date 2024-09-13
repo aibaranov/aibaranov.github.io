@@ -20,7 +20,18 @@ code {
     color: #FFFFFF; /* Custom color for inline code */
 }
 
-.post-content {
-    max-width: 900px; /* Adjust this value */
-    margin: 0 auto;
+/* Custom width for the main content area */
+@media (min-width: 768px) {
+    .page__content {
+        max-width: 1000px; /* Adjust this value as needed */
+        margin: 0 auto;
+    }
+}
+
+/* Ensure this applies to blog post content */
+@media (min-width: 768px) {
+    .single-post .page__content {
+        max-width: 1000px; /* Adjust this value as needed */
+        margin: 0 auto;
+    }
 }
