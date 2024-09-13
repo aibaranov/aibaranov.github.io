@@ -19,14 +19,3 @@ code {
     background-color: #FF0000; /* Slightly different background for inline code */
     color: #FFFFFF; /* Custom color for inline code */
 }
-
-/* Custom width for the main content area */
-.page__content {
-    max-width: 900px; /* Adjust this value to the desired width */
-    margin: 0 auto; /* Center the content */
-}
-
-/* Optionally, adjust the sidebar to make more room for content */
-.sidebar {
-    max-width: 250px; /* Adjust sidebar width if needed */
-}
