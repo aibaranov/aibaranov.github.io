@@ -19,19 +19,3 @@ code {
     background-color: #FF0000; /* Slightly different background for inline code */
     color: #FFFFFF; /* Custom color for inline code */
 }
-
-/* Custom width for the main content area */
-@media (min-width: 768px) {
-    .page__content {
-        max-width: 1000px; /* Adjust this value as needed */
-        margin: 0 auto;
-    }
-}
-
-/* Ensure this applies to blog post content */
-@media (min-width: 768px) {
-    .single-post .page__content {
-        max-width: 1000px; /* Adjust this value as needed */
-        margin: 0 auto;
-    }
-}
