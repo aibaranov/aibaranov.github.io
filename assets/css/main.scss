@@ -10,28 +10,12 @@ search: false
 
 /* Custom background color for code blocks */
 .highlight pre {
-    background-color: #f0f0f0; /* Light grey background for the entire code block */
-    color: #333; /* Dark text color for the entire code block */
+    background-color: #f0f0f0; /* Light grey background */
+    color: #333; /* Dark text color */
 }
 
-/* Customize colors for different syntax elements */
-.hljs-keyword {
-    color: #d73a49; /* Red color for keywords (e.g., `if`, `else`, `return`) */
+/* Customize inline code */
+code {
+    background-color: #f8f8f8; /* Slightly different background for inline code */
+    color: #d63384; /* Custom color for inline code */
 }
-
-.hljs-string {
-    color: #032f62; /* Blue color for strings (e.g., `"Hello, World!"`) */
-}
-
-.hljs-comment {
-    color: #6a737d; /* Grey color for comments (e.g., `# This is a comment`) */
-}
-
-.hljs-function {
-    color: #6f42c1; /* Purple color for function names (e.g., `def my_function`) */
-}
-
-.hljs-number {
-    color: #005cc5; /* Blue color for numbers (e.g., `42`, `3.14`) */
-}
-
