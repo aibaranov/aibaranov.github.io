@@ -133,14 +133,14 @@ author:
       url: "https://github.com/ArtemBaranov/"
 
 # Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/artem_i_baranov"
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "http://linkedin.com/in/connor-mcgarr-7522a6152/"
+#footer:
+#  links:
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      url: "https://twitter.com/artem_i_baranov"
+#    - label: "Linkedin"
+#      icon: "fab fa-fw fa-linkedin"
+#      url: "http://linkedin.com/in/connor-mcgarr-7522a6152/"
     
 
 # Reading Files
