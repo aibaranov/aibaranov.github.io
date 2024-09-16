@@ -1,5 +1,5 @@
 ---
-title: "«Bad Romance»: How Kaspersky Lab Failed to Conquer the Western Cybersecurity Market"
+title: "Bad Romance: How Kaspersky Lab Failed to Conquer the Western Cybersecurity Market"
 layout: single
 date: 2024-09-17
 tags: [posts]
