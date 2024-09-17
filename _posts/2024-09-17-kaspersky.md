@@ -1,7 +1,7 @@
 ---
 title: '"Bad Romance": How Kaspersky Lab Failed to Conquer the Western Cybersecurity Market'
 layout: single
-date: 2024-09-16
+date: 2024-09-18
 tags: [posts]
 excerpt: "The story of one Russia-based cybersecurity company that once set out to conquer the Western cybersecurity market"
 toc: true
