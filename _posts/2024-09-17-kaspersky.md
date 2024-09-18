@@ -162,7 +162,7 @@ As shown in this data, all leading anti-malware products deploy highly-privilege
 
 It's worth noting that all leading anti-malware solutions have the same technical architecture as Kaspersky, including highly privileged services and kernel mode drivers. But these solutions don't belong to the vendors with Russian origins. If you would like to learn more, you can read my [earlier study](https://www.linkedin.com/pulse/how-much-code-does-anti-malware-software-push-kernel-mode-baranov-czc6e) on how much kernel mode code antivirus vendors deploy in the system. It was written after the global outage caused by the buggy driver of CrowdStrike Falcon EDR. Above is an image demonstrating these statistics.
 
-## «We Don't Need Russians On Our Computers»
+## "We Don't Need Russians On Our Computers"
 
 After February 2022, the relationship between Russia and the U.S., along with European countries, was completely ruined. Since then, the term «good Russian companies» has ceased to exist, especially for those whose products are popular in Russia and used by military or government institutions. Despite significant efforts to establish so-called «transparency centers» in multiple countries, U.S. officials were unimpressed with these initiatives. They subsequently announced new sanctions against Kaspersky, which implied a total ban on the company’s products in the United States.
 
