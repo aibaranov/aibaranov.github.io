@@ -8,14 +8,16 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/* Custom background color for code blocks */
+/*
+ Custom background color for code blocks 
 .highlight pre {
-    background-color: #f0f0f0; /* Light grey background */
-    color: #333; /* Dark text color */
+    background-color: #f0f0f0; Light grey background
+    color: #333; Dark text color
 }
 
-/* Customize inline code */
+Customize inline code 
 code {
-    background-color: #FF0000; /* Slightly different background for inline code */
-    color: #FFFFFF; /* Custom color for inline code */
+    background-color: #FF0000; Slightly different background for inline code
+    color: #FFFFFF; Custom color for inline code
 }
+*/
