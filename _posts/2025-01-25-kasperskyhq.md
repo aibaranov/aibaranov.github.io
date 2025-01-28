@@ -24,5 +24,5 @@ excerpt: "Nice photos of Kaspersky HQ"
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/kasperskyhq9.jpg" alt="">
 
-From drone
+From copter
 <img src="{{ site.url }}{{ site.baseurl }}/images/kasperskyhq8.jpg" alt="">
