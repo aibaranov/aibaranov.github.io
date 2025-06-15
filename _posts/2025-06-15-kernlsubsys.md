@@ -3,7 +3,7 @@ title: "Calculating the size of the Windows kernel subsystems"
 layout: single
 date: 2025-06-15
 tags: [posts]
-excerpt: "Calculating the size of the Windows kernel subsystems"
+excerpt: "Have you ever wondered which Windows kernel subsystem has the largest code size? Let's find out."
 ---
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/kernlsubsys1.png" alt="">
