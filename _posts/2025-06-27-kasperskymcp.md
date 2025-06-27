@@ -48,6 +48,16 @@ Restart Claude. If everything went well, you will see the icon of Kaspersky TIP 
 
 Examples of requests.
 
+```
+Provide me with information about file with the hash: 580C9454B743739528466FC0604F6E62
+
+Get full analysis result for file with the hash: 580C9454B743739528466FC0604F6E62
+
+Get information about the following domain from Kaspersky TIP: www.google.com
+
+I want Kaspersky TIP to analyze a file from my computer, the path: C:\Windows\bfsvc.exe
+```
+
 <img src="{{ site.url }}{{ site.baseurl }}/images/kasperskymcp5.gif" alt="">
 
 
