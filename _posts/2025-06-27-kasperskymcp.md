@@ -2,7 +2,7 @@
 title: "Setting up Claude MCP for TI with Kaspersky TIP as a case study"
 layout: single
 date: 2025-06-27
-tags: [posts]
+tags: [posts, kaspersky, claude, model context protocol, threat intelligence, LLM]
 excerpt: "A blog on how to set up a Threat Intelligence server for Claude, using Kaspersky TIP as a case study"
 ---
 

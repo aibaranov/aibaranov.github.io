@@ -2,7 +2,7 @@
 title: "Calculating the size of the Windows kernel subsystems"
 layout: single
 date: 2025-06-15
-tags: [posts]
+tags: [posts, windows internals, windows kernel, reverse engineering, ida, ghidra]
 excerpt: "Have you ever wondered which Windows kernel subsystem has the largest code size? Let's find out."
 ---
 
