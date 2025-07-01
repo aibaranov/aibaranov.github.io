@@ -2,7 +2,7 @@
 title: "Lift me up to Ring 0: what are the most vulnerable Windows drivers"
 layout: single
 date: 2025-06-02
-tags: [posts]
+tags: [posts, vulnerability research, Windows, security]
 excerpt: "Examining the statistics on the most frequently patched Windows drivers between January 2022 and May 2025"
 ---
 Decided to go through Microsoft's CVE portal over the past three years (January 2022 - May 2025) to find out which Windows km components have been patched most frequently. The charts with the statistics are presented below, and some of the findings may look surprising. 

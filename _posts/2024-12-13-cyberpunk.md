@@ -2,7 +2,7 @@
 title: "On The Road To Defeating Very Hard Adam Smasher in Cyberpunk"
 layout: single
 date: 2024-12-27
-tags: [posts]
+tags: [posts, cyberpunk, cyberpunk 2077]
 excerpt: "Discussing options that may be useful for defeating Smasher"
 toc: true
 toc_label: "Table of Contents"

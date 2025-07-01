@@ -2,7 +2,7 @@
 title: 'Inception: Unlocking the Secrets of the Most Epic Subconscious Invasion'
 layout: single
 date: 2024-10-17
-tags: [posts]
+tags: [posts, inception, sci-fi]
 excerpt: "Revealing the secrets of my all-time fav Nolan masterpiece, Inception, which explores the mystery of mind travel"
 toc: true
 toc_label: "Table of Contents"

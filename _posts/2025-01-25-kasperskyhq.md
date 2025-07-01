@@ -2,7 +2,7 @@
 title: "My snaps of Kaspersky HQ"
 layout: single
 date: 2025-01-25
-tags: [posts]
+tags: [posts, kaspersky, pics]
 excerpt: "Nice photos of Kaspersky HQ"
 ---
 
