@@ -38,7 +38,7 @@ Now copy the json snippet required to register the MCP in Claude (see `README.md
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/kasperskymcp2.gif" alt="">
 
-Run Claude and go to `File -> Settings -> Developer`. Press `Edit Config`. The app creates an empty file `claude_desktop_config.json`. Go to our Claude installation folder and paste the copied json into that file. Don't forget to replace `YOUR_API_KEY` macro with your API key.
+Run Claude and go to `File -> Settings -> Developer`. Press `Edit Config`. The app creates an empty file `claude_desktop_config.json`. Go to our Claude installation folder and paste the copied json into that file. Don't forget to replace `YOUR_API_KEY` macro with your API key and change the path to the repo.
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/kasperskymcp3.png" alt="">
 
@@ -59,6 +59,10 @@ I want Kaspersky TIP to analyze a file from my computer, the path: C:\Windows\bf
 ```
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/kasperskymcp5.gif" alt="">
+
+Video guide
+
+{% include video id="DCbWHR1th2Y" provider="youtube" %}
 
 
 
