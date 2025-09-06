@@ -142,7 +142,6 @@ footer:
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/artem-baranov-86163135/"
     
-
 # Reading Files
 include:
   - .htaccess
@@ -166,6 +165,7 @@ exclude:
   - gulpfile.js
   - LICENSE
   - log
+  - minimal-mistakes-jekyll.gemspec
   - node_modules
   - package.json
   - package-lock.json
