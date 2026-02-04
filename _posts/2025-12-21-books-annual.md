@@ -49,7 +49,7 @@ This book is by industry analyst Richard Stiennon and provides a broad view of c
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/booksannual7.png" alt="">
 
-This book is authored by Bill Gates and was mentioned earlier. Source Code is a memoir, with almost half of the book dedicated to Bill’s life before Microsoft—his thoughts and reflections on childhood and university years, when he and Paul Allen programmed their BASIC interpreter for the Altair and founded the company. While reading the book, I left numerous notes on Twitter and LinkedIn.
+This book is authored by Bill Gates and was mentioned earlier. Source Code is a memoir, with almost half of the book dedicated to Bill’s life before Microsoft—his thoughts and reflections on childhood and university years, when he and Paul Allen programmed their BASIC interpreter for the Altair and founded the company. While reading the book, I left numerous notes on Twitter an LinkedIn.
 
 ## The Intel Trinity
 
