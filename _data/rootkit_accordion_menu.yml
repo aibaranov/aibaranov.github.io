@@ -1,0 +1,595 @@
+# _data/rootkit_accordion_menu.yml
+# Rootkit 1
+- title: "NTRootkit (1999)"
+  id: "R1"
+  tooltip: "x86"
+  items:
+    - label: "T1.a"
+    - label: "T1.d"
+    - label: "T9.a"
+
+# Rootkit 2
+- title: "FU (2004)"
+  id: "R2"
+  tooltip: "x86"
+  class: "header-purple"
+  items:
+    - label: "T2.a"
+    - label: "T2.d"
+    
+# Rootkit 3
+- title: "Phide (2004)"
+  id: "R3"
+  tooltip: "Concept, x86"
+  class: "header-teal"
+  items:
+    - label: "T2.b"
+    - label: "T2.h"
+    
+# Rootkit 4
+- title: "Phide2 (2004)"
+  id: "R4"
+  tooltip: "Concept, x86"
+  class: "header-teal"
+  items:
+    - label: "T2.b"
+    - label: "T2.c"
+    
+# Rootkit 5
+- title: "FUTo (2005)"
+  id: "R5"
+  tooltip: "x86"
+  class: "header-purple"
+  items:
+    - label: "T2.a"
+    - label: "T2.d"
+    - label: "T2.j"
+    - label: "T2.k"
+    
+# Rootkit 6
+- title: "Myfip (2005)"
+  id: "R6"
+  tooltip: "x86"
+  items:
+    - label: "T2.a"
+    
+# Rootkit 7
+- title: "Fanbot (2005)"
+  id: "R7"
+  tooltip: "x86"
+  items:
+    - label: "T2.a"
+    
+# Rootkit 8
+- title: "Shadow Walker (2005)"
+  id: "R8"
+  tooltip: "Concept, x86"
+  items:
+    - label: "T5.a"
+    
+# Rootkit 9
+- title: "Sony XCP (2005)"
+  id: "R9"
+  tooltip: "x86"
+  items:
+    - label: "T1.a"
+    
+# Rootkit 10
+- title: "Apropos (2005)"
+  id: "R10"
+  tooltip: "x86"
+  items:
+    - label: "T3.a"
+    
+# Rootkit 11
+- title: "Rustock.A (2006)"
+  id: "R11"
+  tooltip: "x86"
+  class: "header-pink"
+  items:
+    - label: "T1.b"
+    - label: "T1.c"
+    - label: "T2.a"
+    - label: "T3.a"
+    - label: "T4.a"
+    - label: "T8.a"
+    
+# Rootkit 12
+- title: "Rustock.B (2006)"
+  id: "R12"
+  tooltip: "x86"
+  class: "header-pink"
+  items:
+    - label: "T1.b"
+    - label: "T1.c"
+    - label: "T2.a"
+    - label: "T3.a"
+    - label: "T4.a"
+    - label: "T4.b"
+    - label: "T8.a"
+    
+# Rootkit 13
+- title: "phide_ex (2006)"
+  id: "R13"
+  tooltip: "Concept, x86"
+  class: "header-teal"
+  items:
+    - label: "T1.a"
+    - label: "T2.a"
+    - label: "T4.a"
+    
+# Rootkit 14
+- title: "RKDemo (2006)"
+  id: "R14"
+  tooltip: "Concept, x86"
+  items:
+    - label: "T1.a"
+    
+# Rootkit 15
+- title: "Unreal.A (2007)"
+  id: "R15"
+  tooltip: "Concept, x86"
+  items:
+    - label: "T2.a"
+    - label: "T2.e"
+    - label: "T2.f"
+    - label: "T2.g"
+    - label: "T2.h"
+    - label: "T6.a"
+    - label: "T8.a"
+    
+# Rootkit 16
+- title: "Rustock.C (2007)"
+  id: "R16"
+  tooltip: "x86"
+  class: "header-pink"
+  items:
+    - label: "T1.e"
+    - label: "T2.l"
+    - label: "T3.b"
+    - label: "T3.c"
+    
+# Rootkit 17
+- title: "Haxdoor (2007)"
+  id: "R17"
+  tooltip: "x86"
+  items:
+    - label: "T1.a"
+    - label: "T2.a"
+    
+# Rootkit 18
+- title: "BlackEnergy (2007)"
+  id: "R18"
+  tooltip: "x86"
+  class: "header-green"
+  items:
+    - label: "T1.a"
+    
+# Rootkit 19
+- title: "Srizbi (2007)"
+  id: "R19"
+  tooltip: "x86"
+  items:
+    - label: "T1.f"
+    - label: "T4.a"
+    - label: "T4.b"
+    - label: "T12.l"
+    
+# Rootkit 20
+- title: "Alman (2007)"
+  id: "R20"
+  tooltip: "x86"
+  items:
+    - label: "T1.a"
+    
+# Rootkit 21
+- title: "TDL1 (2008)"
+  id: "R21"
+  tooltip: "x86"
+  class: "header-red"
+  items:
+    - label: "T1.f"
+    - label: "T2.a"
+    - label: "T6.b"
+    - label: "T6.c"
+    
+# Rootkit 22
+- title: "TDL2 (2009)"
+  id: "R22"
+  tooltip: "x86"
+  class: "header-red"
+  items:
+    - label: "T1.f"
+    - label: "T2.a"
+    - label: "T3.a"
+    - label: "T6.b"
+    - label: "T6.c"
+    
+# Rootkit 23
+- title: "TDL3 (2009)"
+  id: "R23"
+  tooltip: "x86"
+  class: "header-red"
+  items:
+    - label: "T4.c"
+      tooltip: "Early versions"
+    - label: "T2.n"
+    - label: "T2.o"
+    - label: "T12.g"
+    
+# Rootkit 24
+- title: "ZeroAccess (2009)"
+  id: "R24"
+  tooltip: "x86"
+  items:
+    - label: "T2.m"
+    - label: "T2.n"
+    - label: "T2.o"
+    - label: "T12.g"
+    
+# Rootkit 25
+- title: "Gozi (2009)"
+  id: "R25"
+  tooltip: "x86"
+  items:
+    - label: "T1.a"
+    
+# Rootkit 26
+- title: "Koutodoor (2009)"
+  id: "R26"
+  tooltip: "x86"
+  items:
+    - label: "T2.l"
+    
+# Rootkit 27
+- title: "Stuxnet (2010)"
+  id: "R27"
+  tooltip: "x86"
+  class: "header-blue"
+  items:
+    - label: "T6.a"
+    
+# Rootkit 28
+- title: "Bubnix (2010)"
+  id: "R28"
+  tooltip: "x86"
+  items:
+    - label: "T2.l"
+    - label: "T4.a"
+    
+# Rootkit 29
+- title: "Alureon.DO (2010)"
+  id: "R29"
+  tooltip: "TDL2 clone, x86"
+  class: "header-red"
+  items:
+    - label: "T1.f"
+    - label: "T2.a"
+    - label: "T3.a"
+    
+# Rootkit 30
+- title: "Cutwail (2010)"
+  id: "R30"
+  tooltip: "x86"
+  items:
+    - label: "T1.a"
+    - label: "T4.a"
+
+# Rootkit 31
+- title: "Sality (2010)"
+  id: "R31"
+  tooltip: "x86"
+  items:
+    - label: "T10.a"
+    
+# Rootkit 32
+- title: "BlackEnergy v2 (2010)"
+  id: "R32"
+  tooltip: "x86"
+  class: "header-green"
+  items:
+    - label: "T1.c"
+    - label: "T3.a"
+    
+# Rootkit 33
+- title: "Ramnit (2010)"
+  id: "R33"
+  tooltip: "x86"
+  items:
+    - label: "T1.a"
+
+# Rootkit 34
+- title: "Necurs (2011)"
+  id: "R34"
+  tooltip: "x86, x64"
+  items:
+    - label: "T1.a"
+      tooltip: "x86"
+    - label: "T6.a"
+    - label: "T7.a"
+    - label: "T14.b"
+      tooltip: "x64"
+
+# Rootkit 35
+- title: "Duqu (2011)"
+  id: "R35"
+  tooltip: "x86"
+  class: "header-blue"
+  items:
+    - label: "T12.n"
+    
+# Rootkit 36
+- title: "Festi (2012)"
+  id: "R36"
+  tooltip: "x86"
+  items:
+    - label: "T1.a"
+    - label: "T6.a"
+    
+# Rootkit 37
+- title: "WindowsRegistryRk (2012)"
+  id: "R37"
+  tooltip: "x86"
+  items:
+    - label: "T3.c"
+ 
+# Rootkit 38
+- title: "Avatar (2013)"
+  id: "R38"
+  tooltip: "x86"
+  items:
+    - label: "T2.m"
+    - label: "T4.c"
+    - label: "T12.g"
+    
+# Rootkit 39
+- title: "Sednit (2014)"
+  id: "R39"
+  tooltip: "x86, x64"
+  items:
+    - label: "T1.a"
+    - label: "T6.a"
+    
+# Rootkit 40
+- title: "Turla (2014)"
+  id: "R40"
+  tooltip: "x86, x64"
+  items:
+    - label: "T1.f"
+    - label: "T3.a"
+    - label: "T4.b"
+    - label: "T12.g"
+    - label: "T12.m"
+    - label: "T14.a"
+    
+# Rootkit 41
+- title: "Duqu 2.0 (2015)"
+  id: "R41"
+  tooltip: "x86, x64"
+  class: "header-blue"
+  items:
+    - label: "T6.c"
+    - label: "T14.d"
+    
+# Rootkit 42
+- title: "Grayfish (2015)"
+  id: "R42"
+  tooltip: "x86, x64"
+  class: "header-blue"
+  items:
+    - label: "T2.m"
+    - label: "T12.a"
+    
+# Rootkit 43
+- title: "EquationDrug (2015)"
+  id: "R43"
+  tooltip: "x86, x64"
+  class: "header-blue"
+  items:
+    - label: "T6.c"
+ 
+# Rootkit 44
+- title: "Hacker’s Door (2017)"
+  id: "R44"
+  tooltip: "x86, x64"
+  items:
+    - label: "T3.d"
+    
+# Rootkit 45
+- title: "Derusbi (2017)"
+  id: "R45"
+  tooltip: "x86, x64"
+  items:
+    - label: "T1.a"
+    - label: "T4.a"
+    - label: "T4.b"
+    - label: "T4.e"
+    - label: "T14.c"
+    
+# Rootkit 46
+- title: "Wingbird (2017)"
+  id: "R46"
+  tooltip: "x86"
+  items:
+    - label: "T1.a"
+      tooltip: "To remove AVers hooks"
+      
+# Rootkit 47
+- title: "Purple Fox (2017)"
+  id: "R47"
+  tooltip: "x64"
+  items:
+    - label: "T12.k"
+    - label: "T14.c"
+    
+# Rootkit 48
+- title: "Cahnadr (2018)"
+  id: "R48"
+  tooltip: "x86, x64"
+  items:
+    - label: "T1.c"
+      tooltip: "x86"
+    - label: "T3.c"
+    - label: "T4.f"
+      tooltip: "x64"
+    - label: "T4.g"
+    - label: "T12.i"
+    - label: "T14.a"
+
+# Rootkit 49
+- title: "HideProc (2018)"
+  id: "R49"
+  tooltip: "x86"
+  items:
+    - label: "T2.b"
+    
+# Rootkit 50
+- title: "CEIDPageLock (2018)"
+  id: "R50"
+  tooltip: "x86"
+  items:
+    - label: "T4.d"
+    - label: "T12.n"
+
+# Rootkit 51
+- title: "Zacinlo (2018)"
+  id: "R51"
+  tooltip: "x86, x64"
+  items:
+    - label: "T6.a"
+    - label: "T7.a"
+    - label: "T14.c"
+    
+# Rootkit 52
+- title: "Autochk (2019)"
+  id: "R52"
+  tooltip: "x64"
+  items:
+    - label: "T4.e"
+    - label: "T4.h"
+    - label: "T14.c"
+    
+# Rootkit 53
+- title: "FK_Undead (2020)"
+  id: "R53"
+  tooltip: "x64"
+  items:
+    - label: "T7.a"
+
+# Rootkit 54
+- title: "Cronos (2021)"
+  id: "R54"
+  tooltip: "x64"
+  items:
+    - label: "T2.a"
+    - label: "T2.b"
+    - label: "T2.d"
+    
+# Rootkit 55
+- title: "Demodex (2021)"
+  id: "R55"
+  tooltip: "x86, x64"
+  items:
+    - label: "T4.e"
+    - label: "T3.a"
+      tooltip: "Pci.sys"
+    - label: "T6.a"
+    - label: "T7.a"
+    - label: "T12.h"
+    - label: "T14.a"
+    
+# Rootkit 56
+- title: "DirtyMoe (2021)"
+  id: "R56"
+  tooltip: "x86, x64"
+  items:
+    - label: "T2.a"
+    - label: "T4.a"
+    - label: "T6.a"
+    - label: "T12.j"
+    - label: "T14.c"
+    
+# Rootkit 57
+- title: "FiveSys (2021)"
+  id: "R57"
+  tooltip: "x64"
+  items:
+    - label: "T7.a"
+    - label: "T14.c"
+    
+# Rootkit 58
+- title: "FudModule (2022)"
+  id: "R58"
+  tooltip: "x86, x64"
+  items:
+    - label: "T2.h"
+    - label: "T3.b"
+    - label: "T11.a"
+    - label: "T12.b"
+    - label: "T12.c"
+    - label: "T12.d"
+    - label: "T12.e"
+    - label: "T12.f"
+    - label: "T14.a"
+    
+# Rootkit 59
+- title: "Fire Chili (2022)"
+  id: "R59"
+  tooltip: "x86, x64"
+  items:
+    - label: "T2.b"
+    - label: "T6.a"
+    - label: "T6.c"
+    - label: "T7.a"
+    - label: "T14.c"
+    
+# Rootkit 60
+- title: "InvisiMole (2022)"
+  id: "R60"
+  tooltip: "x64"
+  items:
+    - label: "T6.a"
+    - label: "T11.a"
+    - label: "T12.b"
+    - label: "T12.h"
+    - label: "T14.a"
+
+# Rootkit 61
+- title: "Daxin (2022)"
+  id: "R61"
+  tooltip: "x86, x64"
+  items:
+    - label: "T4.b"
+    - label: "T12.l"
+    
+# Rootkit 62
+- title: "WINNKIT (2022)"
+  id: "R62"
+  tooltip: "x86, x64"
+  items:
+    - label: "T2.a"
+    - label: "T2.f"
+    - label: "T2.g"
+    - label: "T4.b"
+    - label: "T4.f"
+    - label: "T12.l"
+    - label: "T14.c"
+    
+# Rootkit 63
+- title: "ValleyRAT (2023)"
+  id: "R63"
+  tooltip: "x64"
+  items:
+    - label: "T2.b"
+    - label: "T6.a"
+    - label: "T7.a"
+    - label: "T14.c"
+    
+# Rootkit 64
+- title: "ToneShell (2025)"
+  id: "R64"
+  tooltip: "x64"
+  items:
+    - label: "T6.a"
+    - label: "T7.a"
+    - label: "T14.c"

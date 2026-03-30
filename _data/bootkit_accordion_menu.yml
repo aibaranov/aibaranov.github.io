@@ -1,0 +1,382 @@
+# _data/bootkit_accordion_menu.yml
+# Bootkit 1
+- title: "eEye BootRoot (2005)"
+  id: "B1"
+  tooltip: "Concept, x86"
+  items:
+    - label: "T4.i"
+    - label: "T13.a"
+    
+# Bootkit 2
+- title: "IceLord (2007)"
+  id: "B2"
+  tooltip: "Concept, x86"
+  items:
+    - label: "T13.e"
+
+# Bootkit 3
+- title: "Vboot Kit (2007)"
+  id: "B3"
+  tooltip: "Concept, x86, x64"
+  items:
+    - label: "T13.a"
+    
+# Bootkit 4
+- title: "Mebroot (2007)"
+  id: "B4"
+  tooltip: "x86"
+  items:
+    - label: "T2.h"
+    - label: "T3.e"
+    - label: "T4.b"
+    - label: "T4.i"
+    - label: "T4.j"
+    - label: "T12.l"
+    - label: "T13.a"
+
+# Bootkit 5
+- title: "Stoned (2009)"
+  id: "B5"
+  tooltip: "Concept, x86, x64"
+  items:
+    - label: "T13.a"
+    
+# Bootkit 6
+- title: "Whistler (2010)"
+  id: "B6"
+  tooltip: "x86"
+  items:
+    - label: "T13.a"
+    
+# Bootkit 7
+- title: "Mebratix (2010)"
+  id: "B7"
+  tooltip: "x86"
+  items:
+    - label: "T13.a"
+    
+# Bootkit 8
+- title: "TDL4 (2010)"
+  id: "B8"
+  tooltip: "x86, x64"
+  class: "header-blue"
+  items:
+    - label: "T2.o"
+    - label: "T12.g"
+    - label: "T13.a"
+    - label: "T14.e"
+    
+# Bootkit 9
+- title: "MaxSS (2011)"
+  id: "B9"
+  tooltip: "x86, x64"
+  class: "header-blue"
+  items:
+    - label: "T12.g"
+    - label: "T13.a"
+    - label: "T13.b"
+    - label: "T14.e"
+    
+# Bootkit 10
+- title: "PiXiEServ (2011)"
+  id: "B10"
+  tooltip: "x86"
+  items:
+    - label: "T13.a"
+    
+# Bootkit 11
+- title: "Mebromi (2011)"
+  id: "B11"
+  tooltip: "x86"
+  items:
+    - label: "T4.i"
+    - label: "T13.a"
+    - label: "T13.e"
+
+# Bootkit 12
+- title: "Smitnyl (2011)"
+  id: "B12"
+  tooltip: "x86"
+  items:
+    - label: "T13.a"
+
+# Bootkit 13
+- title: "Popureb (2011)"
+  id: "B13"
+  tooltip: "x86"
+  items:
+    - label: "T13.a"
+    
+# Bootkit 14
+- title: "Rovnix (2011)"
+  id: "B14"
+  tooltip: "x86, x64"
+  class: "header-green"
+  items:
+    - label: "T4.c"
+    - label: "T5.a"
+    - label: "T12.g"
+    - label: "T12.l"
+    - label: "T13.b"
+    - label: "T14.e"
+    
+# Bootkit 15
+- title: "Carberp (2011)"
+  id: "B15"
+  tooltip: "x86, x64"
+  class: "header-green"
+  items:
+    - label: "T13.b"
+    - label: "T14.e"
+    
+# Bootkit 16
+- title: "Fisp (2011)"
+  id: "B16"
+  tooltip: "x86"
+  items:
+    - label: "T13.a"
+    
+# Bootkit 17
+- title: "Evil Core (2011)"
+  id: "B17"
+  tooltip: "Concept, x86, x64"
+  items:
+    - label: "T13.a"
+    - label: "T14.f"
+    
+# Bootkit 18
+- title: "Xpaj (2012)"
+  id: "B18"
+  tooltip: "x86, x64"
+  items:
+    - label: "T3.a"
+    - label: "T5.a"
+    - label: "T12.m"
+    - label: "T13.a"
+    
+# Bootkit 19
+- title: "Yurn (2012)"
+  id: "B19"
+  tooltip: "x86"
+  items:
+    - label: "T13.a"
+    
+# Bootkit 20
+- title: "Gapz (2012)"
+  id: "B20"
+  tooltip: "x86, x64"
+  items:
+    - label: "T2.m"
+    - label: "T3.f"
+    - label: "T3.g"
+    - label: "T4.c"
+    - label: "T4.f"
+    - label: "T12.g"
+    - label: "T12.l"
+    - label: "T13.a"
+    - label: "T13.b"
+    
+# Bootkit 21
+- title: "Guntior (2012)"
+  id: "B21"
+  tooltip: "x86"
+  items:
+    - label: "T13.a"
+    
+# Bootkit 22
+- title: "Aduska (2012)"
+  id: "B22"
+  tooltip: "x86"
+  items:
+    - label: "T13.a"
+    
+# Bootkit 23
+- title: "Dreamboot (2013)"
+  id: "B23"
+  tooltip: "Concept, x86, x64"
+  items:
+    - label: "T13.a"
+    
+# Bootkit 24
+- title: "Halcbot (2013)"
+  id: "B24"
+  tooltip: "x86"
+  items:
+    - label: "T1.a"
+    - label: "T3.a"
+    - label: "T4.c"
+    - label: "T13.a"
+    
+# Bootkit 25
+- title: "Caphaw (2013)"
+  id: "B25"
+  tooltip: "x86"
+  items:
+    - label: "T1.a"
+    - label: "T4.b"
+    - label: "T13.a"
+    
+# Bootkit 26
+- title: "Plite (2013)"
+  id: "B26"
+  tooltip: "x86"
+  items:
+    - label: "T13.a"
+    
+# Bootkit 27
+- title: "Simda (2013)"
+  id: "B27"
+  tooltip: "x86"
+  class: "header-green"
+  items:
+    - label: "T2.a"
+    - label: "T2.m"
+    - label: "T3.a"
+    - label: "T3.f"
+    - label: "T4.b"
+    - label: "T13.b"
+    
+# Bootkit 28
+- title: "Gootkit (2014)"
+  id: "B28"
+  tooltip: "x86, x64"
+  class: "header-green"
+  items:
+    - label: "T13.b"
+    
+# Bootkit 29
+- title: "Sednit (2014)"
+  id: "B29"
+  tooltip: "Early MBR version, x86, x64"
+  class: "header-purple"
+  items:
+    - label: "T1.a"
+    - label: "T3.h"
+    - label: "T6.a"
+    - label: "T13.a"
+    
+# Bootkit 30
+- title: "Pitou (2015)"
+  id: "B30"
+  tooltip: "x86, x64"
+  items:
+    - label: "T1.a"
+    - label: "T3.c"
+    - label: "T3.i"
+    - label: "T4.c"
+    
+# Bootkit 31
+- title: "HT Vector EDK (2015)"
+  id: "B31"
+  tooltip: "x86, x64"
+  class: "header-red"
+  items:
+    - label: "T13.c"
+    
+# Bootkit 32
+- title: "Grayfish (2015)"
+  id: "B32"
+  tooltip: "x86, x64"
+  items:
+    - label: "T12.g"
+    - label: "T13.b"
+    - label: "T14.a"
+    
+# Bootkit 33
+- title: "HDRoot (2015/2006)"
+  id: "B33"
+  tooltip: "x86"
+  items:
+    - label: "T4.a"
+    - label: "T4.b"
+    - label: "T4.e"
+    - label: "T13.a"
+    
+# Bootkit 34
+- title: "BOOTRASH (2015)"
+  id: "B34"
+  tooltip: "x86, x64"
+  items:
+    - label: "T12.g"
+    - label: "T13.b"
+    
+# Bootkit 35
+- title: "LoJax (2018)"
+  id: "B35"
+  tooltip: "x86, x64"
+  class: "header-purple"
+  items:
+    - label: "T13.d"
+    
+# Bootkit 36
+- title: "DarkCloud (2018)"
+  id: "B36"
+  tooltip: "x86"
+  items:
+    - label: "T3.a"
+    - label: "T3.f"
+    - label: "T13.a"
+    
+# Bootkit 37
+- title: "EfiGuard (2019)"
+  id: "B37"
+  tooltip: "Concept, x64"
+  class: "header-orange"
+  items:
+    - label: "T12.m"
+    - label: "T13.c"
+    - label: "T14.f"
+    
+# Bootkit 38
+- title: "MosaicRegressor (2020)"
+  id: "B38"
+  tooltip: "x86, x64"
+  class: "header-red"
+  items:
+    - label: "T13.d"
+    
+# Bootkit 39
+- title: "Finfisher (2021)"
+  id: "B39"
+  tooltip: "x86, x64"
+  items:
+    - label: "T13.a"
+    - label: "T13.c"
+    
+# Bootkit 40
+- title: "ESPecter (2021)"
+  id: "B40"
+  tooltip: "x64"
+  items:
+    - label: "T9.a"
+    - label: "T13.a"
+    - label: "T13.c"
+    - label: "T14.e"
+    
+# Bootkit 41
+- title: "MoonBounce (2022)"
+  id: "B41"
+  tooltip: "x64"
+  items:
+    - label: "T13.d"
+    - label: "T14.e"
+    
+# Bootkit 42
+- title: "BlackLotus (2023)"
+  id: "B42"
+  tooltip: "x64"
+  items:
+    - label: "T13.c"
+
+# Bootkit 43
+- title: "Glupteba (2024)"
+  id: "B43"
+  tooltip: "x64"
+  class: "header-orange"
+  items:
+    - label: "T12.m"
+    - label: "T13.c"
+    - label: "T14.f"
+
+    
+

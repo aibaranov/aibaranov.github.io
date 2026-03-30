@@ -1,0 +1,31 @@
+<!-- _includes/rootkit_accordion_nav.html -->
+<div class="technique-summary">
+  <strong>Controls:</strong>
+  <span style="margin-left: 15px; border-left: 1px solid #ccc; padding-left: 15px;">
+    <a href="#the-rootkit-techniques" id="toggle-all-menus" style="font-size: 0.8em; text-decoration: none; color: #7a7a7a;">Go to list</a>
+  </span>
+</div>
+
+<div class="accordion-nav-container">
+  {% for col in site.data.rootkit_accordion_menu %}
+  <div class="accordion-column">
+    
+    <!-- Header (The Rootkit Title) -->
+    <button class="accordion-header {{ col.class }}">
+      {{ col.title }}
+	  <span class="tooltip-text">{{ col.tooltip }}</span>
+    </button>
+
+    <!-- Content (The Labels) -->
+    <div class="accordion-content">
+      {% for item in col.items %}
+      <div class="accordion-item no-click"> 
+        {{ item.label }}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+

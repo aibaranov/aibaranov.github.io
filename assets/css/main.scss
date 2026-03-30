@@ -21,3 +21,245 @@ code {
     color: #FFFFFF; Custom color for inline code
 }
 */
+
+/* THE PARENT CONTAINER */
+.accordion-nav-container {
+  display: block; /* Standard vertical stack */
+  width: 100%;
+}
+
+/* THE INDIVIDUAL COLUMNS */
+.accordion-column {
+  margin-bottom: 10px; /* Space between the "Technique" boxes */
+  width: 100%;
+  position: relative;
+  overflow: visible !important; /* Critical for top-level tooltips */
+  z-index: 1;
+}
+
+.accordion-column:hover {
+  z-index: 999 !important; /* Higher than its siblings */
+}
+
+/* Ensure the header buttons look consistent in a row */
+.accordion-header {
+  width: 100%;
+  text-align: center;
+  padding: 10px 5px;
+  white-space: nowrap;      /* Keeps "Technique 1" on one line */
+  overflow: hidden;
+  text-overflow: ellipsis;  /* Adds '...' if the title is too long */
+  position: relative;
+  overflow: visible !important;
+}
+
+.accordion-header:hover {
+  background: #d0d0d0;
+}
+
+/* THE DROPDOWN LIST */
+.accordion-content {
+  display: block;      /* Must be block for max-height to work */
+  position: relative;  /* THIS IS THE KEY: it stays in the "flow" and pushes content down */
+  width: 100%;
+  overflow: hidden;    /* Hides the list when height is 0 */
+  max-height: 0;       /* Start closed */
+  transition: max-height 0.3s ease-out; /* Smooth slide effect */
+  background: #fff;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.accordion-content.show {
+  overflow: visible; /* Allows tooltips to pop out of the container */
+  max-height: 1000px;   /*Optional: prevents height limits from clipping */
+}
+
+/* Sub-items */
+.accordion-item {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  position: relative; /* Anchor for side tooltip */
+  display: block;
+}
+
+.accordion-item:hover {
+  background: #f9f9f9;
+}
+
+/* --- TOOLTIPS LOGIC --- */
+
+/* Common Tooltip Style */
+.tooltip-text, .tooltip-text-side {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 10000;
+  font-size: 0.8em;
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none; /* Prevents tooltip from catching clicks */
+  white-space: nowrap;
+}
+
+/* Header Tooltip (Appears Above) */
+.accordion-header .tooltip-text {
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 9999;        /* Stay on top of everything */
+  white-space: nowrap;
+}
+
+/* Sub-item Tooltip (Appears to the Right) */
+.accordion-item .tooltip-text-side {
+  left: 105%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Show on Hover */
+.accordion-header:hover .tooltip-text,
+.accordion-item:hover .tooltip-text-side {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Requirement 3: The Summary Box */
+.technique-summary {
+  background-color: #f8f9fa;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-left: 4px solid #007bff; /* Blue accent line */
+  font-family: sans-serif;
+  font-size: 0.95em;
+}
+
+/* Requirement 1 & 2: Multi-Select Item Styling */
+.technique-item {
+  cursor: pointer;        /* Restores the 'hand' icon */
+  padding: 8px 12px;      /* Makes the hit-area larger */
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  
+  /* Default State (Unselected) */
+  &:hover {
+    background-color: #e2e6ea;
+    color: #333;
+  }
+
+  /* Active State (Selected) */
+  &.is-selected {
+    background-color: #007bff; /* Blue Background */
+    color: #ffffff !important; /* White Text */
+    font-weight: bold;
+  }
+}
+
+.btn--copy {
+  background: none;
+  border: none;
+  color: #7a7a7a;
+  cursor: pointer;
+  font-size: 0.9em;
+  padding: 2px 5px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.btn--copy:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.btn--copy.copied {
+  color: #28a745; /* Turns green when successful */
+}
+
+.tree-view li:has(details) {
+  list-style: none;
+}
+
+/* 2. Highlight the Children (Style the leaves) */
+.tree-view li:not(:has(details)) {
+  /* visual style */
+  background-color: #f3f5f7;  /* Light gray/blue background */
+  font-size: 0.9em;           /* Slightly smaller font */
+  color: #24292f;             /* Dark gray text */
+  
+  /* layout polish */
+  margin: 4px 0;
+  padding: 4px 10px;
+  border-radius: 6px;         /* Rounded corners */
+  list-style-position: inside; /* Puts the bullet inside the color block */
+}
+
+.accordion-header.header-red {
+  color: #fff;
+  background-color: #d9534f; /* Red background */
+  
+  &:hover {
+    background-color: #c9302c; /* Darker red on hover */
+  }
+}
+
+.accordion-header.header-blue {
+  color: #fff;
+  background-color: #2b7ac8; /* Blue background */
+  
+  &:hover {
+    background-color: #22609e; /* Darker blue on hover */
+  }
+}
+
+.accordion-header.header-green {
+  color: #fff;
+  background-color: #1e8f1e; /* Green background */
+  
+  &:hover {
+    background-color: #156515; /* Darker green on hover */
+  }
+}
+
+.accordion-header.header-purple {
+  color: #fff;
+  background-color: #9957da; /* Purple background */
+  
+  &:hover {
+    background-color: #7f2dd1; /* Darker purple on hover */
+  }
+}
+
+.accordion-header.header-teal {
+  color: #fff;
+  background-color: #1c8585; /* Teal background */
+  
+  &:hover {
+    background-color: #135b5b; /* Darker teal on hover */
+  }
+}
+
+.accordion-header.header-pink {
+  color: #fff;
+  background-color: #d84c92; /* Pink background */
+  
+  &:hover {
+    background-color: #c62a78; /* Darker pink on hover */
+  }
+}
+
+.accordion-header.header-orange {
+  color: #fff;
+  background-color: #b46126; /* Orange background */
+  
+  &:hover {
+    background-color: #8a4b1d; /* Darker orange on hover */
+  }
+}
