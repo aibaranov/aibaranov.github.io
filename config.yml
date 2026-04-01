@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
 
 # Site Settings
 locale                   : "en-US"
@@ -96,6 +96,7 @@ facebook:
   app_id                 :
   publisher              :
 og_image                 : # Open Graph/Twitter default site image
+og_image_alt             : # Alt text for Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
@@ -118,16 +119,17 @@ author:
   bio              : "Dedicated to Cybersecurity, Malware Analysis, Windows Internals, Gaming, and other things"
   location         : "Moscow"
   email            :
+  # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
+      icon: "fas fa-fw fa-square-envelope"
       url: mailto:artembaranovex@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://artemonsecurity.blogspot.com"
     - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/artem_i_baranov"
+      icon: "fab fa-fw fa-square-x-twitter"
+      url: "https://x.com/artem_i_baranov"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ArtemBaranov/"
@@ -135,9 +137,9 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/artem_i_baranov"
+   -  label: "Twitter"
+      icon: "fab fa-fw fa-square-x-twitter"
+      url: "https://x.com/artem_i_baranov"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/artem-baranov-86163135/"
@@ -271,6 +273,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+# show_taxonomy: false  # set to false to hide tag/category lists on posts
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -306,12 +309,3 @@ defaults:
       comments: # true
       share: true
       related: true
- 
-  #_pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      classes: wide
-      layout: single
-      author_profile: true
