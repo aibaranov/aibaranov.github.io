@@ -206,13 +206,21 @@ In this post, you can also find the matrices of rootkit and bootkit families and
 
 ## The Matrix
 
+Click on the desired techniques to expand them -> Select a subtechnique -> Copy vector to clipboard -> (Clear All) to reset the menu
+
+Paste the vector from clipboard into the input field -> Click Show to highlight the techniques -> Hover the cursor over them ->Click "Reset" to reset the menu
+
 {% include tech_accordion_nav.html %}
 
 ## The Rootkit Families Matrix
 
+Click on the desired rootkit family to expand it -> Select subtechniques -> Copy vector to clipboard -> (Clear All) to reset the menu -> Go to Matrix -> Paste vector -> Click "Show"
+
 {% include rootkit_accordion_nav.html %}
 
 ## The Bootkit Families Matrix
+
+Click on the desired bootkit family to expand it -> Select subtechniques -> Copy vector to clipboard -> (Clear All) to reset the menu -> "Go to the matrix" -> Paste vector -> Click "Show"
 
 {% include bootkit_accordion_nav.html %}
 

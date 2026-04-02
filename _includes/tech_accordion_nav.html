@@ -5,7 +5,6 @@
   <button id="copy-techniques" class="btn--copy" style="display:none; margin-left: 10px;" title="Copy to clipboard">
     <i class="far fa-copy"></i>
   </button>
-  <!-- UPDATED: This button now clears selection AND folds menus -->
   <button id="reset-techniques" class="btn--reset" style="display:none; margin-left: 10px;">(Clear All)</button>
   
   <span style="margin-left: 15px; border-left: 1px solid #ccc; padding-left: 15px;">
@@ -17,6 +16,10 @@
 <div class="technique-vector-input" style="margin: 15px 0; padding: 10px; background: #f9f9f9; border: 1px solid #eee; border-radius: 4px; display: flex; align-items: center; flex-wrap: wrap; gap: 10px;">
   <label for="vector-input" style="font-weight: bold; margin: 0;">Input techniques vector:</label>
   <input type="text" id="vector-input" placeholder="e.g. T1.a, T2.b" style="padding: 5px; width: 250px; border: 1px solid #ccc; border-radius: 3px;">
+  
+  <!-- NEW: Paste Button -->
+  <button id="paste-vector-btn" class="btn" style="padding: 5px 15px; cursor: pointer; background-color: #222; color: #fff; border: none; border-radius: 3px;">Paste</button>
+  
   <button id="show-vector-btn" class="btn" style="padding: 5px 15px; cursor: pointer; background-color: #222; color: #fff; border: none; border-radius: 3px;">Show</button>
   <button id="reset-vector-btn" class="btn" style="padding: 5px 15px; cursor: pointer; background-color: #ddd; color: #333; border: none; border-radius: 3px;">Reset</button>
 </div>
@@ -60,17 +63,20 @@ document.addEventListener("DOMContentLoaded", function() {
   // --- CONFIGURATION ---
   const itemSelector = '.technique-item';
   const summaryOutput = document.getElementById('selected-list');
-  const resetButton = document.getElementById('reset-techniques'); // Top "Clear All"
+  const resetButton = document.getElementById('reset-techniques');
   const copyButton = document.getElementById('copy-techniques');
   const toggleAllBtn = document.getElementById('toggle-all-menus');
   
   const allContents = container.querySelectorAll('.accordion-content');
   const allHeaders = container.querySelectorAll('.accordion-header');
+  
+  // Scoped item selection (Critical Fix from previous step preserved)
   const items = container.querySelectorAll(itemSelector);
   
   const vectorInput = document.getElementById('vector-input');
   const showVectorBtn = document.getElementById('show-vector-btn');
-  const resetVectorBtn = document.getElementById('reset-vector-btn'); // Bottom "Reset"
+  const resetVectorBtn = document.getElementById('reset-vector-btn');
+  const pasteVectorBtn = document.getElementById('paste-vector-btn'); // New Element
 
   let allExpanded = false;
 
@@ -81,31 +87,40 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  // --- UPDATED: "Clear All" BUTTON LOGIC ---
+  // --- NEW: PASTE BUTTON LOGIC ---
+  if (pasteVectorBtn) {
+    pasteVectorBtn.addEventListener('click', async function() {
+      try {
+        const text = await navigator.clipboard.readText();
+        vectorInput.value = text;
+      } catch (err) {
+        console.error('Failed to read clipboard contents: ', err);
+        // Fallback or alert if permission denied or not supported
+        alert("Unable to access clipboard. Please ensure you have granted permission.");
+      }
+    });
+  }
+
+  // --- CLEAR ALL BUTTON LOGIC ---
   resetButton.addEventListener('click', function() {
-    // 1. Clear Selection
     items.forEach(el => el.classList.remove('is-selected'));
     
-    // 2. Fold All Menus (Collapse)
     allContents.forEach(content => {
       content.classList.remove('show');
       content.style.maxHeight = null;
     });
 
-    // 3. Reset Header Arrows
     allHeaders.forEach(header => {
       header.classList.remove('active');
     });
 
-    // 4. Reset Global Toggle State
     allExpanded = false;
     toggleAllBtn.textContent = "Expand All";
 
-    // 5. Update Text Summary
     updateSummaryDisplay();
   });
 
-  // Copy button logic
+  // --- COPY LOGIC ---
   copyButton.addEventListener('click', function() {
     const textToCopy = summaryOutput.textContent;
     if (textToCopy && textToCopy !== "None") {
@@ -121,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // --- LOGIC: SHOW VECTOR ---
+  // --- SHOW VECTOR LOGIC ---
   showVectorBtn.addEventListener('click', function() {
     const rawInput = vectorInput.value;
     if (!rawInput) return;
@@ -136,7 +151,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const prefix = parts[0]; 
         const label = parts[1];
 
-        const targetItem = document.querySelector(`.technique-item[data-prefix="${prefix}"][data-value="${label}"]`);
+        // Scoped Selector (Critical Fix preserved)
+        const targetItem = container.querySelector(`.technique-item[data-prefix="${prefix}"][data-value="${label}"]`);
 
         if (targetItem) {
           targetItem.classList.add('is-selected');
@@ -157,16 +173,37 @@ document.addEventListener("DOMContentLoaded", function() {
     updateSummaryDisplay();
   });
 
-  // --- LOGIC: BOTTOM RESET BUTTON ---
-  // (Identical behavior to Clear All, also clears input field)
   resetVectorBtn.addEventListener('click', function() {
     vectorInput.value = "";
-    resetButton.click(); // Trigger the logic we just wrote above
+    resetButton.click();
   });
 
+  // --- TOGGLE ALL ---
+  toggleAllBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    allExpanded = !allExpanded;
+    
+    if (allExpanded) {
+      this.textContent = "Collapse All";
+      allHeaders.forEach(h => h.classList.add('active'));
+      allContents.forEach(c => {
+        c.classList.add('show');
+        c.style.maxHeight = c.scrollHeight + "px";
+      });
+    } else {
+      this.textContent = "Expand All";
+      allHeaders.forEach(h => h.classList.remove('active'));
+      allContents.forEach(c => {
+        c.classList.remove('show');
+        c.style.maxHeight = null;
+      });
+    }
+  });
 
+  // --- UPDATE SUMMARY DISPLAY ---
   function updateSummaryDisplay() {
-    const selectedItems = document.querySelectorAll(itemSelector + '.is-selected');
+    // Scoped Selector (Critical Fix preserved)
+    const selectedItems = container.querySelectorAll(itemSelector + '.is-selected');
     
     const values = Array.from(selectedItems).map(el => {
       const prefix = el.getAttribute('data-prefix');
@@ -185,9 +222,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  // --- LOGIC: INDEPENDENT FOLDING ---
-  const headers = document.querySelectorAll('.accordion-header'); 
-
+  // --- INDEPENDENT FOLDING ---
+  const headers = container.querySelectorAll('.accordion-header'); 
   headers.forEach(header => {
     header.addEventListener('click', function(e) {
       this.classList.toggle('active');
@@ -195,32 +231,9 @@ document.addEventListener("DOMContentLoaded", function() {
       if (panel.style.maxHeight) {
         panel.style.maxHeight = null; 
       } else {
-        panel.style.maxHeight = panel.scrollHeight + "px"; 
+        panel.style.maxHeight = panel.scrollHeight + "px";
       }
     });
   });
-  
-  toggleAllBtn.addEventListener('click', function(e) {
-    e.preventDefault();
-    allExpanded = !allExpanded;
-
-    allContents.forEach(content => {
-      if (allExpanded) {
-        content.classList.add('show');
-        content.style.maxHeight = content.scrollHeight + "px"; 
-      } else {
-        content.classList.remove('show');
-        content.style.maxHeight = null;
-      }
-    });
-
-    allHeaders.forEach(header => {
-      if (allExpanded) header.classList.add('active');
-      else header.classList.remove('active');
-    });
-
-    this.textContent = allExpanded ? "Collapse All" : "Expand All";
-  });
-
 });
 </script>

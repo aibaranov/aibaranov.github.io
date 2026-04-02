@@ -1,31 +1,135 @@
-<!-- _includes/rootkit_accordion_nav.html -->
+<!-- _includes/tech_accordion_nav_2.html -->
+
+<!-- 1. SUMMARY ROW -->
 <div class="technique-summary">
-  <strong>Controls:</strong>
-  <span style="margin-left: 15px; border-left: 1px solid #ccc; padding-left: 15px;">
-    <a href="#the-rootkit-techniques" id="toggle-all-menus" style="font-size: 0.8em; text-decoration: none; color: #7a7a7a;">Go to list</a>
-  </span>
+  <strong>Techniques selected:</strong> <span id="selected-list_2">None</span>
+  
+  <button id="copy-techniques_2" class="btn--copy" style="display:none; margin-left: 10px;" title="Copy to clipboard">
+    <i class="far fa-copy"></i>
+  </button>
+  
+  <!-- This button clears selection AND folds menus -->
+  <button id="reset-techniques_2" class="btn--reset" style="display:none; margin-left: 10px;">(Clear All)</button>
 </div>
 
-<div class="accordion-nav-container">
+<!-- 2. ACCORDION CONTAINER -->
+<div id="tech-accordion-container_2" class="accordion-nav-container">
   {% for col in site.data.rootkit_accordion_menu %}
   <div class="accordion-column">
     
-    <!-- Header (The Rootkit Title) -->
     <button class="accordion-header {{ col.class }}">
       {{ col.title }}
-	  <span class="tooltip-text">{{ col.tooltip }}</span>
+      <span class="tooltip-text">{{ col.tooltip }}</span>
     </button>
 
-    <!-- Content (The Labels) -->
     <div class="accordion-content">
       {% for item in col.items %}
-      <div class="accordion-item no-click"> 
+      <div class="accordion-item technique-item" data-value="{{ item.label }}" data-prefix="{{ col.id }}"> 
         {{ item.label }}
+        <span class="tooltip-text-side">{{ item.tooltip }}</span>
       </div>
       {% endfor %}
     </div>
+
   </div>
   {% endfor %}
 </div>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
 
+  // --- SCOPING: Target ONLY the second container ---
+  const container = document.getElementById('tech-accordion-container_2');
+  if(!container) return;
+
+  // --- CONFIGURATION ---
+  const summaryOutput = document.getElementById('selected-list_2');
+  const resetButton = document.getElementById('reset-techniques_2');
+  const copyButton = document.getElementById('copy-techniques_2');
+
+  // Selectors scoped within this specific container
+  const itemSelector = '.technique-item';
+  const allContents = container.querySelectorAll('.accordion-content');
+  const allHeaders = container.querySelectorAll('.accordion-header');
+  const items = container.querySelectorAll(itemSelector);
+
+  // --- 1. ACCORDION TOGGLE LOGIC ---
+  allHeaders.forEach(header => {
+    header.addEventListener('click', function() {
+      this.classList.toggle('active');
+      const panel = this.nextElementSibling;
+      panel.classList.toggle('show');
+      
+      if (panel.classList.contains('show')) {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } else {
+        panel.style.maxHeight = null;
+      }
+    });
+  });
+
+  // --- 2. ITEM SELECTION LOGIC ---
+  items.forEach(item => {
+    item.addEventListener('click', function(e) {
+      this.classList.toggle('is-selected');
+      updateSummaryDisplay();
+    });
+  });
+
+  // --- 3. CLEAR ALL LOGIC ---
+  // Clears selection text AND collapses all open menus
+  resetButton.addEventListener('click', function() {
+    // Clear selection
+    items.forEach(el => el.classList.remove('is-selected'));
+    
+    // Fold All Menus (Collapse)
+    allContents.forEach(content => {
+      content.classList.remove('show');
+      content.style.maxHeight = null;
+    });
+
+    // Reset Header Arrows
+    allHeaders.forEach(header => header.classList.remove('active'));
+
+    updateSummaryDisplay();
+  });
+
+  // --- 4. COPY LOGIC ---
+  copyButton.addEventListener('click', function() {
+    const textToCopy = summaryOutput.textContent;
+    if (textToCopy && textToCopy !== "None") {
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        this.classList.add('copied');
+        const icon = this.querySelector('i');
+        const originalClass = icon.className;
+        
+        icon.className = 'fas fa-check'; 
+        setTimeout(() => {
+          this.classList.remove('copied');
+          icon.className = originalClass; 
+        }, 2000);
+      });
+    }
+  });
+
+  // --- HELPER: Update Text ---
+  function updateSummaryDisplay() {
+    const selectedItems = container.querySelectorAll(itemSelector + '.is-selected');
+    
+    const values = Array.from(selectedItems).map(el => {
+      const label = el.getAttribute('data-value').trim();
+      return `${label}`; 
+    });
+    
+    if (values.length > 0) {
+      summaryOutput.textContent = values.join(', '); 
+      resetButton.style.display = 'inline-block'; 
+      copyButton.style.display = 'inline-block'; 
+    } else {
+      summaryOutput.textContent = "None";
+      resetButton.style.display = 'none'; 
+      copyButton.style.display = 'none'; 
+    }
+  }
+});
+</script>
