@@ -386,3 +386,46 @@ code {
   background-color: #333;
 }
 
+/* =========================================
+   Mobile Responsiveness (Add to bottom)
+   ========================================= */
+@media screen and (max-width: 768px) {
+  
+  /* Reduce outer wrapper padding to save space */
+  #quiz-wrapper {
+    padding: 15px 10px; /* Less padding on sides */
+    margin: 10px 0;
+    border-radius: 4px; /* Slightly smaller radius */
+  }
+
+  /* Make question text slightly smaller but still readable */
+  .quiz-question-text {
+    font-size: 1em; 
+  }
+
+  /* Increase touch target size for options */
+  .quiz-option {
+    padding: 12px 10px; /* Taller click area for fingers */
+    font-size: 1em;     /* Prevent zooming on iOS (must be 16px+) */
+  }
+
+  /* Stack the footer elements (Score top, Button bottom) */
+  #quiz-footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    align-items: stretch; /* Make button full width */
+  }
+
+  #quiz-reset-btn {
+    width: 100%;        /* Full width button for easy tapping */
+    padding: 12px;      /* Taller button */
+    font-size: 1em;
+  }
+  
+  /* Adjust the letter counter spacing if needed */
+  .quiz-option::before {
+    margin-right: 6px;
+  }
+}
+
