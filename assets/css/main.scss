@@ -263,3 +263,126 @@ code {
     background-color: #8a4b1d; /* Darker orange on hover */
   }
 }
+
+/* =========================================
+   Quiz Widget Styles
+   ========================================= */
+#quiz-wrapper {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+  font-family: inherit; 
+  max-width: 800px;
+  margin: 20px 0;
+}
+
+.quiz-question-block {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 15px;
+}
+
+.quiz-question-text {
+  font-weight: 600;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  counter-reset: quiz-opt;
+}
+
+.quiz-option {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 0.95em;
+  position: relative;
+  
+  /* Kill all transitions/flickering globally for this element */
+  transition: none !important; 
+  -webkit-transition: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+
+  /* Hardware acceleration to keep text crisp during the move */
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Combined hover states for efficiency */
+.quiz-option:hover:not(.disabled) {
+  background-color: #eaeaea !important;
+  transform: translateX(2px) !important;
+  opacity: 1 !important;
+}
+
+/* Interaction States */
+.quiz-option.correct {
+  background-color: #d4edda !important;
+  border-color: #c3e6cb !important;
+  color: #155724;
+}
+
+.quiz-option.incorrect {
+  background-color: #f8d7da !important;
+  border-color: #f5c6cb !important;
+  color: #721c24;
+}
+
+.quiz-option.disabled {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.8;
+}
+
+/* The Locked State (Blurred & Unclickable) */
+.quiz-locked {
+  pointer-events: none;
+  user-select: none;
+}
+
+.quiz-option::before {
+  counter-increment: quiz-opt; 
+  content: counter(quiz-opt, lower-alpha) ") ";
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Footer Stats */
+#quiz-footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f1f1f1;
+  padding: 15px;
+  border-radius: 6px;
+}
+
+#quiz-score-box {
+  font-weight: bold;
+  color: #444;
+}
+
+#quiz-reset-btn {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+#quiz-reset-btn:hover {
+  background-color: #333;
+}
+

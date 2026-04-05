@@ -1,0 +1,900 @@
+- number: 1
+  question: 'What is actually Tenet?'
+  options:
+    - text: 'A branch of the CIA'
+    - text: 'We don''t know yet'
+    - text: 'A mysterious org from the future'
+      correct: true
+    - text: 'A shady group of antagonists'
+
+- number: 2
+  question: 'What about inversion?'
+  options:
+    - text: 'A technology for teleportation'
+    - text: 'A highly classified weapon'
+    - text: 'A process of disintegration'
+    - text: 'Reversing the entropy of an object'
+      correct: true
+
+- number: 3
+  question: 'And a turnstile?'
+  options:
+    - text: 'A device for teleportation'
+    - text: 'A machine for entropy inversion'
+      correct: true
+    - text: 'A place to communicate with the future'
+    - text: 'It is not stated in the movie'
+
+- number: 4
+  question: 'How many turnstiles have we seen?'
+  options:
+    - text: '3'
+    - text: '4'
+      correct: true
+    - text: '5'
+    - text: 'We''re going to check how many'
+
+- number: 5
+  question: 'What is the hypocenter?'
+  options:
+    - text: 'The site of a nuclear explosion'
+      correct: true
+    - text: 'A nuclear weapons depot'
+    - text: 'The center of abnormal activity'
+    - text: 'Where the future operates from'
+
+- number: 6
+  question: 'What is the Algorithm?'
+  options:
+    - text: 'An abandoned artifact from the past'
+    - text: 'A device to destroy the future'
+    - text: 'A device to invert the entire world'
+      correct: true
+    - text: 'The detritus of a coming war'
+
+- number: 7
+  question: 'What is the difference between normal and inverted objects?'
+  options:
+    - text: 'Inverted objects?'
+    - text: 'They move in opposite temporal directions'
+      correct: true
+    - text: 'They are located in different places'
+    - text: 'One of them is invisible'
+
+- number: 8
+  question: 'What is a temporal pincer movement?'
+  options:
+    - text: 'Moving towards each other from different temporal directions'
+      correct: true
+    - text: 'An offensive tactic'
+    - text: 'A defensive strategy'
+    - text: 'The future''s secret technology'
+
+- number: 9
+  question: 'The Opera siege happens at the same time as:'
+  options:
+    - text: 'TP meets Neil in Mumbai'
+    - text: 'The Stalsk-12 battle'
+      correct: true
+    - text: 'Priya meets TP in Mumbai'
+    - text: 'Kat meets Arepo'
+
+- number: 10
+  question: 'How did Neil save TP at the Opera?'
+  options:
+    - text: 'Shot a gunman with an inverted bullet'
+      correct: true
+    - text: 'Evacuated him from the building'
+    - text: 'Cowboy shit'
+    - text: 'Knocked out one of the terrorists'
+
+- number: 11
+  question: 'Do you remember what Neil''s main mission at the Opera is?'
+  options:
+    - text: 'Evacuate the WDM'
+    - text: 'Exfiltrate the Plutonium'
+    - text: 'Eliminate a fake Ukranian operative'
+    - text: 'Save TP''s life'
+      correct: true
+
+- number: 12
+  question: 'How did TP manage to escape the private Russians?'
+  options:
+    - text: 'Most likely, he was evacuated by Tenet'
+      correct: true
+    - text: 'He didn''t...'
+    - text: 'He killed them and escaped'
+    - text: 'He didn''t let them capture him'
+
+- number: 13
+  question: 'By the way, what did TP learn in the lab?'
+  options:
+    - text: 'Where to meet Neil'
+    - text: 'What inversion was'
+      correct: true
+    - text: 'Who Priya was'
+    - text: 'How Sator was connected to the future'
+
+- number: 14
+  question: 'What is "the detritus of a coming war"?'
+  options:
+    - text: 'Unknown objects that cannot be classified'
+    - text: 'It''s not stated in the movie'
+    - text: 'Pieces of broken inverted objects from the future'
+      correct: true
+    - text: 'Objects TP brought to the lab'
+
+- number: 15
+  question: 'Where did TP meet Neil?'
+  options:
+    - text: 'Tallinn'
+    - text: 'Oslo'
+    - text: 'New York'
+    - text: 'Mumbai'
+      correct: true
+
+- number: 16
+  question: 'Why did TP go to India?'
+  options:
+    - text: 'To meet Neil'
+    - text: 'To trace the origin of the inverted bullets'
+      correct: true
+    - text: 'To hide from the CIA'
+    - text: 'To find the antagonists'
+
+- number: 17
+  question: 'Who is Andrei Sator?'
+  options:
+    - text: 'A man who is able to communicate with the future'
+      correct: true
+    - text: 'A personal foe of TP'
+    - text: 'A Russian oligarch based in UAE'
+    - text: 'The founder of Tenet'
+
+- number: 18
+  question: 'Who is Kat?'
+  options:
+    - text: 'A friend of Neil'
+    - text: 'Sator''s estranged wife'
+      correct: true
+    - text: 'A contact for Sir Michael Crosby'
+    - text: 'A woman interested in luxury goods'
+
+- number: 19
+  question: 'What did TP learn from Priya during the first visit?'
+  options:
+    - text: 'Where to find Neil'
+    - text: 'Where to meet Kat'
+    - text: 'The source of the inverted bullets'
+      correct: true
+    - text: 'His main mission'
+
+- number: 20
+  question: 'Who is Sator''s closest henchman?'
+  options:
+    - text: 'Petrov'
+    - text: 'Smith'
+    - text: 'Volkov'
+      correct: true
+    - text: 'Arepo'
+
+- number: 21
+  question: 'How did Sator allegedly use his first gold?'
+  options:
+    - text: 'Most likely as collateral for a loan'
+      correct: true
+    - text: 'He didn''t use it at all'
+    - text: 'He sold it on the black market'
+    - text: 'He got rid of it'
+
+- number: 22
+  question: 'What is Sator''s main mission?'
+  options:
+    - text: 'To kill TP and Neil'
+    - text: 'To neutralize Tenet'
+    - text: 'To contact the CIA'
+    - text: 'To deliver the Algorithm to the future'
+      correct: true
+
+- number: 23
+  question: 'What is a dead drop?'
+  options:
+    - text: 'A safe place'
+    - text: 'Where Sator met TP'
+    - text: 'A place to store inverted ammo'
+    - text: 'A place where items are safely exchanged'
+      correct: true
+
+- number: 24
+  question: 'Which vehicles in Tallinn were inverted?'
+  options:
+    - text: 'Mercedes, BMW'
+    - text: 'Audi, Saab'
+      correct: true
+    - text: 'Saab, BMW'
+    - text: 'Audi, BMW, Mercedes'
+
+- number: 25
+  question: 'How did Sator trick TP in Tallinn?'
+  options:
+    - text: 'By threatening to kill Kat'
+      correct: true
+    - text: 'By threatening to activate the Algorithm'
+    - text: 'We don''t know'
+    - text: 'By threatening to kill him'
+
+- number: 26
+  question: 'What is the Plutonium-241?'
+  options:
+    - text: 'Highly radioactive material'
+    - text: 'The Algorithm itself'
+    - text: 'A section of the Algorithm'
+      correct: true
+    - text: 'We''re going to check what it is'
+
+- number: 27
+  question: 'When did a person disappear in the turnstile?'
+  options:
+    - text: 'During inversion'
+      correct: true
+    - text: 'During reversion'
+    - text: 'When entering the freeport'
+    - text: 'In an anomaly area'
+
+- number: 28
+  question: 'What is Sator''s main business?'
+  options:
+    - text: 'Arms dealing'
+      correct: true
+    - text: 'Gas and oil'
+    - text: 'Computers'
+    - text: 'It is not stated'
+
+- number: 29
+  question: 'Which team is inverted in Stalsk-12?'
+  options:
+    - text: 'Red team'
+    - text: 'Blue team'
+      correct: true
+    - text: 'Neither'
+    - text: 'Both'
+
+- number: 30
+  question: 'What information did the private Russians want from TP?'
+  options:
+    - text: 'Where the WDM was'
+    - text: 'Who he was'
+    - text: 'Where the Plutonium was'
+      correct: true
+    - text: 'Where the Russian general was'
+
+- number: 31
+  question: 'Who invented the Algorithm?'
+  options:
+    - text: 'A scientist from the future'
+      correct: true
+    - text: 'Tenet'
+    - text: 'Sator'
+    - text: 'Antagonists from the future'
+
+- number: 32
+  question: 'What is Neil''s final mission?'
+  options:
+    - text: 'To save Kat from Sator'
+    - text: 'To kill Priya'
+    - text: 'To join Tenet'
+    - text: 'To save TP''s life sacrificing himself'
+      correct: true
+
+- number: 33
+  question: 'How did Sator plan to destroy the world?'
+  options:
+    - text: 'By sending the Algorithm to the future'
+      correct: true
+    - text: 'By activating the Algorithm'
+    - text: 'By destroying the Algorithm'
+    - text: 'By killing its inventor'
+
+- number: 34
+  question: 'Where did Sator find his contract?'
+  options:
+    - text: 'Novosibirsk'
+    - text: 'Stalsk-12'
+      correct: true
+    - text: 'City-17'
+    - text: 'Tallinn'
+
+- number: 35
+  question: 'When does a person appear on both sides of a turnstile?'
+  options:
+    - text: 'During inversion'
+    - text: 'During reversion'
+      correct: true
+    - text: 'During annihilation'
+    - text: 'It''s not possible'
+
+- number: 36
+  question: 'What did TP learn from Kat about Sator?'
+  options:
+    - text: 'He is dying of cancer'
+      correct: true
+    - text: 'He is her husband'
+    - text: 'He is able to contact the future'
+    - text: 'He is from Russia'
+
+- number: 37
+  question: 'Why didn''t Priya stop TP in Tallinn?'
+  options:
+    - text: 'She wanted Sator to get the Algorithm'
+      correct: true
+    - text: 'She was afraid of her life'
+    - text: 'She had instructions from Sator'
+    - text: 'She expected Sator to kill Kat'
+
+- number: 38
+  question: 'Where is Kat from?'
+  options:
+    - text: 'England'
+      correct: true
+    - text: 'United States'
+    - text: 'Russia'
+    - text: 'It''s unclear'
+
+- number: 39
+  question: 'Where did Sator manage to capture the Plutonium?'
+  options:
+    - text: 'Oslo'
+    - text: 'Stalsk-12'
+    - text: 'Italy'
+    - text: 'Tallinn'
+      correct: true
+
+- number: 40
+  question: 'Who eventually assembled the Algorithm?'
+  options:
+    - text: 'Sator'
+    - text: 'Volkov'
+      correct: true
+    - text: 'TP'
+    - text: 'Neil'
+
+- number: 41
+  question: 'How did Sator manage to capture the Plutonium?'
+  options:
+    - text: 'Using a temporal pincer movement'
+      correct: true
+    - text: 'By killing TP'
+    - text: 'By taking TP hostage'
+    - text: 'He fails'
+
+- number: 42
+  question: 'Why does the BMW mirror damage exist before the hit?'
+  options:
+    - text: 'The BMW itself was inverted'
+    - text: 'An inverted SUV hit it during the chase'
+      correct: true
+    - text: 'The mirror was already broken'
+    - text: 'What mirror?'
+
+- number: 43
+  question: 'Which phrase is Ives known for?'
+  options:
+    - text: '"Cowboy shit"'
+      correct: true
+    - text: '"We''re going to check this is real"'
+    - text: '"What''s happened, happened"'
+    - text: '"Ignorance is our ammunition"'
+
+- number: 44
+  question: 'Why did the Saab un-flip on the highway?'
+  options:
+    - text: 'It was hit by an inverted weapon'
+    - text: 'We''ll never know'
+    - text: 'It is inverted'
+      correct: true
+    - text: 'It was the SUV, not the Saab'
+
+- number: 45
+  question: 'Why did Neil revert in Stalsk-12?'
+  options:
+    - text: 'To warn TP and Ives about a tripwire'
+      correct: true
+    - text: 'To attend the briefing'
+    - text: 'To fly to the icebreaker'
+    - text: 'He didn''t revert'
+
+- number: 46
+  question: 'Why did Kat almost fail the entire mission?'
+  options:
+    - text: 'She was working with the future'
+    - text: 'It was part of the plan'
+    - text: 'She killed Sator earlier than planned'
+      correct: true
+    - text: 'She forgot about the deal'
+
+- number: 47
+  question: 'What is the "CIA issue"?'
+  options:
+    - text: 'Suicide pills'
+      correct: true
+    - text: 'The Plutonium'
+    - text: 'Weapon encapsulation'
+    - text: 'The contract with the future'
+
+- number: 48
+  question: 'Why did the antagonists want to invert the world?'
+  options:
+    - text: 'They just don''t want the world to exist'
+    - text: 'To prevent WW2'
+    - text: 'It''s unknown'
+    - text: 'To restore the environment'
+      correct: true
+
+- number: 49
+  question: 'Why was Kat inverted after being shot?'
+  options:
+    - text: 'To align her entropy with the entropy of the wound'
+      correct: true
+    - text: 'To join the team back to Oslo'
+    - text: 'To stop Sator from killing her'
+    - text: 'To help TP obtain the plutonium'
+
+- number: 50
+  question: 'Who actually captured the Plutonium in Tallinn?'
+  options:
+    - text: 'Sator himself'
+    - text: 'Tenet'
+    - text: 'One of Sator''s forward-moving henchmen'
+      correct: true
+    - text: 'No one'
+
+- number: 51
+  question: 'Who began the Stalsk-12 mission inverted?'
+  options:
+    - text: 'Neil'
+      correct: true
+    - text: 'TP and Ives'
+    - text: 'TP and Neil'
+    - text: 'Ives and Neil'
+
+- number: 52
+  question: 'Why did Sator choose the hypocenter?'
+  options:
+    - text: 'It had high radiation level'
+    - text: 'Cowboy shit'
+    - text: 'An uninhabitable place safe for storage'
+      correct: true
+    - text: 'It''s not stated'
+
+- number: 53
+  question: 'How many sections make up the Algorithm?'
+  options:
+    - text: '5'
+    - text: '9'
+      correct: true
+    - text: '6'
+    - text: '4'
+
+- number: 54
+  question: 'How can the future respond?'
+  options:
+    - text: 'With inverted material'
+      correct: true
+    - text: 'It can''t respond'
+    - text: 'Sending inverted people'
+    - text: 'Teleporation'
+
+- number: 55
+  question: 'What is the entropic wind?'
+  options:
+    - text: 'A forward-moving force that dominates'
+      correct: true
+    - text: 'An atmospheric phenomenon'
+    - text: 'A mystical force controlled by the future'
+    - text: 'This is how an inverted person feels the wind'
+
+- number: 56
+  question: 'What does the scene where different parts of the building are destroyed show?'
+  options:
+    - text: 'Actually nothing, it''s just for effect'
+    - text: 'Which building?'
+    - text: 'Damage propagates in the same time direction as the projectile'
+      correct: true
+    - text: 'Don''t confuse: they''re destroying the same part of the building'
+
+- number: 57
+  question: 'Who is Priya?'
+  options:
+    - text: 'An arms dealer'
+    - text: 'Neil''s friend'
+    - text: 'A high-ranking Tenet operative'
+      correct: true
+    - text: 'A CIA officer'
+
+- number: 58
+  question: 'What does the principle "What''s happened, happened" mean?'
+  options:
+    - text: 'The past can''t be changed'
+      correct: true
+    - text: 'We can change whatever we want in the past'
+    - text: 'We can change the past without effect'
+    - text: 'I ordered my hot sauce an hour ago'
+
+- number: 59
+  question: 'Where did Kat and Sator travel on the 14th?'
+  options:
+    - text: 'Vietnam'
+      correct: true
+    - text: 'Italy'
+    - text: 'Tallinn'
+    - text: 'Oslo'
+
+- number: 60
+  question: 'What is the principle "Ignorance is our ammunition"?'
+  options:
+    - text: 'Ignoring any threat'
+    - text: 'Restricting information to ensure success'
+      correct: true
+    - text: 'Not getting attached to anyone'
+    - text: 'Keeping yourself self'
+
+- number: 61
+  question: 'Who is the founder of Tenet?'
+  options:
+    - text: 'Neil'
+    - text: 'Sator'
+    - text: 'Priya'
+    - text: 'TP'
+      correct: true
+
+- number: 62
+  question: 'How was Sator rewarded by the future?'
+  options:
+    - text: 'Money'
+    - text: 'Gold'
+      correct: true
+    - text: 'Yacht'
+    - text: 'Luxury estate'
+
+- number: 63
+  question: 'Who led the blue team at Stalsk-12?'
+  options:
+    - text: 'Commander Wheeler'
+      correct: true
+    - text: 'Ives'
+    - text: 'Neil'
+    - text: 'An unknown operative'
+
+- number: 64
+  question: 'Where did Sator fly on the 14th from Vietnam?'
+  options:
+    - text: 'Tallinn'
+    - text: 'Oslo'
+    - text: 'London'
+    - text: 'Kyiv'
+      correct: true
+
+- number: 65
+  question: 'How did the future scientist secure the Algorithm?'
+  options:
+    - text: 'Destroyed it'
+    - text: 'Split it into parts and hid them in the past'
+      correct: true
+    - text: 'Sold it to unknown people in the past'
+    - text: 'She wasn''t interested in hiding it'
+
+- number: 66
+  question: 'Where did the future scientist hide the Algorithm sections?'
+  options:
+    - text: 'Nuclear storages sites in different countries'
+      correct: true
+    - text: 'Under the hypocenter'
+    - text: 'Somewhere in Europe'
+    - text: 'We don''t know'
+
+- number: 67
+  question: 'When were the bullets TP used in the lab inverted?'
+  options:
+    - text: 'They were inverted in the past'
+    - text: 'They''ll be inverted in the future'
+      correct: true
+    - text: 'They weren''t actually inverted'
+    - text: 'There''s no such scene in the movie'
+
+- number: 68
+  question: 'What makes inverted bullets so dangerous?'
+  options:
+    - text: 'Inversed radiation'
+      correct: true
+    - text: 'A reversed matrix'
+    - text: 'Annihilation'
+    - text: 'Teleportation'
+
+- number: 69
+  question: 'Who wrote the film''s score?'
+  options:
+    - text: 'Hans Zimmer'
+    - text: 'John Williams'
+    - text: 'Howard Shore'
+    - text: 'Ludwig Göransson'
+      correct: true
+
+- number: 70
+  question: 'When was the film originally released?'
+  options:
+    - text: '2019'
+    - text: '2020'
+      correct: true
+    - text: '2021'
+    - text: 'Hasn''t happened yet'
+
+- number: 71
+  question: 'Why did TP kill Priya in the end?'
+  options:
+    - text: 'He was tasked by Sator'
+    - text: 'To stop her from killing Kat'
+      correct: true
+    - text: 'He was tasked by Ives'
+    - text: 'She was in his way'
+
+- number: 72
+  question: 'What makes inverted objects difficult to handle?'
+  options:
+    - text: 'They are highly radioactive'
+    - text: 'They are almost invisible'
+    - text: 'They move unpredictably'
+      correct: true
+    - text: 'They are fragile'
+
+- number: 73
+  question: 'How do they communicate with posterity?'
+  options:
+    - text: 'Leaving messages'
+      correct: true
+    - text: 'Voice calls'
+    - text: 'Video calls'
+    - text: 'Inverting objects'
+
+- number: 74
+  question: 'Why do inverted Tenet operatives wear full gear?'
+  options:
+    - text: 'For no apparent reason'
+    - text: 'All inverted people must wear it'
+    - text: 'To prevent annihilation if they meet themselves'
+      correct: true
+    - text: 'To identify themselves'
+
+- number: 75
+  question: 'Who found the turnstile in Stalsk-12?'
+  options:
+    - text: 'Blue Team'
+      correct: true
+    - text: 'Red Team'
+    - text: 'Kat'
+    - text: 'Ives'
+
+- number: 76
+  question: 'What is a proving window?'
+  options:
+    - text: 'A window in an inverted car'
+    - text: 'The period of time between inversion and reversion'
+    - text: 'Armored glass window between the red and blue zones'
+      correct: true
+    - text: 'The moment you see your future self'
+
+- number: 77
+  question: 'Who are these people from the future?'
+  options:
+    - text: 'The powerful world government'
+    - text: 'It''s not stated'
+      correct: true
+    - text: 'A group of scientists'
+    - text: 'Sator''s own men'
+
+- number: 78
+  question: 'Which team was transported in shipping containers?'
+  options:
+    - text: 'Red Team'
+    - text: 'Blue Team'
+      correct: true
+    - text: 'Both'
+    - text: 'Neither'
+
+- number: 79
+  question: 'What is the main property of the inverted state?'
+  options:
+    - text: 'Cause and effect swap places'
+      correct: true
+    - text: 'Everything becomes colorless'
+    - text: 'Everything becomes transparen t'
+    - text: 'It''s not clear'
+
+- number: 80
+  question: 'What happens to broken inverted objects?'
+  options:
+    - text: 'They become highly radioactive'
+    - text: 'They simply disappear due to the entropic wind'
+      correct: true
+    - text: 'They become transparent'
+    - text: 'They lose their physical form'
+
+- number: 81
+  question: 'Who did TP and Neil face in the Oslo freeport?'
+  options:
+    - text: 'Sator'
+    - text: 'Their inverted selves'
+      correct: true
+    - text: 'Airport staff'
+    - text: 'Volkov'
+
+- number: 82
+  question: 'Who is not a member of Tenet?'
+  options:
+    - text: 'Kat'
+      correct: true
+    - text: 'Priya'
+    - text: 'Neil'
+    - text: 'Ives'
+
+- number: 83
+  question: 'Why did Priya want to kill Kat at the end?'
+  options:
+    - text: 'She didn''t like Kat'
+    - text: 'Sator instructed her to'
+    - text: 'Kat was inverted'
+    - text: 'Kat could compromise Tenet'
+      correct: true
+
+- number: 84
+  question: 'Why didn''t TP let Priya kill Kat?'
+  options:
+    - text: 'We don''t know'
+    - text: 'He loved her'
+      correct: true
+    - text: 'Kat was part of Tenet'
+    - text: 'She was inverted'
+
+- number: 85
+  question: 'How is the Algorithm supposed to be used?'
+  options:
+    - text: 'Activated to invert everything'
+    - text: 'To be disposed of'
+    - text: 'It''s not clear'
+    - text: 'Converted back to a math formula'
+      correct: true
+
+- number: 86
+  question: 'Where''s Stalsk-12 located?'
+  options:
+    - text: 'Ukraine'
+    - text: 'Kazakhstan'
+    - text: 'Somewhere in Europe'
+    - text: 'Russia'
+      correct: true
+
+- number: 87
+  question: 'Which location doesn''t have a turnstile?'
+  options:
+    - text: 'Oslo'
+    - text: 'Tallinn'
+    - text: 'Trondheim'
+      correct: true
+    - text: 'Stalsk-12'
+
+- number: 88
+  question: 'Where''s the rally point for the final mission?'
+  options:
+    - text: 'Trondheim'
+      correct: true
+    - text: 'Oslo'
+    - text: 'Tallinn'
+    - text: 'London'
+
+- number: 89
+  question: 'Why did TP rescue Sator at sea?'
+  options:
+    - text: 'He secretly worked for Sator'
+    - text: 'To learn about his connection to the future'
+      correct: true
+    - text: 'Because Kat asked him'
+    - text: 'There''s no such scene'
+
+- number: 90
+  question: 'Who said "I ordered my hot sauce an hour ago"?'
+  options:
+    - text: 'TP'
+      correct: true
+    - text: 'Neil'
+    - text: 'Ives'
+    - text: 'Sator'
+
+- number: 91
+  question: 'Kat couldn''t revert in Tallinn because:'
+  options:
+    - text: 'It was too far'
+    - text: 'Sator controlled the turnstile at the time'
+      correct: true
+    - text: 'It didn''t have an entrance'
+    - text: 'It didn''t have an exit'
+
+- number: 92
+  question: 'What''s actually meant by "We live in a twilight world"?'
+  options:
+    - text: 'A state of ambiguity, deception, and hidden danger'
+      correct: true
+    - text: 'The end of the world is near'
+    - text: 'A world where everyone is inverted'
+    - text: 'It''s just a poetic phrase with no meaning'
+
+- number: 93
+  question: 'What''s the actual purpose of that phrase?'
+  options:
+    - text: 'A warning about the end of the world'
+    - text: 'A code phrase to identify CIA agents'
+      correct: true
+    - text: 'A reference to a famous poem'
+    - text: 'A secret signal to the future'
+
+- number: 94
+  question: 'What accent does Sator speak with?'
+  options:
+    - text: 'Estonian'
+    - text: 'Russian'
+      correct: true
+    - text: 'Ukrainian'
+    - text: 'He doesn''t have one'
+
+- number: 95
+  question: 'Why did the future choose Sator?'
+  options:
+    - text: 'For no apparent reason'
+    - text: 'They chose him by mistake'
+    - text: 'He was in the right place at the right time'
+      correct: true
+    - text: 'It was his initiative'
+
+- number: 96
+  question: 'What would happen if the future succeeded?'
+  options:
+    - text: 'Annihilation of the world'
+      correct: true
+    - text: 'Nothing'
+    - text: 'Nature would be restored'
+    - text: 'Everyone would move to the past'
+
+- number: 97
+  question: 'What is a Tenet operative forbidden from doing?'
+  options:
+    - text: 'Making unauthorized mission changes'
+      correct: true
+    - text: 'Going back in time'
+    - text: 'Killing anybody'
+    - text: 'Contacting other people'
+
+- number: 98
+  question: 'How did Neil know TP?'
+  options:
+    - text: 'TP is his relative'
+    - text: 'They both worked for the CIA'
+    - text: 'TP recruited him in the past'
+      correct: true
+    - text: 'They didn''t know each other'
+
+- number: 99
+  question: 'What''s the name of Kat''s son?'
+  options:
+    - text: 'William'
+    - text: 'Max'
+      correct: true
+    - text: 'Brian'
+    - text: 'Rob'
+
+- number: 100
+  question: 'Why did Sator want to commit suicide?'
+  options:
+    - text: 'He had depression'
+    - text: 'He was ordered to'
+    - text: 'It''s not stated'
+    - text: 'He had terminal cancer'
+      correct: true
+

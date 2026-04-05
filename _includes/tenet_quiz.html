@@ -1,0 +1,132 @@
+<!-- =========================================
+     PART 1: THE GATEKEEPER (Intro Quiz)
+     ========================================= -->
+<div id="intro-quiz-wrapper">
+  <div class="quiz-question-block" id="intro-q1">
+    <div class="quiz-question-text">We live in a twilight world</div>
+    <div class="quiz-options">
+      <!-- Note: We use a specific function 'checkIntroAnswer' here -->
+      <div class="quiz-option" onclick="checkIntroAnswer(this)">I ordered my hot sauce an hour ago</div>
+      <div class="quiz-option" onclick="checkIntroAnswer(this)">We're going to check this is real</div>
+      <div class="quiz-option" onclick="checkIntroAnswer(this)" data-correct="true">There are no friends at dusk</div>
+      <div class="quiz-option" onclick="checkIntroAnswer(this)">Cowboy shit</div>
+    </div>
+  </div>
+</div>
+
+<!-- Locked Message (Optional visual cue) -->
+<div id="quiz-lock-message" style="margin-bottom: 20px; color: #666; font-style: italic;">
+  🔒 <em>Answer the question above correctly to unlock the full quiz.</em>
+</div>
+
+<div id="intro-success-message" style="display: none; text-align: left;">
+  Okay, let's get started. ✅
+</div>
+
+<hr>
+
+<div id="main-quiz-wrapper" class="quiz-locked">
+
+  {% for item in site.data.tenet_quiz %}
+  <div class="quiz-question-block">
+    <div class="quiz-question-text">{{ item.number }}. {{ item.question }}</div>
+    <div class="quiz-options">
+      {% for option in item.options %}
+        <div class="quiz-option" 
+             onclick="checkAnswer(this)" 
+             {% if option.correct %}data-correct="true"{% endif %}>
+          {{ option.text }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endfor %}
+
+  <!-- Score Footer -->
+  <div id="quiz-footer">
+    <div id="quiz-score-box">
+      Total score: <span id="score-count">0/100</span> <span id="score-percent">0%</span>
+    </div>
+    <button id="quiz-reset-btn" onclick="resetQuiz()">Clear All</button>
+  </div>
+
+</div>
+
+<script>
+
+  function checkIntroAnswer(element) {
+    // If already correct, do nothing
+    if (element.classList.contains('correct')) return;
+
+    var parent = element.parentElement;
+    
+    if (element.getAttribute('data-correct') === 'true') {
+      // 1. Mark as correct
+      element.classList.add('correct');
+      
+      // 2. Lock the intro options
+      var options = parent.querySelectorAll('.quiz-option');
+      options.forEach(opt => opt.classList.add('disabled'));
+
+      // 3. UNLOCK THE MAIN QUIZ
+      // We simply remove the class that adds the blur/pointer-events
+      var mainQuiz = document.getElementById('main-quiz-wrapper');
+      mainQuiz.classList.remove('quiz-locked');
+	  
+	  // 4. Hide the lock message
+      document.getElementById('quiz-lock-message').style.display = 'none';
+	  document.getElementById('intro-success-message').style.display = 'block'
+
+    } else {
+      // Mark as incorrect but allow retries
+      element.classList.add('incorrect');
+      element.classList.add('disabled'); 
+    }
+  }
+
+  var mainQuestions = document.querySelectorAll('#main-quiz-wrapper .quiz-question-block');
+  var totalQuestions = mainQuestions.length;
+  var currentScore = 0;
+
+  function checkAnswer(element) {
+    if (element.classList.contains('disabled')) return;
+    
+    var parent = element.parentElement;
+    var options = parent.querySelectorAll('.quiz-option');
+
+    // Lock options for this specific question
+    options.forEach(opt => opt.classList.add('disabled'));
+
+    // Scoring Logic
+    if (element.getAttribute('data-correct') === 'true') {
+      element.classList.add('correct');
+      currentScore++;
+    } else {
+      element.classList.add('incorrect');
+    }
+
+    updateScore();
+  }
+
+  function updateScore() {
+    // Ensure we don't divide by zero if something loads wrong
+    if (totalQuestions === 0) return;
+
+    var percentage = Math.round((currentScore / totalQuestions) * 100);
+    document.getElementById('score-count').innerText = currentScore + "/" + totalQuestions;
+    document.getElementById('score-percent').innerText = percentage + "%";
+  }
+
+  function resetQuiz() {
+    currentScore = 0;
+    
+    // Only reset options inside the MAIN wrapper
+    var mainOptions = document.querySelectorAll('#main-quiz-wrapper .quiz-option');
+    
+    mainOptions.forEach(opt => {
+      opt.classList.remove('correct', 'incorrect', 'disabled');
+    });
+
+    updateScore();
+  }
+</script>
