@@ -2,7 +2,6 @@
 title: "My ultimate 100-question quiz on Tenet"
 layout: single
 author_profile: false
-classes: wide
 date: 2026-04-05
 tags: [tenet, sci-fi, quiz]
 excerpt: "Check your knowledge of Tenet with this ultimate 100-question quiz."
