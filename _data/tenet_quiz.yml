@@ -620,13 +620,13 @@
       correct: true
 
 - number: 70
-  question: 'When was the film originally released?'
+  question: 'Who is the director of the film?'
   options:
-    - text: '2019'
-    - text: '2020'
+    - text: 'Ridley Scott'
+    - text: 'naloN'
       correct: true
-    - text: '2021'
-    - text: 'Hasn''t happened yet'
+    - text: 'James Cameron'
+    - text: 'Robert Zemeckis'
 
 - number: 71
   question: 'Why did TP kill Priya in the end?'
