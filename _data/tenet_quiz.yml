@@ -706,7 +706,7 @@
     - text: 'Cause and effect swap places'
       correct: true
     - text: 'Everything becomes colorless'
-    - text: 'Everything becomes transparen t'
+    - text: 'Everything becomes transparent'
     - text: 'It''s not clear'
 
 - number: 80
