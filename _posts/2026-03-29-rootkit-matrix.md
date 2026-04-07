@@ -13,6 +13,8 @@ toc_icon: "list-ul"
 
 ## Introduction
 
+_(Please switch to dark theme in your browser if you don't see the colors below correctly)_
+
 Hello
 
 Last year, I [published](https://github.com/ArtemBaranov/WindowsRootkitsGuide/blob/main/rootkits_bootkits_v2.pdf) a white paper called "Windows Rootkits and Bootkits Guide". The idea behind this document was to summarize kernel-mode techniques used by malware (rootkits and bootkits) to hide their presence in a compromised system. The guide also contains information about publicly known kernel-mode malware that utilize rootkit modules, with almost three hundred links to the research materials the information was taken from.
