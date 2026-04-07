@@ -69,7 +69,6 @@
       options.forEach(opt => opt.classList.add('disabled'));
 
       // 3. UNLOCK THE MAIN QUIZ
-      // We simply remove the class that adds the blur/pointer-events
       var mainQuiz = document.getElementById('main-quiz-wrapper');
       mainQuiz.classList.remove('quiz-locked');
 	  
@@ -89,27 +88,35 @@
   var currentScore = 0;
 
   function checkAnswer(element) {
+    // Prevent clicking if already answered
     if (element.classList.contains('disabled')) return;
     
     var parent = element.parentElement;
     var options = parent.querySelectorAll('.quiz-option');
 
-    // Lock options for this specific question
+    // 1. Lock options for this specific question
     options.forEach(opt => opt.classList.add('disabled'));
 
-    // Scoring Logic
+    // 2. Scoring Logic
     if (element.getAttribute('data-correct') === 'true') {
       element.classList.add('correct');
       currentScore++;
     } else {
+      // Case: WRONG ANSWER
       element.classList.add('incorrect');
+      
+      // New Logic: Find and highlight the correct sibling
+      options.forEach(opt => {
+        if (opt.getAttribute('data-correct') === 'true') {
+          opt.classList.add('correct');
+        }
+      });
     }
 
     updateScore();
   }
 
   function updateScore() {
-    // Ensure we don't divide by zero if something loads wrong
     if (totalQuestions === 0) return;
 
     var percentage = Math.round((currentScore / totalQuestions) * 100);
@@ -120,7 +127,6 @@
   function resetQuiz() {
     currentScore = 0;
     
-    // Only reset options inside the MAIN wrapper
     var mainOptions = document.querySelectorAll('#main-quiz-wrapper .quiz-option');
     
     mainOptions.forEach(opt => {
