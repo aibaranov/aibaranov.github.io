@@ -348,6 +348,21 @@ code {
   color: #721c24 !important;
 }
 
+/* Instead of display: none, use these properties */
+.quiz-locked {
+  opacity: 0.3;          /* Makes it look "faded out" */
+  pointer-events: none;  /* Blocks all clicks/interactions */
+  user-select: none;     /* Prevents highlighting text */
+  filter: grayscale(1);  /* Optional: makes it black and white for a "locked" look */
+  cursor: not-allowed;
+}
+
+/* Also add this to make the intro-quiz buttons actually stop working when clicked */
+.quiz-option.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
 #quiz-footer {
   margin-top: 20px;
   display: flex;
