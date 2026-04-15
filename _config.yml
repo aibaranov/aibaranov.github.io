@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
+minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "catppuccin_latte", "catppuccin_mocha"
 
 # Site Settings
 locale                   : "en-US"
@@ -116,7 +116,7 @@ analytics:
 author:
   name             : "Artem Baranov"
   avatar           : "/images/avatar_image.png"
-  bio              : "Dedicated to Cybersecurity, Malware Analysis, Windows Internals, Gaming, and other things"
+  bio              : "I write about cybersecurity, gaming, Nolan films, and other things"
   location         : "Moscow"
   email            :
   # fediverse      : "@you@instance.social"  # used for fediverse:creator meta tag
