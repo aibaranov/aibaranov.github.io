@@ -133,6 +133,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ArtemBaranov/"
+    - label: "My key: 0x2F02112FA8EB42B6"
+      icon: "fas fa-fw fa-key"
+      url: "https://keyserver.ubuntu.com/pks/lookup?search=0x2F02112FA8EB42B6&fingerprint=on&op=index"
 
 # Site Footer
 footer:
