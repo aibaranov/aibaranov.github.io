@@ -1,40 +1,51 @@
 <!-- _includes/tech_accordion_nav.html -->
 
+<!-- 1. SUMMARY & CONTROLS (Refactored for Flexbox Layout) -->
 <div class="technique-summary">
-  <strong>Techniques selected:</strong> <span id="selected-list">None</span>
-  <button id="copy-techniques" class="btn--copy" style="display:none; margin-left: 10px;" title="Copy to clipboard">
-    <i class="far fa-copy"></i>
-  </button>
-  <button id="reset-techniques" class="btn--reset" style="display:none; margin-left: 10px;">(Clear All)</button>
+  <div class="summary-readout">
+    <strong>Techniques selected:</strong> 
+    <span id="selected-list">None</span>
+  </div>
   
-  <span style="margin-left: 15px; border-left: 1px solid #ccc; padding-left: 15px;">
-    <a href="#" id="toggle-all-menus" style="font-size: 0.8em; text-decoration: none; color: #7a7a7a;">Expand All</a>
-  </span>
+  <div class="summary-actions">
+    <!-- Copy Button -->
+    <button id="copy-techniques" class="btn--icon" style="display:none;" title="Copy to clipboard">
+      <i class="far fa-copy"></i>
+    </button>
+    
+    <!-- Clear Button -->
+    <button id="reset-techniques" class="btn--text" style="display:none;">(Clear All)</button>
+    
+    <span class="divider"></span>
+    
+    <!-- Expand All -->
+    <button id="toggle-all-menus" class="btn--link">Expand All</button>
+  </div>
 </div>
 
-<!-- Vector Input Section -->
-<div class="technique-vector-input" style="margin: 15px 0; padding: 10px; background: #f9f9f9; border: 1px solid #eee; border-radius: 4px; display: flex; align-items: center; flex-wrap: wrap; gap: 10px;">
-  <label for="vector-input" style="font-weight: bold; margin: 0;">Input techniques vector:</label>
-  <input type="text" id="vector-input" placeholder="e.g. T1.a, T2.b" style="padding: 5px; width: 250px; border: 1px solid #ccc; border-radius: 3px;">
+<!-- 2. VECTOR INPUT SECTION (Clean - No Inline Styles) -->
+<div class="technique-vector-input">
+  <label for="vector-input">Input techniques vector:</label>
+  <input type="text" id="vector-input" placeholder="e.g. T1.a, T2.b">
   
-  <!-- NEW: Paste Button -->
-  <button id="paste-vector-btn" class="btn" style="padding: 5px 15px; cursor: pointer; background-color: #222; color: #fff; border: none; border-radius: 3px;">Paste</button>
-  
-  <button id="show-vector-btn" class="btn" style="padding: 5px 15px; cursor: pointer; background-color: #222; color: #fff; border: none; border-radius: 3px;">Show</button>
-  <button id="reset-vector-btn" class="btn" style="padding: 5px 15px; cursor: pointer; background-color: #ddd; color: #333; border: none; border-radius: 3px;">Reset</button>
+  <!-- Action Buttons -->
+  <button id="paste-vector-btn" class="btn">Paste</button>
+  <button id="show-vector-btn" class="btn">Show</button>
+  <button id="reset-vector-btn" class="btn">Reset</button>
 </div>
 
+<!-- 3. ACCORDION CONTAINER -->
 <div id="tech-accordion-container" class="accordion-nav-container">
   {% for col in site.data.tech_accordion_menu %}
   <div class="accordion-column">
     
-    <!-- Top Level Header -->
-    <button class="accordion-header" onclick="toggleAccordion(this)">
+    <!-- Header (Removed inline onclick) -->
+    <button class="accordion-header">
       {{ col.title }}
       <span class="tooltip-text">{{ col.tooltip }}</span>
     </button>
 
-    <!-- Dropdown List -->
+    <!-- Content -->
     <div class="accordion-content">
       {% for item in col.items %}
       <div class="accordion-item technique-item" data-value="{{ item.label }}" data-prefix="{{ col.id }}"> 
@@ -48,12 +59,7 @@
   {% endfor %}
 </div>
 
-<script>
-function toggleAccordion(element) {
-  element.nextElementSibling.classList.toggle('show');
-}
-</script>
-
+<!-- 4. UNIFIED SCRIPT -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
 
@@ -69,17 +75,31 @@ document.addEventListener("DOMContentLoaded", function() {
   
   const allContents = container.querySelectorAll('.accordion-content');
   const allHeaders = container.querySelectorAll('.accordion-header');
-  
-  // Scoped item selection (Critical Fix from previous step preserved)
   const items = container.querySelectorAll(itemSelector);
   
   const vectorInput = document.getElementById('vector-input');
   const showVectorBtn = document.getElementById('show-vector-btn');
   const resetVectorBtn = document.getElementById('reset-vector-btn');
-  const pasteVectorBtn = document.getElementById('paste-vector-btn'); // New Element
+  const pasteVectorBtn = document.getElementById('paste-vector-btn');
 
   let allExpanded = false;
 
+  // --- 1. ACCORDION INTERACTION ---
+  allHeaders.forEach(header => {
+    header.addEventListener('click', function() {
+      this.classList.toggle('active');
+      const panel = this.nextElementSibling;
+      panel.classList.toggle('show');
+      
+      if (panel.classList.contains('show')) {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } else {
+        panel.style.maxHeight = null;
+      }
+    });
+  });
+
+  // --- 2. ITEM SELECTION ---
   items.forEach(item => {
     item.addEventListener('click', function(e) {
       this.classList.toggle('is-selected');
@@ -87,32 +107,30 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
-  // --- NEW: PASTE BUTTON LOGIC ---
+  // --- 3. PASTE LOGIC ---
   if (pasteVectorBtn) {
     pasteVectorBtn.addEventListener('click', async function() {
       try {
         const text = await navigator.clipboard.readText();
         vectorInput.value = text;
       } catch (err) {
-        console.error('Failed to read clipboard contents: ', err);
-        // Fallback or alert if permission denied or not supported
-        alert("Unable to access clipboard. Please ensure you have granted permission.");
+        console.error('Failed to read clipboard:', err);
+        alert("Unable to access clipboard. Please check permissions.");
       }
     });
   }
 
-  // --- CLEAR ALL BUTTON LOGIC ---
+  // --- 4. CLEAR/RESET LOGIC ---
   resetButton.addEventListener('click', function() {
     items.forEach(el => el.classList.remove('is-selected'));
     
+    // Close all menus on reset
     allContents.forEach(content => {
       content.classList.remove('show');
       content.style.maxHeight = null;
     });
 
-    allHeaders.forEach(header => {
-      header.classList.remove('active');
-    });
+    allHeaders.forEach(header => header.classList.remove('active'));
 
     allExpanded = false;
     toggleAllBtn.textContent = "Expand All";
@@ -120,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function() {
     updateSummaryDisplay();
   });
 
-  // --- COPY LOGIC ---
+  // --- 5. COPY LOGIC ---
   copyButton.addEventListener('click', function() {
     const textToCopy = summaryOutput.textContent;
     if (textToCopy && textToCopy !== "None") {
@@ -136,11 +154,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // --- SHOW VECTOR LOGIC ---
+  // --- 6. SHOW VECTOR (Parse Input) ---
   showVectorBtn.addEventListener('click', function() {
     const rawInput = vectorInput.value;
     if (!rawInput) return;
 
+    // Clear current selection first
     items.forEach(el => el.classList.remove('is-selected'));
 
     const tokens = rawInput.split(',').map(t => t.trim());
@@ -151,12 +170,12 @@ document.addEventListener("DOMContentLoaded", function() {
         const prefix = parts[0]; 
         const label = parts[1];
 
-        // Scoped Selector (Critical Fix preserved)
         const targetItem = container.querySelector(`.technique-item[data-prefix="${prefix}"][data-value="${label}"]`);
 
         if (targetItem) {
           targetItem.classList.add('is-selected');
 
+          // Auto-expand the parent accordion
           const parentContent = targetItem.closest('.accordion-content');
           const parentHeader = parentContent.previousElementSibling;
 
@@ -173,12 +192,13 @@ document.addEventListener("DOMContentLoaded", function() {
     updateSummaryDisplay();
   });
 
+  // --- 7. RESET INPUT ---
   resetVectorBtn.addEventListener('click', function() {
     vectorInput.value = "";
-    resetButton.click();
+    resetButton.click(); // Triggers the main reset logic
   });
 
-  // --- TOGGLE ALL ---
+  // --- 8. TOGGLE ALL (Expand/Collapse) ---
   toggleAllBtn.addEventListener('click', function(e) {
     e.preventDefault();
     allExpanded = !allExpanded;
@@ -200,9 +220,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 
-  // --- UPDATE SUMMARY DISPLAY ---
+  // --- HELPER: Update Display ---
   function updateSummaryDisplay() {
-    // Scoped Selector (Critical Fix preserved)
     const selectedItems = container.querySelectorAll(itemSelector + '.is-selected');
     
     const values = Array.from(selectedItems).map(el => {
@@ -221,19 +240,5 @@ document.addEventListener("DOMContentLoaded", function() {
       copyButton.style.display = 'none'; 
     }
   }
-
-  // --- INDEPENDENT FOLDING ---
-  const headers = container.querySelectorAll('.accordion-header'); 
-  headers.forEach(header => {
-    header.addEventListener('click', function(e) {
-      this.classList.toggle('active');
-      const panel = this.nextElementSibling;
-      if (panel.style.maxHeight) {
-        panel.style.maxHeight = null; 
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-    });
-  });
 });
 </script>

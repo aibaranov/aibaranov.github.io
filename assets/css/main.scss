@@ -8,90 +8,251 @@ search: false
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
-/*
- Custom background color for code blocks 
-.highlight pre {
-    background-color: #f0f0f0; Light grey background
-    color: #333; Dark text color
-}
+/* =========================================
+   1. ACCORDION CORE STRUCTURE
+   ========================================= */
 
-Customize inline code 
-code {
-    background-color: #FF0000; Slightly different background for inline code
-    color: #FFFFFF; Custom color for inline code
-}
-*/
-
-/* THE PARENT CONTAINER */
+/* The Parent Container */
 .accordion-nav-container {
-  display: block; /* Standard vertical stack */
+  display: block;
   width: 100%;
 }
 
-/* THE INDIVIDUAL COLUMNS */
+/* Individual Columns */
 .accordion-column {
-  margin-bottom: 10px; /* Space between the "Technique" boxes */
+  margin-bottom: 10px;
   width: 100%;
   position: relative;
-  overflow: visible !important; /* Critical for top-level tooltips */
+  overflow: visible !important; 
   z-index: 1;
+
+  &:hover {
+    z-index: 999 !important; 
+  }
 }
 
-.accordion-column:hover {
-  z-index: 999 !important; /* Higher than its siblings */
-}
-
-/* Ensure the header buttons look consistent in a row */
+/* HEADERS (Level 1) */
 .accordion-header {
   width: 100%;
   text-align: center;
-  padding: 10px 5px;
-  white-space: nowrap;      /* Keeps "Technique 1" on one line */
+  padding: 12px 10px;         /* Slightly taller for better touch target */
+  white-space: nowrap;
   overflow: hidden;
-  text-overflow: ellipsis;  /* Adds '...' if the title is too long */
+  text-overflow: ellipsis;
   position: relative;
   overflow: visible !important;
+  cursor: pointer;
+  
+  /* --- "Cool Platinum" Style --- */
+  background: #e3e8ee;        /* Darker Slate */
+  border: 1px solid #c5cdd6;  /* Stronger Border */
+  color: #222;                
+  font-weight: 600;           /* Bold Text */
+  transition: all 0.2s ease;
+
+  &:hover {
+    background: #ced4da;      /* Darken on hover */
+    border-color: #b1b7c1;
+  }
+
+  /* Active/Open State */
+  &.active {
+    background: #ced4da;
+    border-bottom: 1px solid #adb5bd;
+  }
 }
 
-.accordion-header:hover {
-  background: #d0d0d0;
-}
-
-/* THE DROPDOWN LIST */
+/* DROPDOWN CONTAINER */
 .accordion-content {
-  display: block;      /* Must be block for max-height to work */
-  position: relative;  /* THIS IS THE KEY: it stays in the "flow" and pushes content down */
-  width: 100%;
-  overflow: hidden;    /* Hides the list when height is 0 */
-  max-height: 0;       /* Start closed */
-  transition: max-height 0.3s ease-out; /* Smooth slide effect */
-  background: #fff;
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
-}
-
-.accordion-content.show {
-  overflow: visible; /* Allows tooltips to pop out of the container */
-  max-height: 1000px;   /*Optional: prevents height limits from clipping */
-}
-
-/* Sub-items */
-.accordion-item {
-  padding: 10px;
-  text-decoration: none;
-  color: #333;
-  border-bottom: 1px solid #eee;
-  position: relative; /* Anchor for side tooltip */
   display: block;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  max-height: 0; 
+  transition: max-height 0.3s ease-out;
+  
+  /* Match the sub-item color to prevent white flashes */
+  background: #f0f3f5; 
+  border-left: 1px solid #dbe2e8;
+  border-right: 1px solid #dbe2e8;
+
+  &.show {
+    overflow: visible; 
+    max-height: 1000px; 
+    border-bottom: 1px solid #dbe2e8;
+  }
 }
 
-.accordion-item:hover {
-  background: #f9f9f9;
+/* SUB-ITEMS (Level 2) - UPDATED */
+.accordion-item {
+  padding: 10px 15px;         /* Indented text slightly */
+  text-decoration: none;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  transition: all 0.15s ease;
+
+  /* --- "Mist" Style (The Update) --- */
+  background-color: #f0f3f5;  /* Soft Grey-Blue (Not White!) */
+  color: #333;
+  border-bottom: 1px solid #e2e6ea; /* Subtle divider */
+  font-size: 0.95em;
+
+  &:hover {
+    /* When hovering a child, make it look like a Header */
+    background-color: #e3e8ee; 
+    color: #000;
+    padding-left: 20px;       /* Subtle "slide right" animation */
+  }
+
+  /* Selected State (Blue Highlight) */
+  &.is-selected {
+    background-color: #007bff;
+    color: #ffffff !important;
+    font-weight: 600;
+    border-bottom-color: #0056b3;
+  }
 }
 
-/* --- TOOLTIPS LOGIC --- */
 
-/* Common Tooltip Style */
+/* =========================================
+   2. INTERACTIVE CONTROLS
+   ========================================= */
+
+/* Vector Input Box */
+.technique-vector-input {
+  background-color: #dbe4eb; /* Matches Headers roughly */
+  border: 1px solid #c2c8d1;
+  color: #222;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  label {
+    font-weight: 700;
+    margin: 0;
+    color: #111;
+  }
+
+  input[type="text"] {
+    padding: 6px 10px;
+    width: 250px;
+    border: 1px solid #b0b8c1;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #333;
+  }
+
+  /* Input Buttons */
+  .btn {
+    padding: 6px 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+    
+    /* Dark Action Buttons */
+    &#paste-vector-btn, 
+    &#show-vector-btn {
+      background-color: #222;
+      color: #fff;
+      &:hover { background-color: #000; }
+    }
+
+    /* Grey Reset Button */
+    &#reset-vector-btn {
+      background-color: #cdd5dc;
+      color: #222;
+      border: 1px solid #b0b8c1;
+      &:hover { background-color: #bec6cd; }
+    }
+  }
+}
+
+/* Summary Bar */
+.technique-summary {
+  background-color: #dbe4eb;       
+  border: 1px solid #c2c8d1;       
+  border-radius: 6px;
+  padding: 10px 15px;              
+  margin-bottom: 15px;
+  color: #222;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;                       
+
+  .summary-readout {
+    color: #111; 
+    font-weight: 500;
+    font-size: 0.95em;
+  }
+
+  .summary-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .btn--icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #555;
+    padding: 0;
+    font-size: 1.1em;
+    display: flex; 
+    align-items: center; 
+    
+    &:hover { color: #000; }
+    &.copied { color: #28a745; } 
+  }
+
+  .btn--text {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #d9534f; 
+    font-size: 0.9em;
+    padding: 0;
+    &:hover { text-decoration: underline; }
+  }
+
+  .divider {
+    border-left: 1px solid #999; 
+    height: 16px;                
+    width: 1px;
+    display: inline-block;
+    margin: 0 5px;               
+  }
+
+  .btn--link {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 0.9em;
+    color: #555;
+    cursor: pointer;
+    font-weight: 600; 
+    
+    &:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+/* =========================================
+   3. TOOLTIPS
+   ========================================= */
+
 .tooltip-text, .tooltip-text-side {
   visibility: hidden;
   background-color: #333;
@@ -104,164 +265,96 @@ code {
   font-size: 0.8em;
   opacity: 0;
   transition: opacity 0.3s;
-  pointer-events: none; /* Prevents tooltip from catching clicks */
+  pointer-events: none;
   white-space: nowrap;
 }
 
-/* Header Tooltip (Appears Above) */
 .accordion-header .tooltip-text {
   bottom: 120%;
   left: 50%;
   transform: translateX(-50%);
-  position: absolute;
-  z-index: 9999;        /* Stay on top of everything */
-  white-space: nowrap;
 }
 
-/* Sub-item Tooltip (Appears to the Right) */
 .accordion-item .tooltip-text-side {
   left: 105%;
   top: 50%;
   transform: translateY(-50%);
 }
 
-/* Show on Hover */
 .accordion-header:hover .tooltip-text,
 .accordion-item:hover .tooltip-text-side {
   visibility: visible;
   opacity: 1;
 }
 
-/* Requirement 3: The Summary Box */
-.technique-summary {
-  background-color: #f8f9fa;
-  padding: 10px 15px;
-  margin-bottom: 20px;
-  border-left: 4px solid #007bff; /* Blue accent line */
-  font-family: sans-serif;
-  font-size: 0.95em;
-}
 
-/* Requirement 1 & 2: Multi-Select Item Styling */
-.technique-item {
-  cursor: pointer;        /* Restores the 'hand' icon */
-  padding: 8px 12px;      /* Makes the hit-area larger */
-  transition: all 0.2s ease;
-  border-radius: 4px;
-  
-  /* Default State (Unselected) */
-  &:hover {
-    background-color: #e2e6ea;
-    color: #333;
+/* =========================================
+   4. HEADER COLOR VARIANTS
+   ========================================= */
+
+.accordion-header {
+  &.header-red {
+    color: #fff;
+    background-color: #d9534f;
+    &:hover { background-color: #c9302c; }
   }
 
-  /* Active State (Selected) */
-  &.is-selected {
-    background-color: #007bff; /* Blue Background */
-    color: #ffffff !important; /* White Text */
-    font-weight: bold;
+  &.header-blue {
+    color: #fff;
+    background-color: #2b7ac8;
+    &:hover { background-color: #22609e; }
+  }
+
+  &.header-green {
+    color: #fff;
+    background-color: #1e8f1e;
+    &:hover { background-color: #156515; }
+  }
+
+  &.header-purple {
+    color: #fff;
+    background-color: #9957da;
+    &:hover { background-color: #7f2dd1; }
+  }
+
+  &.header-teal {
+    color: #fff;
+    background-color: #1c8585;
+    &:hover { background-color: #135b5b; }
+  }
+
+  &.header-pink {
+    color: #fff;
+    background-color: #d84c92;
+    &:hover { background-color: #c62a78; }
+  }
+
+  &.header-orange {
+    color: #fff;
+    background-color: #b46126;
+    &:hover { background-color: #8a4b1d; }
   }
 }
 
-.btn--copy {
-  background: none;
-  border: none;
-  color: #7a7a7a;
-  cursor: pointer;
-  font-size: 0.9em;
-  padding: 2px 5px;
-  border-radius: 4px;
-  transition: background 0.2s;
-}
 
-.btn--copy:hover {
-  background-color: #f0f0f0;
-  color: #333;
-}
-
-.btn--copy.copied {
-  color: #28a745; /* Turns green when successful */
-}
+/* =========================================
+   5. EXTRA UTILITIES
+   ========================================= */
 
 .tree-view li:has(details) {
   list-style: none;
 }
 
-/* 2. Highlight the Children (Style the leaves) */
 .tree-view li:not(:has(details)) {
-  /* visual style */
-  background-color: #f3f5f7;  /* Light gray/blue background */
-  font-size: 0.9em;           /* Slightly smaller font */
-  color: #24292f;             /* Dark gray text */
-  
-  /* layout polish */
+  /* Updated to match new sub-item style */
+  background-color: #f0f3f5;
+  border: 1px solid #dce2e8;
+  font-size: 0.9em;
+  color: #24292f;
   margin: 4px 0;
   padding: 4px 10px;
-  border-radius: 6px;         /* Rounded corners */
-  list-style-position: inside; /* Puts the bullet inside the color block */
-}
-
-.accordion-header.header-red {
-  color: #fff;
-  background-color: #d9534f; /* Red background */
-  
-  &:hover {
-    background-color: #c9302c; /* Darker red on hover */
-  }
-}
-
-.accordion-header.header-blue {
-  color: #fff;
-  background-color: #2b7ac8; /* Blue background */
-  
-  &:hover {
-    background-color: #22609e; /* Darker blue on hover */
-  }
-}
-
-.accordion-header.header-green {
-  color: #fff;
-  background-color: #1e8f1e; /* Green background */
-  
-  &:hover {
-    background-color: #156515; /* Darker green on hover */
-  }
-}
-
-.accordion-header.header-purple {
-  color: #fff;
-  background-color: #9957da; /* Purple background */
-  
-  &:hover {
-    background-color: #7f2dd1; /* Darker purple on hover */
-  }
-}
-
-.accordion-header.header-teal {
-  color: #fff;
-  background-color: #1c8585; /* Teal background */
-  
-  &:hover {
-    background-color: #135b5b; /* Darker teal on hover */
-  }
-}
-
-.accordion-header.header-pink {
-  color: #fff;
-  background-color: #d84c92; /* Pink background */
-  
-  &:hover {
-    background-color: #c62a78; /* Darker pink on hover */
-  }
-}
-
-.accordion-header.header-orange {
-  color: #fff;
-  background-color: #b46126; /* Orange background */
-  
-  &:hover {
-    background-color: #8a4b1d; /* Darker orange on hover */
-  }
+  border-radius: 6px;
+  list-style-position: inside;
 }
 
 /* =========================================
@@ -363,7 +456,27 @@ code {
   opacity: 0.6;
 }
 
-#quiz-footer {
+.quiz-hint {
+  border-left: 3px solid #e74c3c; /* A soft red line */
+  padding-left: 10px;
+  margin-top: 12px;
+  font-size: 0.85em;
+  color: #555;
+}
+
+.quiz-hint {
+  display: none;       /* Hidden by default */
+  font-size: 0.8em;    /* Small size */
+  color: #2e7d32;      /* Dark green */
+  margin-top: 10px;
+  line-height: 1.4;
+  
+  border-left: 2px solid #81c784; 
+  padding-left: 10px;
+}
+
+
+div[id^="main-quiz-wrapper-"] .quiz-footer {
   margin-top: 20px;
   display: flex;
   align-items: center;
@@ -373,12 +486,12 @@ code {
   border-radius: 6px;
 }
 
-#quiz-score-box {
+div[id^="main-quiz-wrapper-"] .quiz-score-box {
   font-weight: bold;
   color: var(--primary-color, #444);
 }
 
-#quiz-reset-btn {
+div[id^="main-quiz-wrapper-"] .quiz-reset-btn {
   background-color: var(--primary-color, #555);
   color: var(--background-color, white);
   border: none;

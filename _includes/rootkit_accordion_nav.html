@@ -1,15 +1,21 @@
-<!-- _includes/tech_accordion_nav_2.html -->
+<!-- _includes/rootkit_accordion_nav.html -->
 
-<!-- 1. SUMMARY ROW -->
+<!-- 1. SUMMARY ROW (Updated Layout) -->
 <div class="technique-summary">
-  <strong>Techniques selected:</strong> <span id="selected-list_2">None</span>
+  <div class="summary-readout">
+    <strong>Techniques selected:</strong> 
+    <span id="selected-list_2">None</span>
+  </div>
   
-  <button id="copy-techniques_2" class="btn--copy" style="display:none; margin-left: 10px;" title="Copy to clipboard">
-    <i class="far fa-copy"></i>
-  </button>
-  
-  <!-- This button clears selection AND folds menus -->
-  <button id="reset-techniques_2" class="btn--reset" style="display:none; margin-left: 10px;">(Clear All)</button>
+  <div class="summary-actions">
+    <!-- Copy Button -->
+    <button id="copy-techniques_2" class="btn--icon" style="display:none;" title="Copy to clipboard">
+      <i class="far fa-copy"></i>
+    </button>
+    
+    <!-- Clear Button -->
+    <button id="reset-techniques_2" class="btn--text" style="display:none;">(Clear All)</button>
+  </div>
 </div>
 
 <!-- 2. ACCORDION CONTAINER -->
@@ -17,6 +23,7 @@
   {% for col in site.data.rootkit_accordion_menu %}
   <div class="accordion-column">
     
+    <!-- Added onclick handler to match strict event delegation isn't needed here due to JS below -->
     <button class="accordion-header {{ col.class }}">
       {{ col.title }}
       <span class="tooltip-text">{{ col.tooltip }}</span>
@@ -77,12 +84,11 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // --- 3. CLEAR ALL LOGIC ---
-  // Clears selection text AND collapses all open menus
   resetButton.addEventListener('click', function() {
     // Clear selection
     items.forEach(el => el.classList.remove('is-selected'));
     
-    // Fold All Menus (Collapse)
+    // Fold All Menus
     allContents.forEach(content => {
       content.classList.remove('show');
       content.style.maxHeight = null;
@@ -99,14 +105,16 @@ document.addEventListener("DOMContentLoaded", function() {
     const textToCopy = summaryOutput.textContent;
     if (textToCopy && textToCopy !== "None") {
       navigator.clipboard.writeText(textToCopy).then(() => {
+        // Add visual feedback class
         this.classList.add('copied');
-        const icon = this.querySelector('i');
-        const originalClass = icon.className;
         
+        // Swap Icon
+        const icon = this.querySelector('i');
         icon.className = 'fas fa-check'; 
+        
         setTimeout(() => {
           this.classList.remove('copied');
-          icon.className = originalClass; 
+          icon.className = 'far fa-copy'; 
         }, 2000);
       });
     }
@@ -123,6 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     if (values.length > 0) {
       summaryOutput.textContent = values.join(', '); 
+      // Use flex to align properly in the new container
       resetButton.style.display = 'inline-block'; 
       copyButton.style.display = 'inline-block'; 
     } else {

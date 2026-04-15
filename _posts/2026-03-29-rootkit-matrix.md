@@ -4,7 +4,7 @@ layout: single
 author_profile: false
 classes: wide
 date: 2026-03-29
-tags: [posts, rootkit, malware]
+tags: [rootkit, windows internals, windows kernel, ring 0]
 excerpt: "Introducing the Rootkit Techniques Matrix and updates to the Guide"
 toc: true
 toc_label: "Table of Contents"
@@ -12,8 +12,6 @@ toc_icon: "list-ul"
 ---
 
 ## Introduction
-
-_(Please switch to dark theme in your browser if you don't see the colors below correctly)_
 
 Hello
 

@@ -1,24 +1,29 @@
 <!-- _includes/bootkit_accordion_nav.html -->
 
-<!-- 1. SUMMARY ROW -->
+<!-- 1. SUMMARY ROW (Refactored) -->
 <div class="technique-summary">
-  <strong>Techniques selected:</strong> <span id="selected-list_3">None</span>
+  <div class="summary-readout">
+    <strong>Techniques selected:</strong> 
+    <span id="selected-list_3">None</span>
+  </div>
   
-  <button id="copy-techniques_3" class="btn--copy" style="display:none; margin-left: 10px;" title="Copy to clipboard">
-    <i class="far fa-copy"></i>
-  </button>
-  
-  <!-- This button clears selection AND folds menus -->
-  <button id="reset-techniques_3" class="btn--reset" style="display:none; margin-left: 10px;">(Clear All)</button>
-  
-  <span style="margin-left: 15px; border-left: 1px solid #ccc; padding-left: 15px;">
-    <a href="#the-matrix" style="font-size: 0.8em; text-decoration: none; color: #7a7a7a;">Go to the matrix</a>
-  </span>
+  <div class="summary-actions">
+    <!-- Copy Button -->
+    <button id="copy-techniques_3" class="btn--icon" style="display:none;" title="Copy to clipboard">
+      <i class="far fa-copy"></i>
+    </button>
+    
+    <!-- Clear Button -->
+    <button id="reset-techniques_3" class="btn--text" style="display:none;">(Clear All)</button>
+    
+    <!-- Navigation Link (Styled to match Expand All) -->
+    <span class="divider"></span>
+    <a href="#the-matrix" class="btn--link">Go to the matrix</a>
+  </div>
 </div>
 
 
 <!-- 2. ACCORDION CONTAINER (Unique ID: _3) -->
-<!-- Note: changing data source to tech_accordion_menu_3 -->
 <div id="tech-accordion-container_3" class="accordion-nav-container">
   {% for col in site.data.bootkit_accordion_menu %}
   <div class="accordion-column">
@@ -83,12 +88,11 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   // --- 3. CLEAR ALL LOGIC ---
-  // Clears selection text AND collapses all open menus
   resetButton.addEventListener('click', function() {
     // Clear selection
     items.forEach(el => el.classList.remove('is-selected'));
     
-    // Fold All Menus (Collapse)
+    // Fold All Menus
     allContents.forEach(content => {
       content.classList.remove('show');
       content.style.maxHeight = null;
