@@ -1,0 +1,179 @@
+- number: 1
+  question: 'Where did the future scientist hide the Algorithm sections?'
+  options:
+    - text: 'Nuclear storages sites in different countries'
+      correct: true
+    - text: 'Under the hypocenter'
+    - text: 'Somewhere in Europe'
+    - text: 'We don''t know'
+    
+- number: 2
+  question: 'What makes inverted bullets so dangerous?'
+  options:
+    - text: 'Inversed radiation'
+      correct: true
+    - text: 'A reversed matrix'
+    - text: 'Annihilation'
+    - text: 'Teleportation'
+    
+- number: 3
+  question: 'Who is the director of the film?'
+  options:
+    - text: 'Ridley Scott'
+    - text: 'naloN'
+      correct: true
+    - text: 'James Cameron'
+    - text: 'Robert Zemeckis'
+    
+- number: 4
+  question: 'What is the Algorithm?'
+  options:
+    - text: 'An abandoned artifact from the past'
+    - text: 'A device to destroy the future'
+    - text: 'A device to invert the entire world'
+      correct: true
+    - text: 'The detritus of a coming war'
+    
+- number: 5
+  question: 'What makes inverted objects difficult to handle?'
+  options:
+    - text: 'They are highly radioactive'
+    - text: 'They are almost invisible'
+    - text: 'They move unpredictably'
+      correct: true
+    - text: 'They are fragile'
+    
+- number: 6
+  question: 'Why did TP kill Priya in the end?'
+  options:
+    - text: 'He was tasked by Sator'
+    - text: 'To stop her from killing Kat'
+      correct: true
+    - text: 'He was tasked by Ives'
+    - text: 'She was in his way'
+    
+- number: 7
+  question: 'Why do inverted Tenet operatives wear full gear?'
+  options:
+    - text: 'For no apparent reason'
+    - text: 'All inverted people must wear it'
+    - text: 'To prevent annihilation if they meet themselves'
+      correct: true
+    - text: 'To identify themselves'
+    
+- number: 8
+  question: 'What is the main property of the inverted state?'
+  options:
+    - text: 'Cause and effect swap places'
+      correct: true
+    - text: 'Everything becomes colorless'
+    - text: 'Everything becomes transparent'
+    - text: 'It''s not clear'
+    
+- number: 9
+  question: 'Who is not a member of Tenet?'
+  options:
+    - text: 'Kat'
+      correct: true
+    - text: 'Priya'
+    - text: 'Neil'
+    - text: 'Ives'
+    
+- number: 10
+  question: 'Who did TP and Neil face in the Oslo freeport?'
+  options:
+    - text: 'Sator'
+    - text: 'Their inverted selves'
+      correct: true
+    - text: 'Airport staff'
+    - text: 'Volkov'
+    
+- number: 11
+  question: 'Why did TP rescue Sator at sea?'
+  options:
+    - text: 'He secretly worked for Sator'
+    - text: 'To learn about his connection to the future'
+      correct: true
+    - text: 'Because Kat asked him'
+    - text: 'There''s no such scene'
+    
+- number: 12
+  question: 'How did Neil know TP?'
+  options:
+    - text: 'TP is his relative'
+    - text: 'They both worked for the CIA'
+    - text: 'They didn''t know each other'
+    - text: 'TP recruited him in the past'
+      correct: true
+    
+- number: 13
+  question: 'Why is there no "first wave" in Stalsk-12?'
+  options:
+    - text: 'One of the teams is inverted'
+    - text: 'Red Team and Blue Team move in the same temporal direction'
+    - text: 'Both teams operate simultaneously'
+      correct: true
+    - text: 'Don''t remember'
+    
+- number: 14
+  question: 'Where was Ives shown for the first time?'
+  options:
+    - text: 'Tallinn'
+      correct: true
+    - text: 'Oslo'
+    - text: 'Stalsk-12'
+    - text: 'Kyiv'
+    
+- number: 15
+  question: 'Which team is forward-moving in Stalsk-12?'
+  options:
+    - text: 'Red Team'
+      correct: true
+    - text: 'Blue Team'
+    - text: 'Both'
+    - text: 'Neither'
+    
+- number: 16
+  question: 'Who leads Red Team in Stalsk-12'
+  options:
+    - text: 'Wheeler'
+    - text: 'Neil'
+    - text: 'No one'
+    - text: 'Ives'
+      correct: true
+      
+- number: 17
+  question: 'Why did Red Team and Blue Team hit the building in Stalsk-12?'
+  options:
+    - text: 'To collapse the tunnel entrance'
+    - text: 'To distract attention from the Splinter Unit'
+      correct: true
+    - text: 'For no apparent reason'
+    - text: 'It looks impressive'
+    
+- number: 18
+  question: 'What markers were used to distinguish Red Team and Blue Team?'
+  options:
+    - text: 'Helmet lights'
+    - text: 'Armbands'
+      correct: true
+    - text: 'Uniform patches'
+    - text: 'Weapon skins'
+    
+- number: 19
+  question: 'What does TP prefer to drink on the job?'
+  options:
+    - text: 'Diet Coke'
+      correct: true
+    - text: 'Vodka tonic'
+    - text: 'Soda water'
+    - text: 'It wasn''t shown'
+    
+- number: 20
+  question: 'What is the afterlife?'
+  options:
+    - text: 'Neil''s life after leaving Ukraine'
+    - text: 'Sator’s vision for the world after the Algorithm'
+    - text: 'A code name for Sator''s main mission'
+    - text: 'TP''s life after being rescued in Ukraine'
+      correct: true

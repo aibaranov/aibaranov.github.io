@@ -380,7 +380,7 @@ search: false
 
 .quiz-question-text {
   font-weight: 600;
-  font-size: 1.1em;
+  font-size: 0.95em;
   margin-bottom: 15px;
   /* Ensures question text matches the main blog body color */
   color: var(--primary-color, inherit);
@@ -409,6 +409,16 @@ search: false
   transition: none !important;
   transform: translateZ(0);
   backface-visibility: hidden;
+  
+  counter-increment: quiz-opt;
+  padding-left: 32px; /* Make room for the label */
+}
+
+.quiz-option::before {
+  content: counter(quiz-opt, lower-alpha) ") "; /* Displays a, b, c... */
+  position: absolute;
+  left: 10px;
+  color: inherit;
 }
 
 /* Hover state for light mode: darkens the gray further */
@@ -428,17 +438,23 @@ search: false
   background-color: #3d3d3d !important;
 }
 
+[data-theme="dark"] .quiz-hint {
+  background-color: #2d5a36; /* Lighter, more visible green */
+  border-color: #3e7d4b;
+  color: #ffffff;            /* Pure white text for clarity */
+}
+
 /* Interaction States - Keep these distinct but slightly darker text for readability */
 .quiz-option.correct {
-  background-color: #d4edda !important;
-  border-color: #c3e6cb !important;
-  color: #155724 !important; 
+  background-color: #28a745 !important;
+  border-color: #1e7e34 !important;
+  color: #ffffff !important; 
 }
 
 .quiz-option.incorrect {
-  background-color: #f8d7da !important;
-  border-color: #f5c6cb !important;
-  color: #721c24 !important;
+  background-color: #dc3545 !important;
+  border-color: #bd2130 !important;
+  color: #ffffff !important;
 }
 
 /* Instead of display: none, use these properties */
@@ -457,24 +473,19 @@ search: false
 }
 
 .quiz-hint {
-  border-left: 3px solid #e74c3c; /* A soft red line */
-  padding-left: 10px;
-  margin-top: 12px;
-  font-size: 0.85em;
-  color: #555;
-}
-
-.quiz-hint {
-  display: none;       /* Hidden by default */
-  font-size: 0.8em;    /* Small size */
-  color: #2e7d32;      /* Dark green */
-  margin-top: 10px;
-  line-height: 1.4;
+  display: none;
+  margin-top: 15px;
+  padding: 15px 20px 15px 12px; 
+  font-size: 0.95em;
+  line-height: 1.6;
+  border-radius: 6px;
   
-  border-left: 2px solid #81c784; 
-  padding-left: 10px;
+  /* Light Mode: Noticeably darker/richer green background */
+  background-color: #c3e6cb; /* Stronger mint green */
+  border: 1px solid #b1dfbb;
+  border-left: 6px solid #218838; 
+  color: #0b2e13;            /* Near-black green for maximum contrast */
 }
-
 
 div[id^="main-quiz-wrapper-"] .quiz-footer {
   margin-top: 20px;
@@ -498,6 +509,7 @@ div[id^="main-quiz-wrapper-"] .quiz-reset-btn {
   padding: 8px 16px;
   border-radius: 4px;
   cursor: pointer;
+  font-size: 0.95em;
 }
 
 /* =========================================
@@ -519,8 +531,12 @@ div[id^="main-quiz-wrapper-"] .quiz-reset-btn {
 
   /* Increase touch target size for options */
   .quiz-option {
-    padding: 12px 10px; /* Taller click area for fingers */
-    font-size: 1em;     /* Prevent zooming on iOS (must be 16px+) */
+    padding: 12px 10px 12px 32px; /* Maintains the 32px left space for letters */
+    font-size: 1em; 
+  }
+  
+  .quiz-option::before {
+    left: 10px; /* Keeps the letter "a)" in the right spot on mobile */
   }
 
   /* Stack the footer elements (Score top, Button bottom) */
@@ -538,8 +554,5 @@ div[id^="main-quiz-wrapper-"] .quiz-reset-btn {
   }
   
   /* Adjust the letter counter spacing if needed */
-  .quiz-option::before {
-    margin-right: 6px;
-  }
 }
 

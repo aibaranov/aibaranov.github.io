@@ -1,0 +1,180 @@
+- number: 1
+  question: 'What is actually Tenet?'
+  options:
+    - text: 'A branch of the CIA'
+    - text: 'We don''t know yet'
+    - text: 'A mysterious org from the future'
+      correct: true
+    - text: 'A shady group of antagonists'
+
+- number: 2
+  question: 'What about inversion?'
+  options:
+    - text: 'A technology for teleportation'
+    - text: 'A highly classified weapon'
+    - text: 'A process of disintegration'
+    - text: 'Reversing the entropy of an object'
+      correct: true
+
+- number: 3
+  question: 'And a turnstile?'
+  options:
+    - text: 'A device for teleportation'
+    - text: 'A machine for entropy inversion'
+      correct: true
+    - text: 'A place to communicate with the future'
+    - text: 'It is not stated in the movie'
+
+- number: 4
+  question: 'What is the hypocenter?'
+  options:
+    - text: 'The site of a nuclear explosion'
+      correct: true
+    - text: 'A nuclear weapons depot'
+    - text: 'The center of abnormal activity'
+    - text: 'Where the future operates from'
+
+- number: 5
+  question: 'What is the difference between normal and inverted objects?'
+  options:
+    - text: 'Inverted objects?'
+    - text: 'They move in opposite temporal directions'
+      correct: true
+    - text: 'They are located in different places'
+    - text: 'One of them is invisible'
+
+- number: 6
+  question: 'The Opera siege happens at the same time as:'
+  options:
+    - text: 'TP meets Neil in Mumbai'
+    - text: 'The Stalsk-12 battle'
+      correct: true
+    - text: 'Priya meets TP in Mumbai'
+    - text: 'Kat meets Arepo'
+
+- number: 7
+  question: 'How did Neil save TP at the Opera?'
+  options:
+    - text: 'Shot a gunman with an inverted bullet'
+      correct: true
+    - text: 'Evacuated him from the building'
+    - text: 'Cowboy shit'
+    - text: 'Knocked out one of the terrorists'
+
+- number: 8
+  question: 'By the way, what did TP learn in the lab?'
+  options:
+    - text: 'Where to meet Neil'
+    - text: 'What inversion was'
+      correct: true
+    - text: 'Who Priya was'
+    - text: 'How Sator was connected to the future'
+
+- number: 9
+  question: 'Where did TP meet Neil?'
+  options:
+    - text: 'Tallinn'
+    - text: 'Oslo'
+    - text: 'New York'
+    - text: 'Mumbai'
+      correct: true
+
+- number: 10
+  question: 'Why did TP go to India?'
+  options:
+    - text: 'To meet Neil'
+    - text: 'To trace the origin of the inverted bullets'
+      correct: true
+    - text: 'To hide from the CIA'
+    - text: 'To find the antagonists'
+
+- number: 11
+  question: 'Who is Andrei Sator?'
+  options:
+    - text: 'A man who is able to communicate with the future'
+      correct: true
+    - text: 'A personal foe of TP'
+    - text: 'A Russian oligarch based in UAE'
+    - text: 'The founder of Tenet'
+
+- number: 12
+  question: 'Who is Kat?'
+  options:
+    - text: 'A friend of Neil'
+    - text: 'Sator''s estranged wife'
+      correct: true
+    - text: 'A contact for Sir Michael Crosby'
+    - text: 'A woman interested in luxury goods'
+
+- number: 13
+  question: 'Which team is inverted in Stalsk-12?'
+  options:
+    - text: 'Red team'
+    - text: 'Blue team'
+      correct: true
+    - text: 'Neither'
+    - text: 'Both'
+
+- number: 14
+  question: 'What is Neil''s final mission?'
+  options:
+    - text: 'To save Kat from Sator'
+    - text: 'To kill Priya'
+    - text: 'To join Tenet'
+    - text: 'To save TP''s life sacrificing himself'
+      correct: true
+
+- number: 15
+  question: 'Why didn''t Priya stop TP in Tallinn?'
+  options:
+    - text: 'She wanted Sator to get the Algorithm'
+      correct: true
+    - text: 'She was afraid of her life'
+    - text: 'She had instructions from Sator'
+    - text: 'She expected Sator to kill Kat'
+
+- number: 16
+  question: 'Where is Kat from?'
+  options:
+    - text: 'England'
+      correct: true
+    - text: 'United States'
+    - text: 'Russia'
+    - text: 'It''s unclear'
+
+- number: 17
+  question: 'Where did Sator manage to capture the Plutonium?'
+  options:
+    - text: 'Oslo'
+    - text: 'Stalsk-12'
+    - text: 'Italy'
+    - text: 'Tallinn'
+      correct: true
+
+- number: 18
+  question: 'Why did the antagonists want to invert the world?'
+  options:
+    - text: 'They just don''t want the world to exist'
+    - text: 'To prevent WW2'
+    - text: 'It''s unknown'
+    - text: 'To restore the environment'
+      correct: true
+
+- number: 19
+  question: 'Who is the founder of Tenet?'
+  hint: '💡 It must be TP, but it wasn''t clearly stated in the film.'
+  options:
+    - text: 'Neil'
+    - text: 'Sator'
+    - text: 'Priya'
+    - text: 'TP'
+      correct: true
+
+- number: 20
+  question: 'How did the future scientist secure the Algorithm?'
+  options:
+    - text: 'Destroyed it'
+    - text: 'Split it into parts and hid them in the past'
+      correct: true
+    - text: 'Sold it to unknown people in the past'
+    - text: 'She wasn''t interested in hiding it'

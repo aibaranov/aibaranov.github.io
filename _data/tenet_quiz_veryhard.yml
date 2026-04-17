@@ -1,0 +1,186 @@
+- number: 1
+  question: 'How did Sator disclose the plutonium on the radio chatter?'
+  options:
+    - text: 'The plutonium is at the freeport'
+    - text: 'The algorithm is at the freeport'
+      correct: true
+    - text: 'The material is at the freeport'
+    - text: 'The material is in the case'
+
+- number: 2
+  question: 'Who was meant to get this phrase?'
+  options:
+    - text: 'Volkov'
+    - text: 'His inverted driver'
+    - text: 'It''s unclear'
+      correct: true
+    - text: 'Other backward-moving henchmen'
+
+- number: 3
+  question: 'Who from the cast was allowed to read the entire script?'
+  options:
+    - text: 'JDW'
+    - text: 'Robert Pattinson'
+    - text: 'JDW, Michael Caine'
+    - text: 'JDW, Robert Pattinson'
+      correct: true
+
+- number: 4
+  question: 'Where does Sator expect the gold from the future to appear?'
+  hint: '💡 The theory that Sator expects the gold to appear in the time capsule underground doesn''t align with the rules of inverted material. From the inverted gold''s perspective, Sator should expect it to appear in the turnstile; then, he buries it in the capsule and transmits the coordinates.'
+  options:
+    - text: 'A turnstile where it''s reverted'
+      correct: true
+    - text: 'A buried time capsule'
+    - text: 'Somewhere he actually doesn''t know'
+    - text: 'At the freeport'
+
+- number: 5
+  question: 'What did Sator do right before TP and Neil noticed his SUV?'
+  options:
+    - text: 'Dropped Kat off the freeport'
+    - text: 'Set the Saab on fire'
+      correct: true
+    - text: 'Hit the Saab'
+    - text: 'We don''t know'
+
+- number: 6
+  question: 'What was the deal supposed to happen at the Opera?'
+  options:
+    - text: 'The Russian general handed the plutonium to WDM'
+    - text: 'WDM sold the plutonium to the CIA'
+    - text: 'WDM handed the plutonium to the Russian general'
+      correct: true
+    - text: 'The Russian general sold the plutonium to Sator''s henchmen'
+
+- number: 7
+  question: 'What happened in 2008?'
+  hint: '💡 Apparently, Sator was trying to extract the plutonium from a Russian military base in 2008. When TP and Sator are sailing on a sport yacht, TP tells him this story without knowing that it was Sator and that the plutonium was actually part of the Algorithm.'
+  options:
+    - text: 'CIA established contact with Sator'
+    - text: 'Sator found his contract'
+    - text: 'Sator obtained the 5th part of the Algorithm'
+    - text: 'Sator attempted to steal the Plutonium from a Russian military base'
+      correct: true
+
+- number: 8
+  question: 'The name of Kat''s lover?'
+  options:
+    - text: 'Arepo'
+      correct: true
+    - text: 'Rotas'
+    - text: 'Nick'
+    - text: 'Bernard'
+
+- number: 9
+  question: 'At what time did the blue and red teams hit the building?'
+  options:
+    - text: '11:40'
+    - text: '9:40'
+    - text: '10:40'
+      correct: true
+    - text: '10:45'
+
+- number: 10
+  question: '"Neil must have gone already". What does this mean?'
+  hint: '💡 Since "both teams operate simultaneously" the time when TP goes to revert and fly to Stalsk-12 is the same time the Blue Team returns from the city. After completing the mission, they revert back to a normal state. At the time TP talks to Kat, Neil was supposed to have returned and reverted to wait with the other members of his command.'
+  options:
+    - text: 'Neil inverted to wait in a shipping container'
+    - text: 'Neil returned from Stalsk-12 and reverted'
+      correct: true
+    - text: 'Neill passed through a turnstile to wait outside'
+    - text: 'Neil returned from Stalsk-12 and inverted'
+
+- number: 11
+  question: 'Why did Wheeler caution "If you are not at the LZ at zero, you are not leaving"?'
+  hint: '💡 Obviously the choppers weren''t inverted, but Blue Team was. Since they were moving in opposite temporal directions, the choppers couldn''t wait.'
+  options:
+    - text: 'Inverted choppers cannot wait for the Blue Team'
+    - text: 'Normal choppers cannot wait for the Blue Team'
+      correct: true
+    - text: 'Red Team must eliminate everyone at the landing zone'
+    - text: 'Red Team was unable to offload from the choppers'
+
+- number: 12
+  question: 'Which device did TP and Neil use to reach Priya''s apartment?'
+  options:
+    - text: 'A grappling hook'
+    - text: 'A window-cleaning platform'
+    - text: 'A pneumatic grapnel gun'
+    - text: 'A bungee-slingshot'
+      correct: true
+
+- number: 13
+  question: 'What is Priya''s husband''s name?'
+  options:
+    - text: 'Sanjay Singh'
+      correct: true
+    - text: 'Rajesh Singh'
+    - text: 'Amitabh Bachchan'
+    - text: 'Bikram Dasgupta'
+
+- number: 14
+  question: 'How long does the Stalsk-12 operation last?'
+  options:
+    - text: '15 minutes'
+    - text: '10 minutes'
+      correct: true
+    - text: '20 minutes'
+    - text: '12 minutes'
+
+- number: 15
+  question: 'How much time separates the teams in Stalsk-12'
+  options:
+    - text: 'Half an hour'
+    - text: '20 minutes'
+    - text: 'One hour'
+      correct: true
+    - text: '40 minutes'
+
+- number: 16
+  question: '"Why can''t you get on the chopper?"'
+  options:
+    - text: 'You don''t know what Tenet is'
+    - text: 'You don''t know Tenet''s main mission'
+    - text: 'You''re still thinking in linear terms'
+      correct: true
+    - text: 'You don''t know who Sator is'
+
+- number: 17
+  question: 'Why can''t you leave the battlefield alive if you have seen the contents of the capsule?'
+  options:
+    - text: 'To keep its location a secret'
+      correct: true
+    - text: 'Because you are inverted'
+    - text: 'To prevent a temporal paradox'
+    - text: 'The Algorithm is highly radioactive'
+
+- number: 18
+  question: 'What was the future Neil doing after running to the cave?'
+  hint: '💡 Inverted Neil experiences the effects of his actions before the causes. When he approaches the chamber, he sees the open door; he holds it, closes it and catches the bullet, which from a forward perspective looks like he gets up, opens the lock, holds the door, closes it, and runs away.'
+  options:
+    - text: 'Opened the lock, held the door, caught the bullet'
+    - text: 'Caught the bullet, held the door, closed the door'
+    - text: 'Caught the bullet, opened the lock, held the door'
+    - text: 'Held the door, closed the door, caught the bullet'
+      correct: true
+
+- number: 19
+  question: 'Neil has a degree in which science?'
+  options:
+    - text: 'Chemistry'
+    - text: 'Physics'
+      correct: true
+    - text: 'Mathematics'
+    - text: 'Temporal Mechanics'
+
+- number: 20
+  question: 'Why did Sator initially refuse to work with TP?'
+  hint: '💡 In the yacht scene, Sator tells TP he won''t work with him because he couldn''t find any information about him.'
+  options:
+    - text: 'Sator found no records of him'
+      correct: true
+    - text: 'Sator took an immediate dislike to him'
+    - text: 'Sator was angry with him'
+    - text: 'Sator suspected TP of stealing'
+

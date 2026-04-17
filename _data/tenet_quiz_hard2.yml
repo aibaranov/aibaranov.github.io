@@ -1,0 +1,186 @@
+- number: 1
+  question: 'How do they communicate with posterity?'
+  options:
+    - text: 'Voice calls'
+    - text: 'Video calls'
+    - text: 'Leaving messages'
+      correct: true
+    - text: 'Inverting objects'
+    
+- number: 2
+  question: 'Who found the entrance to the hypocenter?'
+  options:
+    - text: 'Red Team'
+    - text: 'Blue Team'
+      correct: true
+    - text: 'Kat'
+    - text: 'Ives'
+    
+- number: 3
+  question: 'Who are these people from the future?'
+  hint: '💡 It wasn''t revealed in the movie.'
+  options:
+    - text: 'The powerful world government'
+    - text: 'A group of scientists'
+    - text: 'Sator''s own men'
+    - text: 'It''s not stated'
+      correct: true
+      
+- number: 4
+  question: 'What happens to broken inverted objects?'
+  options:
+    - text: 'They simply disappear due to the entropic wind'
+      correct: true
+    - text: 'They become highly radioactive'
+    - text: 'They become transparent'
+    - text: 'They lose their physical form'
+    
+- number: 5
+  question: 'Why did Priya want to kill Kat at the end?'
+  options:
+    - text: 'She didn''t like Kat'
+    - text: 'Kat could compromise Tenet'
+      correct: true
+    - text: 'Sator instructed her to'
+    - text: 'Kat was inverted'
+    
+- number: 6
+  question: 'How is the Algorithm supposed to be used?'
+  hint: '💡 The Algorithm is actually a physical representation of a math formula devised by a scientist in the future.'
+  options:
+    - text: 'Activated to invert everything'
+    - text: 'To be disposed of'
+    - text: 'It''s not clear'
+    - text: 'Converted back to a math formula'
+      correct: true
+      
+- number: 7
+  question: 'Which location doesn''t have a turnstile?'
+  options:
+    - text: 'Oslo'
+    - text: 'Tallinn'
+    - text: 'Trondheim'
+      correct: true
+    - text: 'Stalsk-12'
+
+- number: 8
+  question: 'Where''s the rally point for the final mission?'
+  options:
+    - text: 'Trondheim'
+      correct: true
+    - text: 'Oslo'
+    - text: 'Tallinn'
+    - text: 'London'
+    
+- number: 9
+  question: 'Kat couldn''t revert in Tallinn because:'
+  options:
+    - text: 'It was too far'
+    - text: 'Sator controlled the turnstile at the time'
+      correct: true
+    - text: 'It didn''t have an entrance'
+    - text: 'It didn''t have an exit'
+    
+- number: 10
+  question: 'What''s actually meant by "We live in a twilight world"?'
+  options:
+    - text: 'A state of ambiguity, deception, and hidden danger'
+      correct: true
+    - text: 'The end of the world is near'
+    - text: 'A world where everyone is inverted'
+    - text: 'It''s just a poetic phrase with no meaning'
+    
+- number: 11
+  question: 'What''s the actual purpose of that phrase?'
+  options:
+    - text: 'A warning about the end of the world'
+    - text: 'A code phrase to identify CIA agents'
+      correct: true
+    - text: 'A reference to a famous poem'
+    - text: 'A secret signal to the future'
+    
+- number: 12
+  question: 'What would happen if the future succeeded?'
+  hint: '💡 The inversion of the entire planet would likely lead to a total collapse, rather than returning it to an intact state.'
+  options:
+    - text: 'Nothing'
+    - text: 'Nature would be restored'
+    - text: 'Annihilation of the world'
+      correct: true
+    - text: 'Everyone would move to the past'
+    
+- number: 13
+  question: 'What is a Tenet operative forbidden from doing?'
+  hint: '💡 Making unauthorized changes would alter the chain of events that must remain intact, potentially causing the entire mission to fail in the future.'
+  options:
+    - text: 'Going back in time'
+    - text: 'Making unauthorized mission changes'
+      correct: true
+    - text: 'Killing anybody'
+    - text: 'Contacting other people'
+    
+- number: 14
+  question: 'What is the difference between the turnstiles shown in the film?'
+  hint: '💡 The turnstiles shown in the film vary in design, from simple (Oslo, Stalsk-12) to complex (Tallinn, the icebreaker). They are tailored for missions of varying scale.'
+  options:
+    - text: 'Each served a different mission'
+      correct: true
+    - text: 'They were assigned to different teams'
+    - text: 'There is no functional difference'
+    - text: 'Some only move objects, not people'
+    
+- number: 15
+  question: 'How did Neil plan to bypass the internal locks at the Oslo freeport?'
+  hint: '💡 His idea was to trigger a factory reset so the locks would revert to predefined codes.'
+  options:
+    - text: 'Freeze them with liquid nitrogen'
+    - text: 'Use a master key card'
+    - text: 'Trigger a system reboot'
+    - text: 'Reset them to factory settings'
+      correct: true
+      
+- number: 16
+  question: 'Who gave TP information about Sator''s freeports?'
+  options:
+    - text: 'Priya'
+    - text: 'Sir Michael Crosby'
+    - text: 'Kat'
+      correct: true
+    - text: 'Ives'
+    
+- number: 17
+  question: 'Why did TP and Neil crash a plane at the Oslo airport?'
+  options:
+    - text: 'To trigger the fire alarms'
+      correct: true
+    - text: 'To destroy the Goya painting'
+    - text: 'To block the runway'
+    - text: 'To hide their tracks'
+    
+- number: 18
+  question: 'Why wasn''t Sator supposed to be killed before the splinter unit extracted the Algorithm?'
+  options:
+    - text: 'To avoid a temporal paradox'
+    - text: 'He had a dead man''s switch'
+      correct: true
+    - text: 'He could have killed Kat'
+    - text: 'Cowboy shit'
+    
+- number: 19
+  question: 'What does the "Tenet" hand gesture indicate?'
+  hint: '💡 Neil used this gesture when explaining temporal directions intertwine.'
+  options:
+    - text: 'A request for backup'
+    - text: 'Signaling about danger'
+    - text: 'Request for extraction'
+    - text: 'Temporal directions intertwining'
+      correct: true
+      
+- number: 20
+  question: 'Who is Sator''s closest henchman?'
+  options:
+    - text: 'Volkov'
+      correct: true
+    - text: 'Petrov'
+    - text: 'Smith'
+    - text: 'Arepo'

@@ -1,0 +1,188 @@
+- number: 1
+  question: 'How many turnstiles have we seen?'
+  options:
+    - text: '3'
+    - text: '4'
+      correct: true
+    - text: '5'
+    - text: 'We''re going to check how many'
+    
+- number: 2
+  question: 'How did TP manage to escape the private Russians?'
+  options:
+    - text: 'Most likely, he was evacuated by Tenet'
+      correct: true
+    - text: 'He didn''t...'
+    - text: 'He killed them and escaped'
+    - text: 'He didn''t let them capture him'
+    
+- number: 3
+  question: 'What is "the detritus of a coming war"?'
+  options:
+    - text: 'Unknown objects that cannot be classified'
+    - text: 'It''s not stated in the movie'
+    - text: 'Pieces of broken inverted objects from the future'
+      correct: true
+    - text: 'Objects TP brought to the lab'
+    
+- number: 4
+  question: 'How did Sator allegedly use his first gold?'
+  hint: '💡 The problem with using the first gold Sator found in the capsule is that he couldn''t revert it, since he hadn''t built any turnstiles yet.'
+  options:
+    - text: 'Most likely as collateral for a loan'
+      correct: true
+    - text: 'He didn''t use it at all'
+    - text: 'He sold it on the black market'
+    - text: 'He got rid of it'
+    
+- number: 5
+  question: 'Which vehicles in Tallinn were inverted?'
+  hint: '💡 It''s obvious that the Audi and Saab were inverted, due to their behavior on the highway relative to forward-moving observers.' 
+  options:
+    - text: 'Mercedes, BMW'
+    - text: 'Audi, Saab'
+      correct: true
+    - text: 'Saab, BMW'
+    - text: 'Audi, BMW, Mercedes'
+    
+- number: 6
+  question: 'When does a person disappear in the turnstile?'
+  hint: '💡 When a person inverts, they disappear from the eyes of forward-moving observers because they start moving into the past and can no longer be seen.' 
+  options:
+    - text: 'During reversion'
+    - text: 'When entering the freeport'
+    - text: 'In an anomaly area'
+    - text: 'During inversion'
+      correct: true
+      
+- number: 7
+  question: 'What information did the private Russians want from TP?'
+  hint: '💡 Those private Russians associated with Sator wanted to learn from TP where the Plutonium was.' 
+  options:
+    - text: 'Where the WDM was'
+    - text: 'Who he was'
+    - text: 'Where the Plutonium was'
+      correct: true
+    - text: 'Where the Russian general was'
+    
+- number: 8
+  question: 'Continue the dialog "We are going to check this is real"...'
+  options:
+    - text: '"It''s in the glove box"'
+      correct: true
+    - text: '"I can help you"'
+    - text: '"Don''t"'
+    - text: '"Next one''s a bullet to the head"'
+    
+- number: 9
+  question: 'When does a person appear on both sides of a turnstile?'
+  hint: '💡 When a person reverts, they become visible to forward-moving observers; on the red side, they start moving into the future, while on the blue side, they are seen moving backwards from the future.' 
+  options:
+    - text: 'During inversion'
+    - text: 'During reversion'
+      correct: true
+    - text: 'During annihilation'
+    - text: 'It''s not possible'
+    
+- number: 10
+  question: 'Where did Sator manage to capture the Plutonium?'
+  options:
+    - text: 'Oslo'
+    - text: 'Stalsk-12'
+    - text: 'Italy'
+    - text: 'Tallinn'
+      correct: true
+      
+- number: 11
+  question: 'Why does the BMW mirror damage exist before the hit?'
+  hint: '💡 The hit from the inverted SUV propagates into the past from its inverted perspective; therefore, from a forward perspective, the damage begins to appear before the hit.' 
+  options:
+    - text: 'The BMW itself was inverted'
+    - text: 'The mirror was already broken'
+    - text: 'An inverted SUV hit it during the chase'
+      correct: true
+    - text: 'What mirror?'
+    
+- number: 12
+  question: 'Why did the Saab un-flip on the highway?'
+  options:
+    - text: 'It is inverted'
+      correct: true
+    - text: 'It was hit by an inverted weapon'
+    - text: 'We''ll never know'
+    - text: 'It was the SUV, not the Saab'
+    
+- number: 13
+  question: 'Why did Neil revert in Stalsk-12?'
+  options:
+    - text: 'To attend the briefing'
+    - text: 'To fly to the icebreaker'
+    - text: 'He didn''t revert'
+    - text: 'To warn TP and Ives about a tripwire'
+      correct: true
+      
+- number: 14
+  question: 'What is the "CIA issue"?'
+  options:
+    - text: 'The Plutonium'
+    - text: 'Suicide pills'
+      correct: true
+    - text: 'Weapon encapsulation'
+    - text: 'The contract with the future'
+    
+- number: 15
+  question: 'Why was Kat inverted after being shot?'
+  hint: '💡 Since Kat was shot with an inverted bullet, it reversed the wound''s entropy. Such wounds are hard to cure with conventional medicine. By inverting Kat, they align her entropy with the wound''s entropy, making it treatable.' 
+  options:
+    - text: 'To join the team back to Oslo'
+    - text: 'To stop Sator from killing her'
+    - text: 'To align her entropy with the entropy of the wound'
+      correct: true
+    - text: 'To help TP obtain the plutonium'
+    
+- number: 16
+  question: 'Who actually captured the Plutonium in Tallinn?'
+  hint: '💡 Over the radio chatter, we hear Sator revealing the plutonium''s location so his forward-moving henchmen can obtain it.' 
+  options:
+    - text: 'Sator himself'
+    - text: 'One of Sator''s forward-moving henchmen'
+      correct: true
+    - text: 'Tenet'
+    - text: 'No one'
+    
+- number: 17
+  question: 'How can the future respond?'
+  options:
+    - text: 'With inverted material'
+      correct: true
+    - text: 'It can''t respond'
+    - text: 'Sending inverted people'
+    - text: 'Teleporation'
+    
+- number: 18
+  question: 'What is the entropic wind?'
+  options:
+    - text: 'An atmospheric phenomenon'
+    - text: 'A forward-moving force that dominates'
+      correct: true
+    - text: 'A mystical force controlled by the future'
+    - text: 'This is how an inverted person feels the wind'
+    
+- number: 19
+  question: 'What does the scene where different parts of the building are destroyed show?'
+  options:
+    - text: 'Actually nothing, it''s just for effect'
+    - text: 'Which building?'
+    - text: 'Damage propagates in the same time direction as the projectile'
+      correct: true
+    - text: 'Don''t confuse: they''re destroying the same part of the building'
+    
+- number: 20
+  question: 'When were the bullets TP used in the lab inverted?'
+  hint: '💡 The inverted bullets served as evidence to guide TP to Priya''s home. To make them available in the lab, someone must have taken them to a turnstile later.'
+  options:
+    - text: 'They''ll be inverted in the future'
+      correct: true
+    - text: 'They were inverted in the past'
+    - text: 'They weren''t actually inverted'
+    - text: 'There''s no such scene in the movie'

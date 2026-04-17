@@ -1,3 +1,4 @@
+<!-- _includes/tenet_quiz.html -->
 <!-- =========================================
      PART 1: THE GATEKEEPER (Intro Quiz)
      ========================================= -->
@@ -5,7 +6,6 @@
   <div class="quiz-question-block" id="intro-q1">
     <div class="quiz-question-text">We live in a twilight world</div>
     <div class="quiz-options">
-      <!-- Note: We use a specific function 'checkIntroAnswer' here -->
       <div class="quiz-option" onclick="checkIntroAnswer(this)">I ordered my hot sauce an hour ago</div>
       <div class="quiz-option" onclick="checkIntroAnswer(this)">We're going to check this is real</div>
       <div class="quiz-option" onclick="checkIntroAnswer(this)" data-correct="true">There are no friends at dusk</div>
@@ -16,18 +16,20 @@
 
 <!-- Locked Message (Optional visual cue) -->
 <div id="quiz-lock-message" style="margin-bottom: 20px; color: #666; font-style: italic;">
-  🔒 <em>Answer the question above correctly to unlock the full quiz.</em>
+  🔒 <em>Answer the question above correctly to unlock the full quizzes.</em>
 </div>
 
 <div id="intro-success-message" style="display: none; text-align: left;">
   Okay, let's get started. ✅
 </div>
 
-<hr>
+## Quiz 1 (Easy) ⭐⭐
 
-<div id="main-quiz-wrapper" class="quiz-locked">
-
-  {% for item in site.data.tenet_quiz %}
+<!-- =========================================
+     PART 2: MAIN QUIZ 1
+     ========================================= -->
+<div id="main-quiz-wrapper-1" class="quiz-locked" data-quiz-id="1">
+  {% for item in site.data.tenet_quiz_easy1 %}
   <div class="quiz-question-block">
     <div class="quiz-question-text">{{ item.number }}. {{ item.question }}</div>
     <div class="quiz-options">
@@ -39,21 +41,266 @@
         </div>
       {% endfor %}
     </div>
+	
+	<!-- Only renders if a hint exists in the .yml -->
+	{% if item.hint %}
+      <div class="quiz-hint">
+        {{ item.hint }}
+      </div>
+    {% endif %}
   </div>
-{% endfor %}
+  {% endfor %}
 
-  <!-- Score Footer -->
-  <div id="quiz-footer">
-    <div id="quiz-score-box">
-      Total score: <span id="score-count">0/100</span> <span id="score-percent">0%</span>
+  <!-- Footer for Quiz 1 -->
+  <div class="quiz-footer">
+    <div id="quiz-score-box" class="quiz-score-box">
+      Score: <span id="score-count-1">0/20</span> <span id="score-percent-1">0%</span>
     </div>
-    <button id="quiz-reset-btn" onclick="resetQuiz()">Clear All</button>
+    <button class="quiz-reset-btn" onclick="resetQuiz('1')">Clear Quiz 1</button>
   </div>
-
 </div>
 
-<script>
+## Quiz 2 (Easy) ⭐⭐
 
+<!-- =========================================
+     PART 3: MAIN QUIZ 2
+     ========================================= -->
+<div id="main-quiz-wrapper-2" class="quiz-locked" data-quiz-id="2">
+  {% for item in site.data.tenet_quiz_easy2 %}
+  <div class="quiz-question-block">
+    <div class="quiz-question-text">{{ item.number }}. {{ item.question }}</div>
+    <div class="quiz-options">
+      {% for option in item.options %}
+        <div class="quiz-option" 
+             onclick="checkAnswer(this)" 
+             {% if option.correct %}data-correct="true"{% endif %}>
+          {{ option.text }}
+        </div>
+      {% endfor %}
+    </div>
+	
+	{% if item.hint %}
+      <div class="quiz-hint">
+        {{ item.hint }}
+      </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+  <div class="quiz-footer">
+    <div id="quiz-score-box" class="quiz-score-box">
+      Score: <span id="score-count-2">0/20</span> <span id="score-percent-2">0%</span>
+    </div>
+    <button class="quiz-reset-btn" onclick="resetQuiz('2')">Clear Quiz 2</button>
+  </div>
+</div>
+
+## Quiz 3 (Medium) ⭐⭐⭐
+
+<!-- =========================================
+     PART 4: MAIN QUIZ 3
+     ========================================= -->
+<div id="main-quiz-wrapper-3" class="quiz-locked" data-quiz-id="3">
+  {% for item in site.data.tenet_quiz_medium1 %}
+  <div class="quiz-question-block">
+    <div class="quiz-question-text">{{ item.number }}. {{ item.question }}</div>
+    <div class="quiz-options">
+      {% for option in item.options %}
+        <div class="quiz-option" 
+             onclick="checkAnswer(this)" 
+             {% if option.correct %}data-correct="true"{% endif %}>
+          {{ option.text }}
+        </div>
+      {% endfor %}
+    </div>
+	
+	{% if item.hint %}
+      <div class="quiz-hint">
+        {{ item.hint }}
+      </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+  <div class="quiz-footer">
+    <div id="quiz-score-box" class="quiz-score-box">
+      Score: <span id="score-count-3">0/20</span> <span id="score-percent-3">0%</span>
+    </div>
+    <button class="quiz-reset-btn" onclick="resetQuiz('3')">Clear Quiz 3</button>
+  </div>
+</div>
+
+## Quiz 4 (Medium) ⭐⭐⭐
+
+<!-- =========================================
+     PART 5: MAIN QUIZ 4
+     ========================================= -->
+<div id="main-quiz-wrapper-4" class="quiz-locked" data-quiz-id="4">
+  {% for item in site.data.tenet_quiz_medium2 %}
+  <div class="quiz-question-block">
+    <div class="quiz-question-text">{{ item.number }}. {{ item.question }}</div>
+    <div class="quiz-options">
+      {% for option in item.options %}
+        <div class="quiz-option" 
+             onclick="checkAnswer(this)" 
+             {% if option.correct %}data-correct="true"{% endif %}>
+          {{ option.text }}
+        </div>
+      {% endfor %}
+    </div>
+	
+	{% if item.hint %}
+      <div class="quiz-hint">
+        {{ item.hint }}
+      </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+  <div class="quiz-footer">
+    <div id="quiz-score-box" class="quiz-score-box">
+      Score: <span id="score-count-4">0/20</span> <span id="score-percent-4">0%</span>
+    </div>
+    <button class="quiz-reset-btn" onclick="resetQuiz('4')">Clear Quiz 4</button>
+  </div>
+</div>
+
+## Quiz 5 (Hard) ⭐⭐⭐⭐
+
+<!-- =========================================
+     PART 6: MAIN QUIZ 5
+     ========================================= -->
+<div id="main-quiz-wrapper-5" class="quiz-locked" data-quiz-id="5">
+  {% for item in site.data.tenet_quiz_hard1 %}
+  <div class="quiz-question-block">
+    <div class="quiz-question-text">{{ item.number }}. {{ item.question }}</div>
+    <div class="quiz-options">
+      {% for option in item.options %}
+        <div class="quiz-option" 
+             onclick="checkAnswer(this)" 
+             {% if option.correct %}data-correct="true"{% endif %}>
+          {{ option.text }}
+        </div>
+      {% endfor %}
+    </div>
+	
+	{% if item.hint %}
+      <div class="quiz-hint">
+        {{ item.hint }}
+      </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+  <div class="quiz-footer">
+    <div id="quiz-score-box" class="quiz-score-box">
+      Score: <span id="score-count-5">0/20</span> <span id="score-percent-5">0%</span>
+    </div>
+    <button class="quiz-reset-btn" onclick="resetQuiz('5')">Clear Quiz 5</button>
+  </div>
+</div>
+
+## Quiz 6 (Hard) ⭐⭐⭐⭐
+
+<!-- =========================================
+     PART 7: MAIN QUIZ 6
+     ========================================= -->
+<div id="main-quiz-wrapper-6" class="quiz-locked" data-quiz-id="6">
+  {% for item in site.data.tenet_quiz_hard2 %}
+  <div class="quiz-question-block">
+    <div class="quiz-question-text">{{ item.number }}. {{ item.question }}</div>
+    <div class="quiz-options">
+      {% for option in item.options %}
+        <div class="quiz-option" 
+             onclick="checkAnswer(this)" 
+             {% if option.correct %}data-correct="true"{% endif %}>
+          {{ option.text }}
+        </div>
+      {% endfor %}
+    </div>
+	
+	{% if item.hint %}
+      <div class="quiz-hint">
+        {{ item.hint }}
+      </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+  <div class="quiz-footer">
+    <div id="quiz-score-box" class="quiz-score-box">
+      Score: <span id="score-count-6">0/20</span> <span id="score-percent-6">0%</span>
+    </div>
+    <button class="quiz-reset-btn" onclick="resetQuiz('6')">Clear Quiz 6</button>
+  </div>
+</div>
+
+## Quiz 7 (Very hard) ⭐⭐⭐⭐⭐
+
+<!-- =========================================
+     PART 8: MAIN QUIZ 7
+     ========================================= -->
+<div id="main-quiz-wrapper-7" class="quiz-locked" data-quiz-id="7">
+  {% for item in site.data.tenet_quiz_veryhard %}
+  <div class="quiz-question-block">
+    <div class="quiz-question-text">{{ item.number }}. {{ item.question }}</div>
+    <div class="quiz-options">
+      {% for option in item.options %}
+        <div class="quiz-option" 
+             onclick="checkAnswer(this)" 
+             {% if option.correct %}data-correct="true"{% endif %}>
+          {{ option.text }}
+        </div>
+      {% endfor %}
+    </div>
+	
+	{% if item.hint %}
+      <div class="quiz-hint">
+        {{ item.hint }}
+      </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+  <div class="quiz-footer">
+    <div id="quiz-score-box" class="quiz-score-box">
+      Score: <span id="score-count-7">0/20</span> <span id="score-percent-7">0%</span>
+    </div>
+    <button class="quiz-reset-btn" onclick="resetQuiz('7')">Clear Quiz 7</button>
+  </div>
+</div>
+
+<!-- =========================================
+     SCRIPTS
+     ========================================= -->
+<script>
+  // --- 1. Setup State Tracking ---
+  // Automatically counts questions for both quizzes on load
+  const TOTAL_QUIZZES = 7;
+  
+  var quizScores = {};
+  
+  // Initialize totals (Wait for DOM content to be safe, or run inline)
+  document.addEventListener("DOMContentLoaded", function() {
+    // Loop through IDs 1 to TOTAL_QUIZZES
+    for (let i = 1; i <= TOTAL_QUIZZES; i++) {
+      let id = i.toString();
+	  
+	  // Initialize the object for this ID
+	  quizScores[id] = { current: 0, total: 0 };
+	  
+	  // Count questions: looks for #main-quiz-wrapper-1, #main-quiz-wrapper-2, etc.
+	  let wrapper = document.getElementById('main-quiz-wrapper-' + id);
+	  if (wrapper) {
+        quizScores[id].total = wrapper.querySelectorAll('.quiz-question-block').length;
+      }
+	  
+	  // Initial update to UI
+      updateScore(id);
+    }
+  });
+   
+  // --- 2. Intro Quiz Logic --- 
   function checkIntroAnswer(element) {
     // If already correct, do nothing
     if (element.classList.contains('correct')) return;
@@ -61,20 +308,21 @@
     var parent = element.parentElement;
     
     if (element.getAttribute('data-correct') === 'true') {
-      // 1. Mark as correct
+      // Mark as correct
       element.classList.add('correct');
       
-      // 2. Lock the intro options
-      var options = parent.querySelectorAll('.quiz-option');
-      options.forEach(opt => opt.classList.add('disabled'));
+      // Lock intro options
+      parent.querySelectorAll('.quiz-option').forEach(opt => opt.classList.add('disabled'));
 
-      // 3. UNLOCK THE MAIN QUIZ
-      var mainQuiz = document.getElementById('main-quiz-wrapper');
-      mainQuiz.classList.remove('quiz-locked');
+      // UNLOCK ALL TOTAL_QUIZZES QUIZZES
+      for (let i = 1; i <= TOTAL_QUIZZES; i++) {
+        let wrapper = document.getElementById('main-quiz-wrapper-' + i);
+        // Safety check: only remove class if element exists
+        if (wrapper) wrapper.classList.remove('quiz-locked');
+      }
 	  
-	  // 4. Hide the lock message
       document.getElementById('quiz-lock-message').style.display = 'none';
-	  document.getElementById('intro-success-message').style.display = 'block'
+      document.getElementById('intro-success-message').style.display = 'block';
 
     } else {
       // Mark as incorrect but allow retries
@@ -83,16 +331,15 @@
     }
   }
 
-  var mainQuestions = document.querySelectorAll('#main-quiz-wrapper .quiz-question-block');
-  var totalQuestions = mainQuestions.length;
-  var currentScore = 0;
-
+  // --- 3. Main Quiz Logic (Universal) ---
   function checkAnswer(element) {
     // Prevent clicking if already answered
     if (element.classList.contains('disabled')) return;
     
-    var parent = element.parentElement;
-    var options = parent.querySelectorAll('.quiz-option');
+    // Finds the wrapper with the data-quiz-id
+    var wrapper = element.closest('[data-quiz-id]');
+    var quizId = wrapper.getAttribute('data-quiz-id');
+    var options = element.parentElement.querySelectorAll('.quiz-option');
 
     // 1. Lock options for this specific question
     options.forEach(opt => opt.classList.add('disabled'));
@@ -100,39 +347,60 @@
     // 2. Scoring Logic
     if (element.getAttribute('data-correct') === 'true') {
       element.classList.add('correct');
-      currentScore++;
+      quizScores[quizId].current++;
     } else {
       // Case: WRONG ANSWER
       element.classList.add('incorrect');
-      
-      // New Logic: Find and highlight the correct sibling
+      // Reveal correct answer
       options.forEach(opt => {
-        if (opt.getAttribute('data-correct') === 'true') {
-          opt.classList.add('correct');
-        }
+        if (opt.getAttribute('data-correct') === 'true') opt.classList.add('correct');
+      });
+	  
+	  // --- REVEAL HINT LOGIC ---
+      // Find the hint within the same question block
+      var questionBlock = element.closest('.quiz-question-block');
+      var hint = questionBlock.querySelector('.quiz-hint');
+      if (hint) {
+        hint.style.display = 'block';
+      }
+    }
+    updateScore(quizId);
+  }
+
+  // --- 4. Update Score UI ---
+  function updateScore(id) {
+    var data = quizScores[id];
+	if (!data) return;
+	
+	var percentage = data.total > 0 ? Math.round((data.current / data.total) * 100) : 0;
+	
+    var countEl = document.getElementById('score-count-' + id);
+    var percentEl = document.getElementById('score-percent-' + id);
+    
+    if (countEl) countEl.innerText = data.current + "/" + data.total;
+    if (percentEl) percentEl.innerText = "(" + percentage + "%)";
+  }
+
+  // --- 5. Reset Logic (Specific to ID) ---
+  function resetQuiz(id) {
+    // Reset score variable
+    quizScores[id].current = 0;
+	
+	// Use the ID dynamically instead of a ternary/if statement
+    var container = document.getElementById('main-quiz-wrapper-' + id);
+	
+	if (container) {
+      var mainOptions = container.querySelectorAll('.quiz-option');
+      mainOptions.forEach(opt => {
+        opt.classList.remove('correct', 'incorrect', 'disabled');
+      });
+	  
+	  var hints = container.querySelectorAll('.quiz-hint');
+      hints.forEach(hint => {
+        hint.style.display = 'none';
       });
     }
 
-    updateScore();
-  }
-
-  function updateScore() {
-    if (totalQuestions === 0) return;
-
-    var percentage = Math.round((currentScore / totalQuestions) * 100);
-    document.getElementById('score-count').innerText = currentScore + "/" + totalQuestions;
-    document.getElementById('score-percent').innerText = percentage + "%";
-  }
-
-  function resetQuiz() {
-    currentScore = 0;
-    
-    var mainOptions = document.querySelectorAll('#main-quiz-wrapper .quiz-option');
-    
-    mainOptions.forEach(opt => {
-      opt.classList.remove('correct', 'incorrect', 'disabled');
-    });
-
-    updateScore();
+    updateScore(id);
   }
 </script>

@@ -1,0 +1,181 @@
+- number: 1
+  question: 'Who is Priya?'
+  options:
+    - text: 'An arms dealer'
+    - text: 'Neil''s friend'
+    - text: 'A high-ranking Tenet operative'
+      correct: true
+    - text: 'A CIA officer'
+    
+- number: 2
+  question: 'Where did Kat and Sator travel on the 14th?'
+  options:
+    - text: 'Vietnam'
+      correct: true
+    - text: 'Italy'
+    - text: 'Tallinn'
+    - text: 'Oslo'
+    
+- number: 3
+  question: 'What is the principle "Ignorance is our ammunition"?'
+  options:
+    - text: 'Ignoring any threat'
+    - text: 'Restricting information to ensure success'
+      correct: true
+    - text: 'Not getting attached to anyone'
+    - text: 'Keeping yourself self'
+    
+- number: 4
+  question: 'How was Sator rewarded by the future?'
+  options:
+    - text: 'Money'
+    - text: 'Yacht'
+    - text: 'Luxury estate'
+    - text: 'Gold'
+      correct: true
+      
+- number: 5
+  question: 'Who led the blue team at Stalsk-12?'
+  options:
+    - text: 'Commander Wheeler'
+      correct: true
+    - text: 'Ives'
+    - text: 'Neil'
+    - text: 'An unknown operative'
+    
+- number: 6
+  question: 'Where did Sator fly on the 14th from Vietnam?'
+  options:
+    - text: 'Tallinn'
+    - text: 'Oslo'
+    - text: 'London'
+    - text: 'Kyiv'
+      correct: true
+      
+- number: 7
+  question: 'What is a proving window?'
+  options:
+    - text: 'A window in an inverted car'
+    - text: 'The period of time between inversion and reversion'
+    - text: 'Armored glass window between the red and blue zones'
+      correct: true
+    - text: 'The moment you see your future self'
+    
+- number: 8
+  question: 'Which team was transported in shipping containers?'
+  options:
+    - text: 'Red Team'
+    - text: 'Blue Team'
+      correct: true
+    - text: 'Both'
+    - text: 'Neither'
+    
+- number: 9
+  question: 'Why didn''t TP let Priya kill Kat?'
+  options:
+    - text: 'He loved her'
+      correct: true
+    - text: 'We don''t know'
+    - text: 'Kat was part of Tenet'
+    - text: 'She was inverted'
+    
+- number: 10
+  question: 'Where''s Stalsk-12 located?'
+  options:
+    - text: 'Ukraine'
+    - text: 'Kazakhstan'
+    - text: 'Somewhere in Europe'
+    - text: 'Russia'
+      correct: true
+      
+- number: 11
+  question: 'Who said "I ordered my hot sauce an hour ago"?'
+  options:
+    - text: 'TP'
+      correct: true
+    - text: 'Neil'
+    - text: 'Ives'
+    - text: 'Sator'
+    
+- number: 12
+  question: 'What accent does Sator speak with?'
+  options:
+    - text: 'Russian'
+      correct: true
+    - text: 'Estonian'
+    - text: 'Ukrainian'
+    - text: 'He doesn''t have one'
+    
+- number: 13
+  question: 'Why did the future choose Sator?'
+  options:
+    - text: 'For no apparent reason'
+    - text: 'They chose him by mistake'
+    - text: 'He was in the right place at the right time'
+      correct: true
+    - text: 'It was his initiative'
+    
+- number: 14
+  question: 'What''s the name of Kat''s son?'
+  options:
+    - text: 'William'
+    - text: 'Max'
+      correct: true
+    - text: 'Brian'
+    - text: 'Rob'
+    
+- number: 15
+  question: 'Why did Sator want to commit suicide?'
+  options:
+    - text: 'He had depression'
+    - text: 'He was ordered to'
+    - text: 'It''s not stated'
+    - text: 'He had terminal cancer'
+      correct: true
+      
+- number: 16
+  question: 'Was the icebreaker inverted?'
+  options:
+    - text: 'Yes, definitely'
+    - text: 'Obviously not'
+      correct: true
+    - text: 'Not sure..'
+    - text: 'We are going to check this is real'
+    
+- number: 17
+  question: 'Were the choppers inverted?'
+  options:
+    - text: 'Not'
+      correct: true
+    - text: 'Yes, they were'
+    - text: 'Don''t know...'
+    - text: 'Those for Blue Team were inverted'
+    
+- number: 18
+  question: 'Why did Sator bring Kat to the Tallinn freeport?'
+  hint: '💡 He used the excuse of an authenticity check to bring her there and use her as leverage against TP.'
+  options:
+    - text: 'To verify the authenticity of goods in the freeport'
+    - text: 'He always needed to control her'
+    - text: 'To invert her'
+    - text: 'To blackmail TP'
+      correct: true
+
+- number: 19
+  question: 'How did Sator plan to destroy the world?'
+  hint: '💡 Contrary to some theories, Sator wasn''t supposed to activate the Algorithm; he was meant to send it to the future.'
+  options:
+    - text: 'By sending the Algorithm to the future'
+      correct: true
+    - text: 'By activating the Algorithm'
+    - text: 'By destroying the Algorithm'
+    - text: 'By killing its inventor'
+    
+- number: 20
+  question: 'When was the film released?'
+  options:
+    - text: '2019'
+    - text: '2020'
+      correct: true
+    - text: '2021'
+    - text: '2018'

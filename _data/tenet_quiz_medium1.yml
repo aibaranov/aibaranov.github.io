@@ -1,0 +1,184 @@
+- number: 1
+  question: 'Who wrote the film''s score?'
+  hint: '💡 It was Ludwig, Hans Zimmer was working on Dune at the time.'
+  options:
+    - text: 'Hans Zimmer'
+    - text: 'John Williams'
+    - text: 'Howard Shore'
+    - text: 'Ludwig Göransson'
+      correct: true
+      
+- number: 2
+  question: 'What is a temporal pincer movement?'
+  options:
+    - text: 'Moving towards each other from different temporal directions'
+      correct: true
+    - text: 'An offensive tactic'
+    - text: 'A defensive strategy'
+    - text: 'The future''s secret technology'
+    
+- number: 3
+  question: 'Do you remember what Neil''s main mission at the Opera is?'
+  options:
+    - text: 'Evacuate the WDM'
+    - text: 'Exfiltrate the Plutonium'
+    - text: 'Eliminate a fake Ukranian operative'
+    - text: 'Save TP''s life'
+      correct: true
+      
+- number: 4
+  question: 'What did TP learn from Priya during the first visit?'
+  options:
+    - text: 'Where to find Neil'
+    - text: 'Where to meet Kat'
+    - text: 'The source of the inverted bullets'
+      correct: true
+    - text: 'His main mission'
+    
+- number: 5
+  question: 'What was inside the cargo plane at Oslo?'
+  options:
+    - text: 'Gold bars'
+      correct: true
+    - text: 'Inverted weapons'
+    - text: 'Empty containers'
+    - text: 'Radioactive material'
+    
+- number: 6
+  question: 'What is Sator''s main mission?'
+  options:
+    - text: 'To deliver the Algorithm to the future'
+      correct: true
+    - text: 'To kill TP and Neil'
+    - text: 'To neutralize Tenet'
+    - text: 'To contact the CIA'
+    
+- number: 7
+  question: 'What is a dead drop?'
+  hint: '💡 This place is underground, and the time capsule is expected to be stored there untouched for centuries.'
+  options:
+    - text: 'A safe place'
+    - text: 'A place where items are safely exchanged'
+      correct: true
+    - text: 'Where Sator met TP'
+    - text: 'A place to store inverted ammo'
+    
+- number: 8
+  question: 'How did Sator trick TP in Tallinn?'
+  options:
+    - text: 'By threatening to kill Kat'
+      correct: true
+    - text: 'By threatening to activate the Algorithm'
+    - text: 'We don''t know'
+    - text: 'By threatening to kill him'
+    
+- number: 9
+  question: 'What is the Plutonium-241?'
+  options:
+    - text: 'Highly radioactive material'
+    - text: 'The Algorithm itself'
+    - text: 'A section of the Algorithm'
+      correct: true
+    - text: 'We''re going to check what it is'
+    
+- number: 10
+  question: 'What is Sator''s main business?'
+  hint: '💡 It''s arms dealing, his freeports and his trade in plutonium, as he mentioned to TP on the boat.'
+  options:
+    - text: 'Arms dealing'
+      correct: true
+    - text: 'Gas and oil'
+    - text: 'Computers'
+    - text: 'It is not stated'
+    
+- number: 11
+  question: 'Who invented the Algorithm?'
+  options:
+    - text: 'Tenet'
+    - text: 'A scientist from the future'
+      correct: true
+    - text: 'Sator'
+    - text: 'Antagonists from the future'
+    
+- number: 12
+  question: 'Where did Sator find his contract?'
+  options:
+    - text: 'Stalsk-12'
+      correct: true
+    - text: 'Novosibirsk'
+    - text: 'City-17'
+    - text: 'Tallinn'
+    
+- number: 13
+  question: 'What did TP learn from Kat about Sator?'
+  options:
+    - text: 'He is her husband'
+    - text: 'He is able to contact the future'
+    - text: 'He is dying of cancer'
+      correct: true
+    - text: 'He is from Russia'
+    
+- number: 14
+  question: 'Who eventually assembled the Algorithm?'
+  options:
+    - text: 'Sator'
+    - text: 'Volkov'
+      correct: true
+    - text: 'TP'
+    - text: 'Neil'
+    
+- number: 15
+  question: 'Which phrase is Ives known for?'
+  options:
+    - text: '"Cowboy shit"'
+      correct: true
+    - text: '"We''re going to check this is real"'
+    - text: '"What''s happened, happened"'
+    - text: '"Ignorance is our ammunition"'
+
+- number: 16
+  question: 'Why did Kat almost fail the entire mission?'
+  hint: '💡 Driven by revenge, she couldn''t bear to let Sator die thinking he won.'
+  options:
+    - text: 'She was working with the future'
+    - text: 'It was part of the plan'
+    - text: 'She killed Sator earlier than planned'
+      correct: true
+    - text: 'She forgot about the deal'
+    
+- number: 17
+  question: 'Why did Sator choose the hypocenter?'
+  hint: '💡 The exchange of materials with the future must occur in an underground location where a time capsule can remain untouched for centuries.'
+  options:
+    - text: 'It had high radiation level'
+    - text: 'Cowboy shit'
+    - text: 'It''s not stated'
+    - text: 'An uninhabitable place safe for storage'
+      correct: true
+      
+- number: 18
+  question: 'Who began the Stalsk-12 mission inverted?'
+  options:
+    - text: 'TP and Ives'
+    - text: 'TP and Neil'
+    - text: 'Ives and Neil'
+    - text: 'Neil'
+      correct: true
+      
+- number: 19
+  question: 'How many sections make up the Algorithm?'
+  options:
+    - text: '5'
+    - text: '9'
+      correct: true
+    - text: '6'
+    - text: '4'
+
+- number: 20
+  question: 'What does the principle "What''s happened, happened" mean?'
+  options:
+    - text: 'The past can''t be changed'
+      correct: true
+    - text: 'We can change whatever we want in the past'
+    - text: 'We can change the past without effect'
+    - text: 'I ordered my hot sauce an hour ago'

@@ -1,0 +1,31 @@
+<!-- _includes/tenet-quiz-block.html -->
+<div id="main-quiz-wrapper-{{ include.id }}" class="quiz-locked" data-quiz-id="{{ include.id }}">
+  {% for item in include.data %}
+  <div class="quiz-question-block">
+    <div class="quiz-question-text">{{ item.number }}. {{ item.question }}</div>
+    <div class="quiz-options">
+      {% for option in item.options %}
+      <div class="quiz-option" onclick="checkAnswer(this)" {% if option.correct %}data-correct="true"{% endif %}>
+        {{ option.text }}
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Only renders if a hint exists in the .yml -->
+    {% if item.hint %}
+    <div class="quiz-hint">
+      {{ item.hint }}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+  <!-- Footer for Quiz -->
+  <div class="quiz-footer">
+    <div id="quiz-score-box" class="quiz-score-box">
+      Score: <span id="score-count-{{ include.id }}">0/20</span>
+      <span id="score-percent-{{ include.id }}">0%</span>
+    </div>
+    <button class="quiz-reset-btn" onclick="resetQuiz('{{ include.id }}')">Clear Quiz {{ include.id }}</button>
+  </div>
+</div>
