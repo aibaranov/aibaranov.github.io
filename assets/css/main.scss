@@ -415,7 +415,7 @@ search: false
 }
 
 .quiz-option::before {
-  content: counter(quiz-opt, lower-alpha) ") "; /* Displays a, b, c... */
+  content: counter(quiz-opt, lower-alpha) ")"; /* Displays a, b, c... */
   position: absolute;
   left: 10px;
   color: inherit;
