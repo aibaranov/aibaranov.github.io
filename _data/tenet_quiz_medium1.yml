@@ -55,7 +55,7 @@
     
 - number: 7
   question: 'What is a dead drop?'
-  hint: '💡 This place is underground, and the time capsule is expected to be stored there untouched for centuries.'
+  hint: '💡 This place is located underground, and the time capsule is expected to be stored there untouched for centuries.'
   options:
     - text: 'A safe place'
     - text: 'A place where items are safely exchanged'

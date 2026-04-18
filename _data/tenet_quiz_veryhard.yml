@@ -1,5 +1,7 @@
 - number: 1
   question: 'How did Sator disclose the plutonium on the radio chatter?'
+  hint: '💡 We need to reverse the phrase said in reverse on the radio as TP and Neil hear it in the BMW.'
+  options:
   options:
     - text: 'The plutonium is at the freeport'
     - text: 'The algorithm is at the freeport'
@@ -9,6 +11,8 @@
 
 - number: 2
   question: 'Who was meant to get this phrase?'
+  hint: '💡 It''s unclear who this phrase is meant for because Sator says it in reverse, and there are no other inverted men in that scene except for the driver. The inverted driver always follows Sator, so when Sator says this phrase, it isn''t meant for him. It could be Volkov, but Volkov isn''t inverted. It looks like there is another inverted man who talks to Sator via radio chatter, and we don''t know who he is.'
+  options:
   options:
     - text: 'Volkov'
     - text: 'His inverted driver'
@@ -19,7 +23,7 @@
 - number: 3
   question: 'Who from the cast was allowed to read the entire script?'
   options:
-    - text: 'JDW'
+    - text: 'JDW, Kenneth Branagh'
     - text: 'Robert Pattinson'
     - text: 'JDW, Michael Caine'
     - text: 'JDW, Robert Pattinson'
@@ -157,7 +161,7 @@
 
 - number: 18
   question: 'What was the future Neil doing after running to the cave?'
-  hint: '💡 Inverted Neil experiences the effects of his actions before the causes. When he approaches the chamber, he sees the open door; he holds it, closes it and catches the bullet, which from a forward perspective looks like he gets up, opens the lock, holds the door, closes it, and runs away.'
+  hint: '💡 Inverted Neil experiences the effects of his actions before the causes. When he approaches the chamber, he sees the open door; so he holds it, closes it and catches the bullet, which from a forward perspective looks like he gets up, opens the lock, holds the door, closes it, and runs away.'
   options:
     - text: 'Opened the lock, held the door, caught the bullet'
     - text: 'Caught the bullet, held the door, closed the door'
