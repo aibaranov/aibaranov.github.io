@@ -1,0 +1,450 @@
+- number: 1
+  question: 'Who is Cobb?'
+  options:
+    - text: 'An engineer'
+    - text: 'Saito''s partner'
+    - text: 'A skilled dream extractor'
+      correct: true
+    - text: 'A CIA undercover agent'
+
+- number: 2
+  question: 'Who is Mal?'
+  options:
+    - text: 'Saito''s wife'
+    - text: 'Cobb''s wife'
+      correct: true
+    - text: 'Eames'' girlfriend'
+    - text: 'Cobb''s sister'
+
+- number: 3
+  question: 'What happened to Mal?'
+  options:
+    - text: 'She died in limbo'
+    - text: 'She was killed'
+    - text: 'She took her own life'
+      correct: true
+    - text: 'It''s not shown'
+
+- number: 4
+  question: 'What is limbo?'
+  options:
+    - text: 'The deepest layer of the subconscious'
+      correct: true
+    - text: 'The deepest layer of the conscious'
+    - text: 'A lucid dream'
+    - text: 'The part of the brain responsible for rendering dreams'
+
+- number: 5
+  question: 'What is "Mr. Charles"?'
+  options:
+    - text: 'Cobb''s first extraction victim'
+    - text: 'A trick used to turn the target against their own subconscious'
+      correct: true
+    - text: 'A code name for the inception mission'
+    - text: 'A device used to stabilize dreams'
+
+- number: 6
+  question: 'What is Inception?'
+  options:
+    - text: 'Extracting information from a mind'
+    - text: 'Killing a belief in a mind'
+    - text: 'Cleansing a mind'
+    - text: 'Seeding an idea in a mind'
+      correct: true
+
+- number: 7
+  question: 'What is the difference between a lucid dream and an ordinary dream?'
+  options:
+    - text: 'The dream''s landscape'
+    - text: 'The number of people involved'
+    - text: 'The degree of awareness'
+      correct: true
+    - text: 'There''s no difference'
+
+- number: 8
+  question: 'Who is Cobb''s employer?'
+  options:
+    - text: 'Saito'
+      correct: true
+    - text: 'Fischer'
+    - text: 'Eames'
+    - text: 'Browning'
+
+- number: 9
+  question: 'What makes Cobb''s totem different?'
+  options:
+    - text: 'It behaves differently in reality than in a dream'
+    - text: 'It behaves differently in a dream than in reality'
+      correct: true
+    - text: 'It behaves the same in both'
+    - text: 'There''s no difference'
+
+- number: 10
+  question: 'Who was Cobb''s previous employer?'
+  options:
+    - text: 'It''s not stated'
+    - text: 'Cobol Engineering'
+      correct: true
+    - text: 'Fischer Morrow'
+    - text: 'Cobol Industrial'
+
+- number: 11
+  question: 'What was the freight train doing on the city street?'
+  options:
+    - text: 'Ariadne''s surprise'
+    - text: 'Arthur''s trick'
+    - text: 'Ariadne''s mistake'
+    - text: 'A projection of Cobb''s subconscious'
+      correct: true
+
+- number: 12
+  question: 'Who is Ariadne?'
+  options:
+    - text: 'A skilled engineer'
+    - text: 'A forger'
+    - text: 'A talented dream architect'
+      correct: true
+    - text: 'The operation manager'
+
+- number: 13
+  question: 'What is a projection?'
+  options:
+    - text: 'The codename for the operation'
+    - text: 'A person''s double in a dream'
+    - text: 'A visual manifestation of the dreamer''s subconscious'
+      correct: true
+    - text: 'A person''s foe in a dream'
+
+- number: 14
+  question: 'What is Cobb afraid of during the mission?'
+  options:
+    - text: 'Mal''s projection'
+      correct: true
+    - text: 'Ariadne''s mistake'
+    - text: 'Eames'' mistake'
+    - text: 'Saito''s behavior'
+
+- number: 15
+  question: 'Did Cobb and Saito manage to escape limbo?'
+  options:
+    - text: 'This question is open to interpretation'
+      correct: true
+    - text: 'Yes'
+    - text: 'Nope'
+    - text: 'Limbo?'
+
+- number: 16
+  question: 'What did Cobb do to Mal?'
+  options:
+    - text: 'Extraction'
+    - text: 'Theft'
+    - text: 'Deception'
+    - text: 'Inception'
+      correct: true
+
+- number: 17
+  question: 'Where does time run more slowly?'
+  options:
+    - text: 'In an upper dream layer'
+    - text: 'In a middle dream layer'
+    - text: 'In a lower dream layer'
+      correct: true
+    - text: 'Time is constant'
+
+- number: 18
+  question: 'What device is used for dream sharing?'
+  options:
+    - text: 'PSAVI'
+    - text: 'VAPSI'
+    - text: 'PASIV'
+      correct: true
+    - text: 'VIPSA'
+
+- number: 19
+  question: 'What is a totem?'
+  options:
+    - text: 'The codename for the Inception mission'
+    - text: 'An object used to distinguish reality from a dream'
+      correct: true
+    - text: 'An object used to wake someone up'
+    - text: 'A tool required for dream sharing'
+
+- number: 20
+  question: 'What is the difference between conscious and subconscious?'
+  options:
+    - text: 'They are the same'
+    - text: 'The degree of anger'
+    - text: 'The degree of joy'
+    - text: 'The degree of awareness'
+      correct: true
+
+- number: 21
+  question: 'Why are multiple dream layers necessary for the main mission?'
+  options:
+    - text: 'It was Saito''s requirement'
+    - text: 'It was recommended by Ariadne'
+    - text: 'Inception requires the idea to be planted deeply'
+      correct: true
+    - text: 'To make the dream more stable'
+
+- number: 22
+  question: 'Who is Maurice Fischer?'
+  options:
+    - text: 'Saito''s rival and owner of Fischer Morrow'
+      correct: true
+    - text: 'Cobb''s former employer'
+    - text: 'Cobb''s current employer'
+    - text: 'Cobb''s rival'
+
+- number: 23
+  question: 'Why did Saito fall into limbo?'
+  options:
+    - text: 'He died in real life'
+    - text: 'He was sent there by Cobb'
+    - text: 'He died in a dream while sedated'
+      correct: true
+    - text: 'He was captured by Mal'
+
+- number: 24
+  question: 'What is Ariadne''s totem?'
+  options:
+    - text: 'A spinning top'
+    - text: 'A red die'
+    - text: 'A ring'
+    - text: 'A chess bishop'
+      correct: true
+
+- number: 25
+  question: 'Who''s Peter Browning?'
+  options:
+    - text: 'Cobb''s partner'
+    - text: 'Robert Fischer''s godfather'
+      correct: true
+    - text: 'Eames'' friend'
+    - text: 'Ariadne''s colleague'
+
+- number: 26
+  question: 'What is the goal of the main mission?'
+  options:
+    - text: 'Inception on Robert Fischer'
+      correct: true
+    - text: 'Inception on Maurice Fischer'
+    - text: 'Extracting secrets from Robert Fischer'
+    - text: 'Extracting secrets from Peter Browning'
+
+- number: 27
+  question: 'Why was a plane flight chosen for the mission?'
+  options:
+    - text: 'It was required by Saito'
+    - text: 'It was required by Cobb'
+    - text: 'For no specific reason'
+    - text: 'It provided a long period of time with access to Fischer'
+      correct: true
+
+- number: 28
+  question: 'Why are multi-layered dreams so dangerous?'
+  options:
+    - text: 'These involve numerous trained projections'
+    - text: 'The dream stability is too weak'
+    - text: 'They are not dangerous'
+    - text: 'They can be life-threatening'
+      correct: true
+
+- number: 29
+  question: 'Why wasn''t Cobb allowed to create mazes?'
+  options:
+    - text: 'He lacked the necessary experience'
+    - text: 'Mal''s projection could compromise them'
+      correct: true
+    - text: 'It''s too complicated for him'
+    - text: 'It was Saito''s requirement'
+
+- number: 30
+  question: 'Who''s Yusuf?'
+  options:
+    - text: 'Cobb''s pal'
+    - text: 'Saito''s contact'
+    - text: 'A chemist who develops sedatives'
+      correct: true
+    - text: 'A dream architect'
+
+- number: 31
+  question: 'Who''s Eames?'
+  options:
+    - text: 'A skilled architect'
+    - text: 'A scientist'
+    - text: 'An explosives specialist'
+    - text: 'A skilled dream forger'
+      correct: true
+
+- number: 32
+  question: 'What is the zero-gravity effect?'
+  options:
+    - text: 'A specific dream layer'
+    - text: 'A state caused by the dreamer''s body being in free-fall'
+      correct: true
+    - text: 'A result of falling within a dream'
+    - text: 'The codename for the mission'
+
+- number: 33
+  question: 'What did the team fail to take into account?'
+  options:
+    - text: 'Fischer''s mind was trained against invasion'
+      correct: true
+    - text: 'The relationship between Fischer and his father'
+    - text: 'The difference between Maurice and his brother'
+    - text: 'Ariadne''s lack of experience'
+
+- number: 34
+  question: 'How can a person wake themselves up?'
+  options:
+    - text: 'By dying in the dream'
+      correct: true
+    - text: 'By jumping into water'
+    - text: 'By killing their enemy'
+    - text: 'By listening to specific music'
+
+- number: 35
+  question: 'What made the mission so difficult?'
+  options:
+    - text: 'Saito''s prerequisites'
+    - text: 'The relationship between Fischer and his father'
+    - text: 'The complexity of the inception itself'
+      correct: true
+    - text: 'Ariadne''s incompetence'
+
+- number: 36
+  question: 'Who compromised the operation?'
+  options:
+    - text: 'Eames'
+    - text: 'Arthur'
+    - text: 'Ariadne'
+    - text: 'Mal''s projection'
+      correct: true
+
+- number: 37
+  question: 'Why did they need to involve Peter Browning?'
+  options:
+    - text: 'To kill Robert''s  father'
+    - text: 'To change Robert''s perception of his father'
+      correct: true
+    - text: 'To capture Mal'
+    - text: 'It was demanded by Saito'
+
+- number: 38
+  question: 'What is the purpose of the first dream layer?'
+  options:
+    - text: 'To train Ariadne'
+    - text: 'To extract the necessary information from Fischer'
+    - text: 'To pick up Yusuf'
+    - text: 'To kidnap Fischer and introduce his conflict with Browning'
+      correct: true
+
+- number: 39
+  question: 'What is the purpose of the second dream layer?'
+  options:
+    - text: 'To turn Fischer against his father'
+    - text: 'To turn Fischer against Browning'
+      correct: true
+    - text: 'To make Fischer vulnerable to extraction'
+    - text: 'To compromise Fischer'
+
+- number: 40
+  question: 'How much time did Cobb and Mal spend in limbo?'
+  options:
+    - text: '50 months'
+    - text: '2 years'
+    - text: '50 years'
+      correct: true
+    - text: '10 years'
+
+- number: 41
+  question: 'Why did Arthur blow up the elevator in the hotel?'
+  options:
+    - text: 'Always wondered why he did it'
+    - text: 'To trigger a kick in a zero-gravity environment'
+      correct: true
+    - text: 'He wanted to destroy the building'
+    - text: 'He was tasked to compromise the mission'
+
+- number: 42
+  question: 'Why did Mal take Fischer as a hostage in limbo?'
+  options:
+    - text: 'To lure Cobb there and make him stay with her'
+      correct: true
+    - text: 'She wanted him to die'
+    - text: 'She was tasked to compromise the mission'
+    - text: 'She wanted to escape from there'
+
+- number: 43
+  question: 'Why did Mal''s projection not appear in the first two layers?'
+  options:
+    - text: 'Mal didn''t want to disturb him there'
+    - text: 'Cobb forbade her'
+    - text: 'It''s not explained'
+    - text: 'Because Cobb didn''t know the layout of the mazes'
+      correct: true
+
+- number: 44
+  question: 'Why did Fischer fall into limbo?'
+  options:
+    - text: 'He wanted to go there'
+    - text: 'Cobb sent him there'
+    - text: 'He was shot by Mal'
+      correct: true
+    - text: 'He didn''t actually'
+
+- number: 45
+  question: 'Why did Saito age so quickly in limbo?'
+  options:
+    - text: 'In limbo, time is heavily expanded'
+      correct: true
+    - text: 'He was injured there'
+    - text: 'He lost his totem'
+    - text: 'The movie doesn''t explain it'
+
+- number: 46
+  question: 'What are the numbers 5 2 8 4 9 1?'
+  options:
+    - text: 'A series of random numbers'
+    - text: 'The combination to the safe used for inception'
+      correct: true
+    - text: 'The code to a hotel room'
+    - text: 'Numbers Saito wrote for Cobb'
+
+- number: 47
+  question: 'Who was the dreamer for the second dream level (hotel)?'
+  options:
+    - text: 'Saito'
+    - text: 'Ariadne'
+    - text: 'Arthur'
+      correct: true
+    - text: 'Yusuf'
+
+- number: 48
+  question: 'What is the third dream layer?'
+  options:
+    - text: 'A hotel'
+    - text: 'A snow fortress'
+      correct: true
+    - text: 'A city'
+    - text: 'A beach'
+
+- number: 49
+  question: 'Who''s Saito?'
+  options:
+    - text: 'Cobb''s partner'
+    - text: 'A businessman who sponsored Cobb''s work'
+    - text: 'A Japanese businessman interested in splitting up Fischer Morrow'
+      correct: true
+    - text: 'A partner of Maurice Fischer'
+
+- number: 50
+  question: 'What did Saito promise Cobb?'
+  options:
+    - text: 'To reward him with $100M'
+    - text: 'To help cure his wife'
+    - text: 'It''s not stated in the movie'
+    - text: 'To clear his criminal records'
+      correct: true
+
