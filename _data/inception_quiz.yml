@@ -73,8 +73,8 @@
 - number: 9
   question: 'What makes Cobb''s totem different?'
   options:
-    - text: 'It behaves differently in reality than in a dream'
-    - text: 'It behaves differently in a dream than in reality'
+    - text: 'It behaves normally in a dream'
+    - text: 'It behaves normally in reality'
       correct: true
     - text: 'It behaves the same in both'
     - text: 'There''s no difference'
