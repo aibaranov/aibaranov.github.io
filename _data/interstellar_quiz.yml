@@ -17,7 +17,7 @@
     - text: 'Gravitational waves sent by future Cooper'
 
 - number: 3
-  question: 'How many people were in the crew of the Endurance?'
+  question: 'How many people were in the Endurance's crew?'
   options:
     - text: '5'
     - text: '6'
@@ -197,7 +197,7 @@
     - text: 'TARS'
 
 - number: 23
-  question: 'How many years did they loose on Miller''s planet?'
+  question: 'How many years did they lose on Miller''s planet?'
   options:
     - text: '22'
     - text: '24'
