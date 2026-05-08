@@ -1,0 +1,93 @@
+<!-- _includes/interstellar_quiz.html -->
+<div id="main-quiz-wrapper-1">
+  {% for item in site.data.interstellar_quiz %}
+  <div class="quiz-question-block">
+    <div class="quiz-question-text">{{ item.number }}. {{ item.question }}</div>
+    <div class="quiz-options">
+      {% for option in item.options %}
+      <div class="quiz-option" onclick="checkAnswer(this)" {% if option.correct %}data-correct="true"{% endif %}>
+        {{ option.text }}
+      </div>
+      {% endfor %}
+    </div>
+
+    {% if item.hint %}
+    <div class="quiz-hint" style="display: none;">
+      {{ item.hint }}
+    </div>
+    {% endif %}
+  </div>
+  {% endfor %}
+
+  <!-- Simplified Footer -->
+  <div class="quiz-footer">
+    <div id="quiz-score-box" class="quiz-score-box">
+      Score: <span id="score-count">0/0</span> <span id="score-percent">(0%)</span>
+    </div>
+    <button class="quiz-reset-btn" onclick="resetQuiz()">Reset Quiz</button>
+  </div>
+</div>
+
+<script>
+  // State for a single quiz
+  var quizData = {
+    current: 0,
+    total: 0
+  };
+
+  document.addEventListener("DOMContentLoaded", function() {
+    // Count questions on load
+    const wrapper = document.getElementById('main-quiz-wrapper-1');
+    quizData.total = wrapper.querySelectorAll('.quiz-question-block').length;
+    updateScore();
+  });
+
+  function checkAnswer(element) {
+    if (element.classList.contains('disabled')) return;
+
+    var parent = element.parentElement;
+    var options = parent.querySelectorAll('.quiz-option');
+
+    // Lock all options for this question
+    options.forEach(opt => opt.classList.add('disabled'));
+
+    if (element.getAttribute('data-correct') === 'true') {
+      element.classList.add('correct');
+      quizData.current++;
+    } else {
+      element.classList.add('incorrect');
+      // Reveal the correct one
+      options.forEach(opt => {
+        if (opt.getAttribute('data-correct') === 'true') opt.classList.add('correct');
+      });
+      // Show hint if it exists
+      var hint = element.closest('.quiz-question-block').querySelector('.quiz-hint');
+      if (hint) hint.style.display = 'block';
+    }
+
+    updateScore();
+  }
+
+  function updateScore() {
+    var percentage = quizData.total > 0 ? Math.round((quizData.current / quizData.total) * 100) : 0;
+    document.getElementById('score-count').innerText = quizData.current + "/" + quizData.total;
+    document.getElementById('score-percent').innerText = "(" + percentage + "%)";
+  }
+
+  function resetQuiz() {
+    quizData.current = 0;
+    var container = document.getElementById('main-quiz-wrapper-1');
+    
+    // Clear styles
+    container.querySelectorAll('.quiz-option').forEach(opt => {
+      opt.classList.remove('correct', 'incorrect', 'disabled');
+    });
+    
+    // Hide hints
+    container.querySelectorAll('.quiz-hint').forEach(hint => {
+      hint.style.display = 'none';
+    });
+
+    updateScore();
+  }
+</script>

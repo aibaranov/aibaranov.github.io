@@ -1,0 +1,450 @@
+- number: 1
+  question: 'Who is Cooper?'
+  options:
+    - text: 'A former military pilot'
+    - text: 'A former starship pilot'
+    - text: 'A former NASA pilot'
+      correct: true
+    - text: 'It is not stated in the film'
+
+- number: 2
+  question: 'What is the anomaly?'
+  options:
+    - text: 'Gravitational waves from the 5th dimension'
+      correct: true
+    - text: 'Energetic waves from the 5th dimension'
+    - text: 'Messages sent by the Lazarus mission'
+    - text: 'Gravitational waves sent by future Cooper'
+
+- number: 3
+  question: 'How many people were in the crew of the Endurance?'
+  options:
+    - text: '5'
+    - text: '6'
+    - text: '3'
+    - text: '4'
+      correct: true
+
+- number: 4
+  question: 'Which physics theories is the film based on?'
+  options:
+    - text: 'Theory of everything'
+    - text: 'Relativity and string theory'
+      correct: true
+    - text: 'Quantum mechanics and biology'
+    - text: 'Thermodynamics and chaos theory'
+
+- number: 5
+  question: 'What did the "Bulk Beings" put into the black hole?'
+  options:
+    - text: 'A cube'
+    - text: 'A pentagon'
+    - text: 'A tesseract'
+      correct: true
+    - text: 'A triangle'
+
+- number: 6
+  question: 'Who is Murph''s ghost?'
+  options:
+    - text: 'Cooper'
+      correct: true
+    - text: 'Tom'
+    - text: 'Donald'
+    - text: 'Doyle'
+
+- number: 7
+  question: 'What is the 4th dimension?'
+  options:
+    - text: 'Space'
+    - text: 'Gravity'
+    - text: 'Time'
+      correct: true
+    - text: 'Quantum'
+
+- number: 8
+  question: 'Who wrote the score for the film?'
+  options:
+    - text: 'Hans Zimmer'
+      correct: true
+    - text: 'Ludwig Göransson'
+    - text: 'Howard Shore'
+    - text: 'Lalo Schifrin'
+
+- number: 9
+  question: 'Who is Professor Brand?'
+  options:
+    - text: 'A Stanford professor'
+    - text: 'A NASA scientist'
+      correct: true
+    - text: 'A military engineer'
+    - text: 'It is not stated'
+
+- number: 10
+  question: 'What was the Lazarus mission''s purpose?'
+  options:
+    - text: 'To colonize Mars'
+    - text: 'To assemble the Endurance in orbit'
+    - text: 'To rescue previous failed missions'
+    - text: 'To find a new home for humanity'
+      correct: true
+
+- number: 11
+  question: 'What was the Endurance''s main mission?'
+  options:
+    - text: 'To relocate people from Earth'
+    - text: 'To rescue the Lazarus mission'
+    - text: 'To colonize a new planet'
+      correct: true
+    - text: 'To bring equipment to Dr. Mann'
+
+- number: 12
+  question: 'Who placed the wormhole near Saturn?'
+  options:
+    - text: 'Bulk Beings'
+      correct: true
+    - text: 'Aliens'
+    - text: 'Mystical gods'
+    - text: 'The Lazarus crew'
+
+- number: 13
+  question: 'What did Cooper see inside the tesseract?'
+  options:
+    - text: 'Endless strings of light'
+    - text: 'Murph’s room across all time'
+      correct: true
+    - text: 'His own childhood'
+    - text: 'The future of humanity'
+
+- number: 14
+  question: 'What does the gravity equation achieve?'
+  options:
+    - text: 'Control over time'
+    - text: 'Faster-than-light travel'
+    - text: 'Control over gravity'
+      correct: true
+    - text: 'Decryption of the 5th dimension'
+
+- number: 15
+  question: 'Why did Dr. Mann betray the mission?'
+  options:
+    - text: 'He was betrayed by NASA'
+    - text: 'Cooper tried to kill him'
+    - text: 'He had a secret government plan'
+    - text: 'His ego and survival instinct'
+      correct: true
+
+- number: 16
+  question: 'Why is the Endurance constructed as a ring?'
+  options:
+    - text: 'To create artificial gravity'
+      correct: true
+    - text: 'For aerodynamic efficiency'
+    - text: 'To travel through the wormhole'
+    - text: 'To survive the black hole''s heat'
+
+- number: 17
+  question: 'Was there actually a Plan A?'
+  options:
+    - text: 'Yes, there was'
+    - text: 'It is left ambiguous'
+    - text: 'No, there wasn''t'
+      correct: true
+    - text: 'The film doesn''t mention Plan A'
+
+- number: 18
+  question: 'What is TARS?'
+  options:
+    - text: 'A NASA research robot'
+    - text: 'A former U.S. Marine Corps robot'
+      correct: true
+    - text: 'A specialized farmer robot'
+    - text: 'It is not stated'
+
+- number: 19
+  question: 'Who or what assisted Cooper in docking with the Endurance?'
+  options:
+    - text: 'CASE'
+    - text: 'TARS'
+    - text: 'CASE and TARS'
+      correct: true
+    - text: 'Dr. Brand'
+
+- number: 20
+  question: 'Who did Mann kill on his planet?'
+  options:
+    - text: 'Doyle'
+    - text: 'Romilly'
+      correct: true
+    - text: 'Dr. Brand'
+    - text: 'Cooper'
+
+- number: 21
+  question: 'Why did humans decide to leave Earth?'
+  options:
+    - text: 'Biological blight and suffocation'
+      correct: true
+    - text: 'High levels of radiation'
+    - text: 'Nuclear war destruction'
+    - text: 'An asteroid impact'
+
+- number: 22
+  question: 'Who did the crew lose on Miller''s planet?'
+  options:
+    - text: 'Romilly'
+    - text: 'Doyle'
+      correct: true
+    - text: 'Dr. Brand'
+    - text: 'TARS'
+
+- number: 23
+  question: 'How many years did they loose on Miller''s planet?'
+  options:
+    - text: '22'
+    - text: '24'
+    - text: '23'
+      correct: true
+    - text: '21'
+
+- number: 24
+  question: 'Why did Dr. Brand choose Edmunds'' planet?'
+  options:
+    - text: 'She trusted his data more'
+    - text: 'Her father recommended it'
+    - text: 'It was the closest planet'
+    - text: 'She was in love with him'
+      correct: true
+
+- number: 25
+  question: 'What was TARS''s goal in the Gargantua mission?'
+  options:
+    - text: 'To gather quantum data'
+      correct: true
+    - text: 'To help Cooper survive'
+    - text: 'To send data directly to Murph'
+    - text: 'TARS did not enter Gargantua'
+
+- number: 26
+  question: 'Why was Professor Brand unable to solve the equation?'
+  options:
+    - text: 'He made a math error'
+    - text: 'He lacked quantum data'
+      correct: true
+    - text: 'He wasn''t the equation''s author'
+    - text: 'The equation is unsolvable'
+
+- number: 27
+  question: 'What code did Cooper use to send quantum data?'
+  options:
+    - text: 'Morse code'
+      correct: true
+    - text: 'English text'
+    - text: 'Secret military code'
+    - text: 'Binary code'
+
+- number: 28
+  question: 'Why did Cooper fall into the black hole?'
+  options:
+    - text: 'To travel to Earth faster'
+    - text: 'Out of scientific curiosity'
+    - text: 'To reduce the Endurance''s weight'
+      correct: true
+    - text: 'He was misled by TARS'
+
+- number: 29
+  question: 'Where did Dr. Brand establish the colony?'
+  options:
+    - text: 'Edmunds'' planet'
+      correct: true
+    - text: 'Mann''s planet'
+    - text: 'Miller''s planet'
+    - text: 'Cobb''s planet'
+
+- number: 30
+  question: 'Who solved the gravity equation?'
+  options:
+    - text: 'Dr. Brand'
+    - text: 'Professor Brand'
+    - text: 'TARS'
+    - text: 'Murph'
+      correct: true
+
+- number: 31
+  question: 'Why did Professor Brand lie about Plan A?'
+  options:
+    - text: 'He wanted to betray humanity'
+    - text: 'NASA ordered him to lie'
+    - text: 'To give the crew hope'
+      correct: true
+    - text: 'He didn''t actually lie'
+
+- number: 32
+  question: 'How many people were in the Lazarus mission?'
+  options:
+    - text: '12'
+      correct: true
+    - text: '11'
+    - text: '13'
+    - text: '10'
+
+- number: 33
+  question: 'Where did Cooper fly at the end?'
+  options:
+    - text: 'Miller''s planet'
+    - text: 'Edmunds'' planet'
+      correct: true
+    - text: 'Mann''s planet'
+    - text: 'Saturn'
+
+- number: 34
+  question: 'Who is Dr. Mann?'
+  options:
+    - text: 'The leader of the Lazarus mission'
+      correct: true
+    - text: 'The chief of NASA'
+    - text: 'A military pilot'
+    - text: 'A stowaway on the Endurance'
+
+- number: 35
+  question: 'What structure did the beings create for Cooper?'
+  options:
+    - text: 'A 3D cube'
+    - text: 'A 2D square'
+    - text: 'A 4D tesseract'
+      correct: true
+    - text: 'A 5D pentagon'
+
+- number: 36
+  question: 'According to the school teacher, what event was faked?'
+  options:
+    - text: 'The first satellite launch'
+    - text: 'The Cuban Missile Crisis'
+    - text: 'The discovery of Miller''s planet'
+    - text: 'The Apollo Moon landing'
+      correct: true
+
+- number: 37
+  question: 'Did Cooper actually "abandon" Murph?'
+  options:
+    - text: 'No, he didn''t'
+      correct: true
+    - text: 'Yes, he did'
+    - text: 'It is not stated'
+    - text: 'No idea'
+
+- number: 38
+  question: 'What is a tesseract in the film?'
+  options:
+    - text: 'A 3D representation of the 4th dimension'
+    - text: 'A 3D representation of the 5th dimension'
+      correct: true
+    - text: 'A portal to the past'
+    - text: 'A physical manifestation of gravity'
+
+- number: 39
+  question: 'Why did Cooper use a gravitational slingshot?'
+  options:
+    - text: 'To send Dr. Brand to Mann''s planet'
+    - text: 'To send Dr. Brand to Edmunds'' planet'
+      correct: true
+    - text: 'To gather quantum data'
+    - text: 'To return to Earth immediately'
+
+- number: 40
+  question: 'What are the "strings" in the tesseract?'
+  options:
+    - text: 'Simple visual distortions'
+    - text: 'Unknown alien technology'
+    - text: 'Physical manifestations of space'
+    - text: 'Physical manifestations of time'
+      correct: true
+
+- number: 41
+  question: 'Why did the future beings need Cooper to transmit data?'
+  options:
+    - text: 'They didn''t have the data'
+    - text: 'They wanted to test him'
+    - text: 'They couldn''t find a specific moment in time'
+      correct: true
+    - text: 'They could not communicate with Murph'
+
+- number: 42
+  question: 'How did humanity launch Cooper Station?'
+  options:
+    - text: 'They learned to control gravity'
+      correct: true
+    - text: 'They used a massive wormhole'
+    - text: 'They built it in orbit'
+    - text: 'The Bulk Beings moved it'
+
+- number: 43
+  question: 'What created gravity on Cooper Station?'
+  options:
+    - text: 'A gravity generator'
+    - text: 'Centrifugal force from rotation'
+      correct: true
+    - text: 'Bulk Being technology'
+    - text: 'It used the Moon''s gravity'
+
+- number: 44
+  question: 'Besides gravity, what force can cross dimensions?'
+  options:
+    - text: 'Love'
+      correct: true
+    - text: 'Pressure'
+    - text: 'Friction'
+    - text: 'Electromagnetism'
+
+- number: 45
+  question: 'What saved Cooper''s life inside the black hole?'
+  options:
+    - text: 'He didn''t enter the black hole'
+    - text: 'His advanced spacesuit'
+    - text: 'The Endurance''s shields'
+    - text: 'The tesseract'
+      correct: true
+
+- number: 46
+  question: 'How did Cooper appear near Saturn?'
+  options:
+    - text: 'He flew the Endurance back'
+    - text: 'He was placed there by the beings'
+      correct: true
+    - text: 'He used his landing pod'
+    - text: 'He never left the black hole'
+
+- number: 47
+  question: 'Why did Murph become much older than Cooper?'
+  options:
+    - text: 'Time dilation near objects with huge gravitation'
+      correct: true
+    - text: 'Time dilation near objects with little gravitation'
+    - text: 'In space time runs much slower'
+    - text: 'Murph was ill'
+
+- number: 48
+  question: 'How did Cooper find the right moments in the room?'
+  options:
+    - text: 'He was instructed by Professor Brand'
+    - text: 'They were highlighted by the future'
+    - text: 'He followed his emotional bond'
+      correct: true
+    - text: 'He chose the room snapshots randomly'
+
+- number: 49
+  question: 'Who was Cooper Station named after?'
+  options:
+    - text: 'Cooper himself'
+    - text: 'His daughter'
+      correct: true
+    - text: 'His son'
+    - text: 'His grandson'
+
+- number: 50
+  question: 'On which planet is time dilation the highest?'
+  options:
+    - text: 'Miller''s planet'
+      correct: true
+    - text: 'Edmunds'' planet'
+    - text: 'Mann''s planet'
+    - text: 'Earth'
+
