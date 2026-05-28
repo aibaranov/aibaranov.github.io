@@ -6,7 +6,7 @@ tags: [posts, windows internals, windows kernel, reverse engineering, ida, ghidr
 excerpt: "Have you ever wondered which Windows kernel subsystem has the largest code size? Let's find out."
 ---
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kernlsubsys1.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kernlsubsys1.jpg" alt="">
 
 ## Introduction
 
@@ -18,7 +18,7 @@ Since this post dedicated to the Windows Internals stuff, it implies a certain l
 
 Below is a diagram illustrating the kernel subsystems within ntoskrnl, proportionate to their sizes. It is based on the results of this study, calculated using the aforementioned IDA and Ghidra scripts. As we can see, the VMM is the largest subsystem, which is unsurprising since it plays a role in the operation of all other subsystems. Memory management is a critical component of any operating system.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kernlsubsys2.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kernlsubsys2.jpg" alt="">
 
 Below are the the name prefixes of the subsystems included in the study.
 
@@ -130,11 +130,11 @@ To launch the IDAPython script, open your IDB file and go to File->Script file..
 
 The pictures below show information from the script output for ntoskrnl in the up-to-date Win11 23H2.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kernlsubsys3.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kernlsubsys3.jpg" alt="">
 
 For a more visual representation, here are the statistics expressed as percentages. Additionally, you can see that 35% of the functions that do not belong to the explored subsystems.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kernlsubsys4.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kernlsubsys4.jpg" alt="">
 
 ## Conclusion
 

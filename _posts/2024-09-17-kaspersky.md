@@ -8,7 +8,7 @@ toc: true
 toc_label: "Table of Contents"
 toc_icon: "list-ul"
 ---
-<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_1.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_1.jpg" alt="">
 
 Disclaimer: this article is not sponsored by any third parties and is based solely on public sources. While it includes complimentary statements about the company, these reflect a widely accepted perspective within the security industry. Some technical details have been intentionally omitted as the article is intended for a wide audience. Perhaps there's at least one reason to read this article if you're curious about what might happen to a Russia-based hi-tech company that once set out to conquer the Western market...
 
@@ -38,7 +38,7 @@ Anti-malware solution / Internet Security solution – a security product that i
 
 Endpoint Antivirus / Endpoint Security / Endpoint Protection - a comprehensive antivirus solution designed for corporate workstations. These solutions have the capability for automatic deployment from a central server, requiring no user interaction, and are managed under corporate policies. Typically, this kind of products don’t include protection components found in consumer products, such as a dedicated online banking protection, VPN, parental control, performance optimization features.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_2.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_2.jpg" alt="">
 
 In this article, terms like «antivirus», «anti-malware product», and «anti-malware solution» may sometimes be used interchangeably to avoid repetition. However, as mentioned above, they have slightly different meanings. These products are specially designed for Windows, which dominates the anti-malware market. Therefore, the context of this article focuses on the Windows anti-malware products market, the largest segment compared to others.
 
@@ -48,7 +48,7 @@ To understand the Kaspersky phenomenon, it's important to consider the historica
 
 Since the early versions of the antivirus, Eugene, a mathematician who gradually became a businessman, placed a strong emphasis on malware detection quality. Throughout the 2000s, Kaspersky consistently outperformed competitors in antivirus tests conducted by the well-regarded Russian test laboratory, Anti-Malware. The company's solutions achieved top marks in both static and dynamic malware detection, as well as in evaluations of self-protection and anti-rootkit capabilities. As Kaspersky expanded into international markets, the company's products achieved similar results in anti-malware tests conducted by independent laboratories in Europe.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_3.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_3.jpg" alt="">
 
 Branded CD boxes of one of the first versions of the antivirus, [source](https://eugene.kaspersky.ru/2011/06/28/istoriya-korobok/)
 
@@ -58,7 +58,7 @@ Windows 2000 was built on Windows NT technology and introduced a revolutionary a
 
 The first decade of the 2000s saw the emergence of nearly all the anti-malware protection technologies that are now standard in modern cybersecurity solutions, including IDS/IPS, HIPS, anti-rootkits, self-protection, firewalls, and application control. These innovations were a response to the rise of new Windows malware with advanced capabilities and rootkit techniques. This period became a golden era for Kaspersky Lab, during which its revenue grew exponentially, as one might expect. Around the mid-2000s, Symantec emerged as the first major player to release an 'Internet Security' suite, integrating those security components into a single product - a pivotal moment in the evolution of the industry.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_4.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_4.jpg" alt="">
 
 The approximate timeline of antivirus evolution, from basic versions to complex Internet Security solutions
 
@@ -72,7 +72,7 @@ We gained further insights into the company during that period from a 2015 inter
 
 >Revenue growth slowed at a catastrophic rate - from 40% in 2009 to 6% in 2013, sales were almost not growing. The arrival of the first outside investor (the American fund General Atlantic in 2011 became the owner of 18.7% of Kaspersky Lab shares) resulted in monetary losses, a year later the company bought back its shares. Meanwhile, the plans were ambitious: by the end of 2014, the Laboratory expected to receive revenue of $1 billion (in fact, it was $711 million).
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_5.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_5.jpg" alt="">
 
 Source: [IDC](https://tadviser.com/index.php/Article:Information_Security_Software_%28Global_Market%29) (Worldwide Endpoint Security 2010-2014 Forecast and 2009 Vendor Shares, December 2010)
 
@@ -94,7 +94,7 @@ In addition to its well-known anti-malware solutions, which account for the majo
 
 A quick glance at sources like Wikipedia or an inquiry to ChatGPT reveals that Kaspersky has played a key role in exposing some of the most advanced state-sponsored malware, including Stuxnet, Flame, Regin, and the tools of the *Equation Group*. These cyberweapons were developed with considerable financial and human resources, often attributed to government-backed operations. Kaspersky shared detailed analyses of these threats on its dedicated cybersecurity portal, Securelist.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_6.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_6.jpg" alt="">
 
 A still from the documentary Zero Days by Alex Gibney. An alleged source within the NSA claims that Stuxnet was developed by the NSA, and the sabotage operation was conducted in collaboration with the CIA and Mossad (Operation Olympic Games). The Russian cybersecurity firm Kaspersky, alongside the Belorussian company VirusBlockAda, was among the first to discover the worm.
 
@@ -120,7 +120,7 @@ However, in September 2017, the Department of Homeland Security (DHS) [issued a 
 
 To address the situation, Eugene Kaspersky was invited to [testify before the U.S. Congress](https://science.house.gov/2017/10/bolstering-government-s-cybersecurity-assessing-risk-kaspersky-lab-products) in September 2017 to answer questions regarding the safety of his company’s products. Both U.S. government officials and private-sector cybersecurity experts were also invited to the session. Initially, Kaspersky accepted the invitation. However, at the last moment, he changed his mind and informed NBC News that he had decided not to travel to the U.S., citing concerns about «unexpected problems» due to the deteriorating relationship between Moscow and Washington.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_8.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_8.jpg" alt="">
 
 Eugene’s tweet showcasing the formal invitation from Congress for a hearing in 2017
 
@@ -132,7 +132,7 @@ This marked a pivotal moment. Trust in Kaspersky products began to erode signifi
 
 Simultaneously, major U.S. retailers BestBuy and Office Depot, following new federal recommendations, pulled Kaspersky products from its shelves. This decision dealt a severe blow to Kaspersky’s consumer segment, as it significantly limited access to its products in one of the largest retail chains in the U.S. Advertising of the company's products had also been banned on Twitter network.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_9.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_9.jpg" alt="">
 
 An open [letter](https://media.kasperskycontenthub.com/wp-content/uploads/sites/20/2018/03/06175644/Twitter-KLUK-Letter-dd-Feb-06-2018.pdf) to the management of Twitter
 
@@ -142,7 +142,7 @@ Another blow came from the European Union. In a [2018 vote](https://www.europarl
 
 However, in 2019, the European Commission [clarified](https://www.zdnet.com/article/eu-no-evidence-of-kaspersky-spying-despite-confirmed-malicious-classification/) its position, stating that it was "not in possession of any evidence regarding potential issues related to the use of Kaspersky Lab products." This statement somewhat mitigated the damage caused by the earlier vote in the European Parliament, though the initial labeling of Kaspersky as «malicious software» had already cast a shadow over the company's reputation.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_7.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_7.jpg" alt="">
 
 Headlines from major U.S. media outlets, signaling the start of a widespread campaign against Kaspersky, amid allegations of ties to the Russian government
 
@@ -156,7 +156,7 @@ Setting aside the geopolitical context, it's important to examine why the U.S. g
 
 Unfortunately, unlike American antivirus vendors, Kaspersky operates under a different geopolitical lens, which has caused its capabilities to be viewed in a negative context.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_10.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_10.jpg" alt="">
 
 As shown in this data, all leading anti-malware products deploy highly-privileged code to perform their core security functions on systems
 
@@ -176,7 +176,7 @@ Nevertheless, the expected sanctions were not imposed immediately. [According to
 
 In March 2022, HackerOne, the U.S. based company that is known as a pioneer in managing vulnerability bug bounty programs and responsible disclosure, without any explanation, disabled Kaspersky's [bug bounty program](https://hackerone.com/kaspersky). At that time, I worked as a Kaspersky research developer on this platform dealing with the reproduction accepted vulnerability reports and the communication with security researchers. After disconnection from this platform, the number of valid vulnerability reports significantly decreased and the company lost the opportunity to pay researchers even for already accepted reports.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_11.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_11.jpg" alt="">
 
 Statistics from Kaspersky’s Bug Bounty program on HackerOne show that no new reports have been accepted in the past two years
 
@@ -191,7 +191,7 @@ If to look at this situation impartially, sanctions can only be imposed in excep
 
 At the moment of the sanctions announcement, Kaspersky was the only Russia-based company, whose products were widely used by Americans, including in the corporate segment. If you don't trust a country, how can you trust a company operating under its jurisdiction. Isn't it quite simple. Especially when the software from this company takes full control over the operating system and could potentially be exploited for illegitimate activities.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_12.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_12.jpg" alt="">
 
 The timeline of the fall
 
@@ -199,7 +199,7 @@ According to Axios, the U.S.-based cybersecurity company Pango [acquired](https:
 
 Taking advantage of this situation, several prominent players in the AM market sought to capitalize on Kaspersky's difficulties by offering discounts for customers looking to replace Kaspersky products with their own. These promotions often included detailed information about the benefits of their solutions, along with instructions on how to remove the now-banned Kaspersky software. By the time of the full ban, Kaspersky’s presence in the U.S. market had likely shrunk to its lowest level since entering two decades prior. Additionally, as far as I know, the first round of sanctions in 2017 also led to the closure of Kaspersky’s U.S.-based anti-malware research division.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_13.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_13.jpg" alt="">
 
 ## The Difficult Road Ahead
 
@@ -209,7 +209,7 @@ Aside from this, the company faced additional challenges. Newer antivirus produc
  
 According to a 2019 ranking of the largest antivirus software manufacturers for Windows, published by OPSWAT, ESET made a significant leap, securing second place in the rankings and surpassing even McAfee. Bitdefender and Avast had also significantly strengthened their positions at that time. Based on the latest data, ESET's revenue from product sales may now significantly exceed that of Kaspersky Lab.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_14.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/kaspersky_14.jpg" alt="">
 
 OPSWAT Windows antivirus market share, October 2019
 

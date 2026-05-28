@@ -63,15 +63,15 @@ https://www.englishtag.com/tests/level_test.asp
 
 Они значительно облегчают понимание смысла того что говорят и помогают людям с недостаточными навыками в языке понимать суть сказанного и совершенствовать собственные навыки. Субтитры, по существу, уже всюду, YouTube, OneDrive, Chrome, Windows, Android, Apple devices, etc. В отличие от субтитров встроенных в приложение или сервис, OS-wide субтитры, помогают переводить все что слышится или воспроизводится на девайсе. Дело только за настройкой, которую нужно дернуть для включения функции. На современных версиях мобилок на базе Android и iOS есть функции позволяющие на ходу переводить поступаемый в мобилку текст с одного языка на другой. Из-за востребованности функции, ее можно включать/выключать без разблокировки устройства. Например, на пикселях для этого достаточно нажать кнопку громкости и включить титры.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/english3.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/english3.jpg" alt="">
 
 Настройки включения титров в Chrome для Windows
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/english2.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/english2.jpg" alt="">
 
 В самой ОСи
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/english1.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/english1.jpg" alt="">
 
 Google Android 15, ОСь позволяет выполнять перевод "на лету" в т ч текущего разговора
 
@@ -85,13 +85,13 @@ Google Android 15, ОСь позволяет выполнять перевод "
 
 На Google Android (родной прошивке) система распознавания называется Google Lens и Circle to Search. Схема использования упрощена до нельзя, достаточно на неск секунд коснуться пальцем самого низа экрана. Circle to Search позволяет не только считать текст с изображения, но и сразу его загуглить или скормить переводчику Google Translate, который моментально выдаст перевод текста. В целом, такую функцию уже можно найти в большом количестве приложений, работающих с загрузкой данных или изображений.
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/english4.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/english4.jpg" alt="">
 
 AI-powered функция Google Circle to Search (Pixel 7, Android 15)
 
 Немного более упрощенная версия Circle to Search, которая доступна на большем кол-ве мобилок (более устаревших) называется Lens (объектив, окуляр). Lens вполне достаточно для считывания текста с картинок. Открывается также просто, нужно просто открыть картинку в Photo и нажать на квадратик. 
 
-<img src="{{ site.url }}{{ site.baseurl }}/images/english5.png" alt="">
+<img src="{{ site.url }}{{ site.baseurl }}/images/english5.jpg" alt="">
 
 Lens
 
