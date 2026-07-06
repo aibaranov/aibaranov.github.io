@@ -1,6 +1,6 @@
 <!-- _includes/tech_accordion_nav.html -->
 
-<!-- 1. SUMMARY & CONTROLS (Refactored for Flexbox Layout) -->
+<!-- 1. SUMMARY & CONTROLS -->
 <div class="technique-summary">
   <div class="summary-readout">
     <strong>Techniques selected:</strong> 
@@ -8,22 +8,19 @@
   </div>
   
   <div class="summary-actions">
-    <!-- Copy Button -->
     <button id="copy-techniques" class="btn--icon" style="display:none;" title="Copy to clipboard">
       <i class="far fa-copy"></i>
     </button>
-    
-    <!-- Clear Button -->
+	
     <button id="reset-techniques" class="btn--text" style="display:none;">(Clear All)</button>
-    
+	
     <span class="divider"></span>
-    
-    <!-- Expand All -->
+	
     <button id="toggle-all-menus" class="btn--link">Expand All</button>
   </div>
 </div>
 
-<!-- 2. VECTOR INPUT SECTION (Clean - No Inline Styles) -->
+<!-- 2. VECTOR INPUT SECTION -->
 <div class="technique-vector-input">
   <label for="vector-input">Input techniques vector:</label>
   <input type="text" id="vector-input" placeholder="e.g. T1.a, T2.b">
@@ -32,23 +29,30 @@
   <button id="paste-vector-btn" class="btn">Paste</button>
   <button id="show-vector-btn" class="btn">Show</button>
   <button id="reset-vector-btn" class="btn">Reset</button>
+  <button id="explain-vector-btn" class="btn">Explain</button>
 </div>
+
+<!-- 2.5 DYNAMIC EXPLANATION BLOCK -->
+<div id="explanation-container" class="explanation-box" style="display: none; margin: 15px 0; padding: 12px; border: 1px solid #3e4451; background-color: #1e222b; border-radius: 4px; white-space: pre-line; color: #abb2bf; font-family: monospace; font-size: 14px;"></div>
 
 <!-- 3. ACCORDION CONTAINER -->
 <div id="tech-accordion-container" class="accordion-nav-container">
   {% for col in site.data.tech_accordion_menu %}
   <div class="accordion-column">
     
-    <!-- Header (Removed inline onclick) -->
     <button class="accordion-header">
       {{ col.title }}
       <span class="tooltip-text">{{ col.tooltip }}</span>
     </button>
 
-    <!-- Content -->
     <div class="accordion-content">
       {% for item in col.items %}
-      <div class="accordion-item technique-item" data-value="{{ item.label }}" data-prefix="{{ col.id }}"> 
+      <!-- Added data-description to pass the YAML description string directly to JavaScript safely -->
+      <div class="accordion-item technique-item" 
+	       data-value="{{ item.label }}" 
+		   data-prefix="{{ col.id }}" 
+		   data-title="{{ col.tooltip | escape }}"
+		   data-description="{{ item.description | escape }}"> 
         {{ item.label }}
         <span class="tooltip-text-side">{{ item.tooltip }}</span>
       </div>
@@ -81,6 +85,8 @@ document.addEventListener("DOMContentLoaded", function() {
   const showVectorBtn = document.getElementById('show-vector-btn');
   const resetVectorBtn = document.getElementById('reset-vector-btn');
   const pasteVectorBtn = document.getElementById('paste-vector-btn');
+  const explainVectorBtn = document.getElementById('explain-vector-btn');
+  const explanationContainer = document.getElementById('explanation-container');
 
   let allExpanded = false;
 
@@ -124,7 +130,6 @@ document.addEventListener("DOMContentLoaded", function() {
   resetButton.addEventListener('click', function() {
     items.forEach(el => el.classList.remove('is-selected'));
     
-    // Close all menus on reset
     allContents.forEach(content => {
       content.classList.remove('show');
       content.style.maxHeight = null;
@@ -134,6 +139,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     allExpanded = false;
     toggleAllBtn.textContent = "Expand All";
+    explanationContainer.style.display = 'none';
+    explanationContainer.textContent = '';
 
     updateSummaryDisplay();
   });
@@ -159,7 +166,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const rawInput = vectorInput.value;
     if (!rawInput) return;
 
-    // Clear current selection first
     items.forEach(el => el.classList.remove('is-selected'));
 
     const tokens = rawInput.split(',').map(t => t.trim());
@@ -175,7 +181,6 @@ document.addEventListener("DOMContentLoaded", function() {
         if (targetItem) {
           targetItem.classList.add('is-selected');
 
-          // Auto-expand the parent accordion
           const parentContent = targetItem.closest('.accordion-content');
           const parentHeader = parentContent.previousElementSibling;
 
@@ -192,10 +197,52 @@ document.addEventListener("DOMContentLoaded", function() {
     updateSummaryDisplay();
   });
 
+  // --- 6.5 EXPLAIN VECTOR LOGIC ---
+  explainVectorBtn.addEventListener('click', function() {
+    const rawInput = vectorInput.value;
+    if (!rawInput) {
+      explanationContainer.style.display = 'none';
+      explanationContainer.textContent = '';
+      return;
+    }
+
+    const tokens = rawInput.split(',').map(t => t.trim());
+    const matchedDescriptions = [];
+
+    tokens.forEach(token => {
+      const parts = token.split('.');
+      if (parts.length === 2) {
+        const prefix = parts[0];
+        const label = parts[1];
+        
+        // Find DOM node matching prefix and item label
+        const targetItem = container.querySelector(`.technique-item[data-prefix="${prefix}"][data-value="${label}"]`);
+        
+        if (targetItem) {
+		  const techName = targetItem.getAttribute('data-title') || 'Unknown Technique';
+          const desc = targetItem.getAttribute('data-description') || 'No description provided.';
+		  
+		  // Formats precisely to: T1.a - [T1] Technique Name [a] Description string.
+          matchedDescriptions.push(`${prefix}.${label} - [${prefix}] ${techName} [${label}] ${desc}`);
+        }
+      }
+    });
+
+    if (matchedDescriptions.length > 0) {
+      explanationContainer.textContent = matchedDescriptions.join('\n');
+      explanationContainer.style.display = 'block';
+    } else {
+      explanationContainer.style.display = 'none';
+      explanationContainer.textContent = '';
+    }
+  });
+
   // --- 7. RESET INPUT ---
   resetVectorBtn.addEventListener('click', function() {
     vectorInput.value = "";
-    resetButton.click(); // Triggers the main reset logic
+    explanationContainer.style.display = 'none';
+    explanationContainer.textContent = '';
+    resetButton.click(); 
   });
 
   // --- 8. TOGGLE ALL (Expand/Collapse) ---
