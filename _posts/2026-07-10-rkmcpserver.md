@@ -5,9 +5,6 @@ author_profile: false
 date: 2026-07-10
 tags: [posts, rootkit]
 excerpt: "Introducing an MCP server to feed your AI model technical data about rootkit techniques, rootkit and bootkit families."
-toc: true
-toc_label: "Table of Contents"
-toc_icon: "list-ul"
 ---
 
 In one of my earlier [blogs](https://aibaranov.github.io/rootkit-matrix/), I introduced the so-called Windows Rootkit Techniques Matrix based on data from my [Windows Rootkits and Bootkits Guide](https://github.com/ArtemBaranov/WindowsRootkitsGuide/blob/main/rootkits_bootkits_v2_1.pdf). The guide itself consists of a nested list of Windows kernel rootkit tricks mapped to two tables of rootkit and bootkit families sorted in chronological order. The matrix, in turn, represents this data visually.
