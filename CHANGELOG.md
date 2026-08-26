@@ -2,6 +2,10 @@
 
 ## Unreleased
 
+No unreleased changes yet.
+
+## [4.28.1](https://github.com/mmistakes/minimal-mistakes/releases/tag/4.28.1)
+
 ### Enhancements
 
 - Respect custom parameters in yiq-contrast-color function (#5453)
