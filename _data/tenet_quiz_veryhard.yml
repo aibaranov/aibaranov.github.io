@@ -4,7 +4,7 @@
   options:
   options:
     - text: 'The plutonium is at the freeport'
-    - text: 'The algorithm is at the freeport'
+    - text: 'The algorithm is in freeport'
       correct: true
     - text: 'The material is at the freeport'
     - text: 'The material is in the case'
@@ -161,12 +161,12 @@
 
 - number: 18
   question: 'What was the future Neil doing after running to the cave?'
-  hint: '💡 Inverted Neil experiences the effects of his actions before the causes. When he approaches the chamber, he sees the open door; so he holds it, closes it and catches the bullet, which from a forward perspective looks like he gets up, opens the lock, holds the door, closes it, and runs away.'
+  hint: '💡 Inverted Neil experienced the effects of his actions before the causes. When he approached the chamber, he saw the closed door; so he picked the lock, held the door open, closed it, and caught the bullet. From a forward perspective, this looked like he got up, unlocked the door, held it, closed it, and ran away.'
   options:
-    - text: 'Opened the lock, held the door, caught the bullet'
-    - text: 'Caught the bullet, held the door, closed the door'
-    - text: 'Caught the bullet, opened the lock, held the door'
-    - text: 'Held the door, closed the door, caught the bullet'
+    - text: 'Closed the door, held it, picked the lock, caught the bullet'
+    - text: 'Caught the bullet, held the door, closed it'
+    - text: 'Caught the bullet, picked the lock, held the door'
+    - text: 'Picked the lock, held the door, closed it, caught the bullet'
       correct: true
 
 - number: 19

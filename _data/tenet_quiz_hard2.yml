@@ -29,7 +29,7 @@
 - number: 4
   question: 'What happens to broken inverted objects?'
   options:
-    - text: 'They simply disappear due to the entropic wind'
+    - text: 'They continue to exist in the past'
       correct: true
     - text: 'They become highly radioactive'
     - text: 'They become transparent'
